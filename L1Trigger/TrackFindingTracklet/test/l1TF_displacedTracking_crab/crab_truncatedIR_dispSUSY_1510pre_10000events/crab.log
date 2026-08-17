@@ -1,0 +1,201 @@
+DEBUG 2026-08-03 15:49:49.573 UTC: 	 CRAB Client version: v3.260630
+DEBUG 2026-08-03 15:49:49.573 UTC: 	 Running on: Linux lxplus9104.cern.ch 5.14.0-687.26.1.el9_8.x86_64 #1 SMP PREEMPT_DYNAMIC Mon Jul 13 13:49:10 EDT 2026 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2026-08-03 15:49:49.573 UTC: 	 Not using Singularity
+DEBUG 2026-08-03 15:49:49.573 UTC: 	 Operating System: Red Hat Enterprise Linux 9.8 (Plow)
+DEBUG 2026-08-03 15:49:49.573 UTC: 	 Executing command: 'submit'
+DEBUG 2026-08-03 15:49:49.574 UTC: 	 Found CRAB cache file /afs/cern.ch/user/r/rganesan/.crab3
+INFO 2026-08-03 15:49:49.575 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2026-08-03 15:49:49.575 UTC: 	 Loading CRAB configuration file.
+DEBUG 2026-08-03 15:49:49.579 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+DEBUG 2026-08-03 15:49:49.584 UTC: 	 Checking credentials
+DEBUG 2026-08-03 15:49:49.584 UTC: 	 Found proxy file /tmp/x509up_u187190
+DEBUG 2026-08-03 15:49:49.584 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2026-08-03 15:49:49.584 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u187190
+DEBUG 2026-08-03 15:49:49.606 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2026-08-03 15:49:49.606 UTC: 	 Getting proxy life time left
+DEBUG 2026-08-03 15:49:49.606 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u187190
+DEBUG 2026-08-03 15:49:49.636 UTC: 	 output : 689269
+689269
+
+ error: 
+ retcode : 0
+DEBUG 2026-08-03 15:49:49.636 UTC: 	 Proxy valid for 191:27:49 hours
+DEBUG 2026-08-03 15:49:49.636 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2026-08-03 15:49:49.721 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+DEBUG 2026-08-03 15:49:49.721 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u187190
+DEBUG 2026-08-03 15:49:49.751 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=rganesan/CN=891298/CN=Rithika Ganesan
+
+ error: 
+ retcode : 0
+DEBUG 2026-08-03 15:49:49.752 UTC: 	 Getting myproxy life time left for 793c4d11a26ebcde4266e59a8b6f21ed151c4e05
+DEBUG 2026-08-03 15:49:49.752 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l 793c4d11a26ebcde4266e59a8b6f21ed151c4e05
+DEBUG 2026-08-03 15:49:50.047 UTC: 	 output : username: 793c4d11a26ebcde4266e59a8b6f21ed151c4e05
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=rganesan/CN=891298/CN=Rithika Ganesan
+  renewal policy: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+  trusted retrieval policy: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=cmscrab/CN=(817881|373708)/CN=Robot: cms crab|/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=crabint1/CN=373708/CN=Robot: CMS CRAB Integration 1
+  timeleft: 479:26:36  (20.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2026-08-03 15:49:50.048 UTC: 	 Myproxy is valid: 1725960
+DEBUG 2026-08-03 15:49:50.048 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: 793c4d11a26ebcde4266e59a8b6f21ed151c4e05  - validity: 19 days, 23:26:00
+DEBUG 2026-08-03 15:49:50.048 UTC: 	 Command use: submit
+DEBUG 2026-08-03 15:49:50.048 UTC: 	 Options use: ['crab_cfg.py']
+DEBUG 2026-08-03 15:49:50.048 UTC: 	 Encoded data for curl request: subresource=version
+DEBUG 2026-08-03 15:49:50.088 UTC: 	 CRABClient version: v3.260630
+DEBUG 2026-08-03 15:49:50.088 UTC: 	 Instance is prod
+DEBUG 2026-08-03 15:49:50.088 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2026-08-03 15:49:50.088 UTC: 	 Command api workflow
+DEBUG 2026-08-03 15:49:50.088 UTC: 	 Started submission
+DEBUG 2026-08-03 15:49:50.088 UTC: 	 Working on /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/test/l1TF_displacedTracking_crab/crab_truncatedIR_dispSUSY_1510pre_10000events
+DEBUG 2026-08-03 15:49:50.120 UTC: 	 Loading required information from the environment
+DEBUG 2026-08-03 15:49:50.120 UTC: 	 Found CMSSW_15_1_0_pre4 for el9_amd64_gcc12 with base /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4
+DEBUG 2026-08-03 15:49:50.120 UTC: 	 Loading required information from the environment
+DEBUG 2026-08-03 15:49:50.120 UTC: 	 Found CMSSW_15_1_0_pre4 for el9_amd64_gcc12 with base /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4
+DEBUG 2026-08-03 15:49:50.120 UTC: 	 UNIQUE NAME: tarUUID 25214fa2-3d28-449c-b6c8-829cc01a9915 
+DEBUG 2026-08-03 15:49:50.120 UTC: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.workArea = 'l1TF_displacedTracking_crab'
+config.General.requestName = 'truncatedIR_dispSUSY_1510pre_10000events'
+config.General.transferOutputs = True
+config.section_('JobType')
+config.JobType.psetName = 'L1TrackNtupleMaker_cfg.py'
+config.JobType.maxMemoryMB = 4000
+config.JobType.numCores = 4
+config.JobType.allowUndistributedCMSSW = True
+config.JobType.pluginName = 'Analysis'
+config.section_('Data')
+config.Data.splitting = 'Automatic'
+config.Data.totalUnits = 10000
+config.Data.outLFNDirBase = '/store/user/rganesan'
+config.Data.publication = False
+config.Data.inputDataset = '/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_AllTP_140X_mcRun4_realistic_v4-v1/GEN-SIM-DIGI-RAW-MINIAOD'
+config.section_('Site')
+config.Site.storageSite = 'T3_CH_CERNBOX'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2026-08-03 15:49:50.120 UTC: 	 self.config.JobType.psetName: L1TrackNtupleMaker_cfg.py
+INFO 2026-08-03 15:49:50.120 UTC: 	 Importing CMSSW configuration L1TrackNtupleMaker_cfg.py
+INFO 2026-08-03 15:49:52.125 UTC: 	 Finished importing CMSSW configuration L1TrackNtupleMaker_cfg.py
+INFO 2026-08-03 15:49:52.125 UTC: 	 You are requesting more than 1 core per job. Please make sure that your multi-threaded code is thread-safe and CPU-efficient, and request the correct amount of memory since the default 'maxMemoryMB' value is meant for single core jobs.
+DEBUG 2026-08-03 15:49:52.125 UTC: 	 Writing CMSSW configuration to /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/test/l1TF_displacedTracking_crab/crab_truncatedIR_dispSUSY_1510pre_10000events/inputs/PSet.py
+DEBUG 2026-08-03 15:49:52.213 UTC: 	 The following EDM output files will be collected: []
+DEBUG 2026-08-03 15:49:52.213 UTC: 	 The following TFile output files will be collected: ['L1TrkNtuple_TruncatedIR_10000events.root']
+DEBUG 2026-08-03 15:49:52.213 UTC: 	 The following user output files (not listed as PoolOuputModule or TFileService in the CMSSW PSet) will be collected: 
+DEBUG 2026-08-03 15:49:52.213 UTC: 	 Loading required information from the environment
+DEBUG 2026-08-03 15:49:52.213 UTC: 	 Found CMSSW_15_1_0_pre4 for el9_amd64_gcc12 with base /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4
+DEBUG 2026-08-03 15:49:52.213 UTC: 	 Making tarball in /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/test/l1TF_displacedTracking_crab/crab_truncatedIR_dispSUSY_1510pre_10000events/inputs/25214fa2-3d28-449c-b6c8-829cc01a9915default.tgz
+DEBUG 2026-08-03 15:49:52.214 UTC: 	 Checking directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/bin
+DEBUG 2026-08-03 15:49:52.214 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/bin to tarball
+DEBUG 2026-08-03 15:49:52.220 UTC: 	 Checking directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/python
+DEBUG 2026-08-03 15:49:52.220 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/python to tarball
+DEBUG 2026-08-03 15:49:52.310 UTC: 	 Checking directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/cfipython
+DEBUG 2026-08-03 15:49:52.310 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/cfipython to tarball
+DEBUG 2026-08-03 15:49:52.477 UTC: 	 Checking directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/lib
+DEBUG 2026-08-03 15:49:52.477 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/lib to tarball
+DEBUG 2026-08-03 15:49:53.234 UTC: 	 Checking directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/biglib
+DEBUG 2026-08-03 15:49:53.234 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/biglib to tarball
+DEBUG 2026-08-03 15:49:53.237 UTC: 	 Checking directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/module
+DEBUG 2026-08-03 15:49:53.237 UTC: 	 Checking directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/config/SCRAM/hooks
+DEBUG 2026-08-03 15:49:53.237 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/config/SCRAM/hooks to tarball
+DEBUG 2026-08-03 15:49:53.273 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/DataFormats/L1TrackTrigger/interface to tarball
+DEBUG 2026-08-03 15:49:53.290 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTMTT/interface to tarball
+DEBUG 2026-08-03 15:49:53.420 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTMTT/python to tarball
+DEBUG 2026-08-03 15:49:53.434 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/interface to tarball
+DEBUG 2026-08-03 15:49:53.554 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/python to tarball
+DEBUG 2026-08-03 15:49:53.657 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/data to tarball
+DEBUG 2026-08-03 15:49:55.026 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackTrigger/interface to tarball
+DEBUG 2026-08-03 15:49:55.056 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackTrigger/python to tarball
+DEBUG 2026-08-03 15:49:55.106 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackerDTC/interface to tarball
+DEBUG 2026-08-03 15:49:55.114 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackerDTC/python to tarball
+DEBUG 2026-08-03 15:49:55.138 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackerTFP/interface to tarball
+DEBUG 2026-08-03 15:49:55.207 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackerTFP/python to tarball
+DEBUG 2026-08-03 15:49:55.245 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/SimDataFormats/Associations/interface to tarball
+DEBUG 2026-08-03 15:49:55.309 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/SimTracker/TrackTriggerAssociation/python to tarball
+DEBUG 2026-08-03 15:49:55.349 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/MCsamples/RelVal_1110/python to tarball
+DEBUG 2026-08-03 15:49:55.849 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/MCsamples/RelVal_1120/python to tarball
+DEBUG 2026-08-03 15:49:56.192 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/MCsamples/RelVal_1130_D49/python to tarball
+DEBUG 2026-08-03 15:49:56.254 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/MCsamples/RelVal_1130_D76/python to tarball
+DEBUG 2026-08-03 15:49:56.544 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/MCsamples/RelVal_1260_D88/python to tarball
+DEBUG 2026-08-03 15:49:56.582 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/MCsamples/RelVal_1400_D98/python to tarball
+DEBUG 2026-08-03 15:49:56.632 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/MCsamples/RelVal_1510_D110/python to tarball
+DEBUG 2026-08-03 15:49:56.736 UTC: 	 Adding directory /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/MCsamples/Scripts/python to tarball
+DEBUG 2026-08-03 15:49:56.991 UTC: 	 Uploading archive /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/test/l1TF_displacedTracking_crab/crab_truncatedIR_dispSUSY_1510pre_10000events/inputs/25214fa2-3d28-449c-b6c8-829cc01a9915default.tgz (3.787109.1 MB) to the CRAB cache.
+DEBUG 2026-08-03 15:49:57.811 UTC: 	 Encoded data for curl request: subresource=upload&objecttype=sandbox&tarballname=45f5cf23503806c6b83c784580d0c5fe7caca76504a6a36a1982fdb435d883bd.tar.gz
+DEBUG 2026-08-03 15:49:57.874 UTC: 	 Will execute:
+curl -f -v -X POST  -H "User-Agent: CRAB" -F "key=rganesan/sandboxes/45f5cf23503806c6b83c784580d0c5fe7caca76504a6a36a1982fdb435d883bd.tar.gz" -F "AWSAccessKeyId=715203df6482458ba839e73e6dab634b" -F "policy=eyJleHBpcmF0aW9uIjogIjIwMjYtMDgtMDNUMTY6NDk6NTdaIiwgImNvbmRpdGlvbnMiOiBbeyJidWNrZXQiOiAiY3JhYmNhY2hlX3Byb2QifSwgeyJrZXkiOiAicmdhbmVzYW4vc2FuZGJveGVzLzQ1ZjVjZjIzNTAzODA2YzZiODNjNzg0NTgwZDBjNWZlN2NhY2E3NjUwNGE2YTM2YTE5ODJmZGI0MzVkODgzYmQudGFyLmd6In1dfQ==" -F "signature=S7wDEDNcuV3l0eW2sMRWVD/2OPg=" -F "file=@/afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/test/l1TF_displacedTracking_crab/crab_truncatedIR_dispSUSY_1510pre_10000events/inputs/25214fa2-3d28-449c-b6c8-829cc01a9915default.tgz" "https://s3.cern.ch/crabcache_prod"
+DEBUG 2026-08-03 15:49:58.998 UTC: 	 exitcode: 0
+stdout: b''
+DEBUG 2026-08-03 15:49:58.999 UTC: 	 upload to S3 of sandbox /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/test/l1TF_displacedTracking_crab/crab_truncatedIR_dispSUSY_1510pre_10000events/inputs/25214fa2-3d28-449c-b6c8-829cc01a9915default.tgz completed
+DEBUG 2026-08-03 15:49:58.999 UTC: 	 make sure that object is ready for retrieve
+DEBUG 2026-08-03 15:50:00.000 UTC: 	 Encoded data for curl request: subresource=download&objecttype=sandbox&tarballname=45f5cf23503806c6b83c784580d0c5fe7caca76504a6a36a1982fdb435d883bd.tar.gz&clientmethod=head_object
+DEBUG 2026-08-03 15:50:00.050 UTC: 	 PreSignedUrl to download sandbox received OK
+DEBUG 2026-08-03 15:50:00.052 UTC: 	 Will execute:
+ curl -v -s -f -o /dev/null --head  "https://s3.cern.ch/crabcache_prod/rganesan/sandboxes/45f5cf23503806c6b83c784580d0c5fe7caca76504a6a36a1982fdb435d883bd.tar.gz?AWSAccessKeyId=715203df6482458ba839e73e6dab634b&Signature=ZkaUkA7LdRIKtMgV8CnIycz5gWM%3D&Expires=1785775800"
+DEBUG 2026-08-03 15:50:00.082 UTC: 	 exitcode: 0
+stdout: b''
+DEBUG 2026-08-03 15:50:00.082 UTC: 	 sandbox /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/test/l1TF_displacedTracking_crab/crab_truncatedIR_dispSUSY_1510pre_10000events/inputs/25214fa2-3d28-449c-b6c8-829cc01a9915default.tgz successfully uploaded to S3
+DEBUG 2026-08-03 15:50:00.082 UTC: 	 Loading required information from the environment
+DEBUG 2026-08-03 15:50:00.082 UTC: 	 Found CMSSW_15_1_0_pre4 for el9_amd64_gcc12 with base /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4
+DEBUG 2026-08-03 15:50:00.082 UTC: 	 Making tarball in /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/test/l1TF_displacedTracking_crab/crab_truncatedIR_dispSUSY_1510pre_10000events/inputs/debugFiles.tgz
+DEBUG 2026-08-03 15:50:00.089 UTC: 	 Uploading archive /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/test/l1TF_displacedTracking_crab/crab_truncatedIR_dispSUSY_1510pre_10000events/inputs/debugFiles.tgz (4 KB) to the CRAB cache.
+DEBUG 2026-08-03 15:50:00.091 UTC: 	 Encoded data for curl request: subresource=upload&objecttype=sandbox&tarballname=663a12b6e62bfc6bbc73a702afa47048d5a3f83545014e9c17e9b39a5573bb70.tar.gz
+DEBUG 2026-08-03 15:50:00.164 UTC: 	 Will execute:
+curl -f -v -X POST  -H "User-Agent: CRAB" -F "key=rganesan/sandboxes/663a12b6e62bfc6bbc73a702afa47048d5a3f83545014e9c17e9b39a5573bb70.tar.gz" -F "AWSAccessKeyId=715203df6482458ba839e73e6dab634b" -F "policy=eyJleHBpcmF0aW9uIjogIjIwMjYtMDgtMDNUMTY6NTA6MDBaIiwgImNvbmRpdGlvbnMiOiBbeyJidWNrZXQiOiAiY3JhYmNhY2hlX3Byb2QifSwgeyJrZXkiOiAicmdhbmVzYW4vc2FuZGJveGVzLzY2M2ExMmI2ZTYyYmZjNmJiYzczYTcwMmFmYTQ3MDQ4ZDVhM2Y4MzU0NTAxNGU5YzE3ZTliMzlhNTU3M2JiNzAudGFyLmd6In1dfQ==" -F "signature=CZpfkCxgcxhqRp6O30mbl8ONQl8=" -F "file=@/afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/test/l1TF_displacedTracking_crab/crab_truncatedIR_dispSUSY_1510pre_10000events/inputs/debugFiles.tgz" "https://s3.cern.ch/crabcache_prod"
+DEBUG 2026-08-03 15:50:00.207 UTC: 	 exitcode: 0
+stdout: b''
+DEBUG 2026-08-03 15:50:00.207 UTC: 	 upload to S3 of sandbox /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/test/l1TF_displacedTracking_crab/crab_truncatedIR_dispSUSY_1510pre_10000events/inputs/debugFiles.tgz completed
+DEBUG 2026-08-03 15:50:00.207 UTC: 	 make sure that object is ready for retrieve
+DEBUG 2026-08-03 15:50:01.208 UTC: 	 Encoded data for curl request: subresource=download&objecttype=sandbox&tarballname=663a12b6e62bfc6bbc73a702afa47048d5a3f83545014e9c17e9b39a5573bb70.tar.gz&clientmethod=head_object
+DEBUG 2026-08-03 15:50:01.275 UTC: 	 PreSignedUrl to download sandbox received OK
+DEBUG 2026-08-03 15:50:01.278 UTC: 	 Will execute:
+ curl -v -s -f -o /dev/null --head  "https://s3.cern.ch/crabcache_prod/rganesan/sandboxes/663a12b6e62bfc6bbc73a702afa47048d5a3f83545014e9c17e9b39a5573bb70.tar.gz?AWSAccessKeyId=715203df6482458ba839e73e6dab634b&Signature=JntwWJy6nPr4VfCa9tVK2%2Bol8Ss%3D&Expires=1785775801"
+DEBUG 2026-08-03 15:50:01.308 UTC: 	 exitcode: 0
+stdout: b''
+DEBUG 2026-08-03 15:50:01.308 UTC: 	 sandbox /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/test/l1TF_displacedTracking_crab/crab_truncatedIR_dispSUSY_1510pre_10000events/inputs/debugFiles.tgz successfully uploaded to S3
+DEBUG 2026-08-03 15:50:01.308 UTC: 	 Result uploading input files: 45f5cf23503806c6b83c784580d0c5fe7caca76504a6a36a1982fdb435d883bd.tar.gz 
+DEBUG 2026-08-03 15:50:01.308 UTC: 	 submit() - self.configuration from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.workArea = 'l1TF_displacedTracking_crab'
+config.General.requestName = 'truncatedIR_dispSUSY_1510pre_10000events'
+config.General.transferOutputs = True
+config.section_('JobType')
+config.JobType.psetName = 'L1TrackNtupleMaker_cfg.py'
+config.JobType.maxMemoryMB = 4000
+config.JobType.numCores = 4
+config.JobType.allowUndistributedCMSSW = True
+config.JobType.pluginName = 'Analysis'
+config.section_('Data')
+config.Data.splitting = 'Automatic'
+config.Data.totalUnits = 10000
+config.Data.outLFNDirBase = '/store/user/rganesan'
+config.Data.publication = False
+config.Data.inputDataset = '/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_AllTP_140X_mcRun4_realistic_v4-v1/GEN-SIM-DIGI-RAW-MINIAOD'
+config.section_('Site')
+config.Site.storageSite = 'T3_CH_CERNBOX'
+config.section_('User')
+config.section_('Debug')
+
+DEBUG 2026-08-03 15:50:01.308 UTC: 	 submit() - self.configreq {'dryrun': 0, 'workflow': 'crab_truncatedIR_dispSUSY_1510pre_10000events', 'saveoutput': 1, 'savelogsflag': 0, 'inputdata': '/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_AllTP_140X_mcRun4_realistic_v4-v1/GEN-SIM-DIGI-RAW-MINIAOD', 'nonvaliddata': 0, 'userfiles': [], 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'useparent': 0, 'ignorelocality': 0, 'splitalgo': 'Automatic', 'algoargs': 480, 'totalunits': 10000, 'lfn': '/store/user/rganesan', 'publication': 0, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'jobtype': 'Analysis', 'generator': 'pythia', 'addoutputfiles': [], 'maxjobruntime': 1250, 'numcores': 4, 'maxmemory': 4000, 'priority': 10, 'nonprodsw': 1, 'asyncdest': 'T3_CH_CERNBOX', 'requireaccelerator': 0, 'oneEventMode': 0, 'extrajdl': [], 'ignoreglobalblacklist': 0, 'partialdataset': 0, 'inputblocks': []}
+DEBUG 2026-08-03 15:50:01.309 UTC: 	 submit() - jobconfig {'addoutputfiles': [], 'tfileoutfiles': ['L1TrkNtuple_TruncatedIR_10000events.root'], 'edmoutfiles': [], 'jobarch': 'el9_amd64_gcc12', 'jobminuarch': 'x86-64-v3', 'jobsw': 'CMSSW_15_1_0_pre4', 'inputdata': '/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_AllTP_140X_mcRun4_realistic_v4-v1/GEN-SIM-DIGI-RAW-MINIAOD', 'cachefilename': '45f5cf23503806c6b83c784580d0c5fe7caca76504a6a36a1982fdb435d883bd.tar.gz', 'debugfilename': '663a12b6e62bfc6bbc73a702afa47048d5a3f83545014e9c17e9b39a5573bb70.tar.gz', 'jobtype': 'Analysis'}
+INFO 2026-08-03 15:50:01.309 UTC: 	 Sending the request to the server at cmsweb.cern.ch
+DEBUG 2026-08-03 15:50:01.309 UTC: 	 Submitting {'dryrun': 0, 'workflow': 'crab_truncatedIR_dispSUSY_1510pre_10000events', 'saveoutput': 1, 'savelogsflag': 0, 'inputdata': '/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_AllTP_140X_mcRun4_realistic_v4-v1/GEN-SIM-DIGI-RAW-MINIAOD', 'nonvaliddata': 0, 'userfiles': [], 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'useparent': 0, 'ignorelocality': 0, 'splitalgo': 'Automatic', 'algoargs': 480, 'totalunits': 10000, 'lfn': '/store/user/rganesan', 'publication': 0, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'jobtype': 'Analysis', 'generator': 'pythia', 'addoutputfiles': [], 'maxjobruntime': 1250, 'numcores': 4, 'maxmemory': 4000, 'priority': 10, 'nonprodsw': 1, 'asyncdest': 'T3_CH_CERNBOX', 'requireaccelerator': 0, 'oneEventMode': 0, 'extrajdl': [], 'ignoreglobalblacklist': 0, 'partialdataset': 0, 'inputblocks': [], 'tfileoutfiles': ['L1TrkNtuple_TruncatedIR_10000events.root'], 'edmoutfiles': [], 'jobarch': 'el9_amd64_gcc12', 'jobminuarch': 'x86-64-v3', 'jobsw': 'CMSSW_15_1_0_pre4', 'cachefilename': '45f5cf23503806c6b83c784580d0c5fe7caca76504a6a36a1982fdb435d883bd.tar.gz', 'debugfilename': '663a12b6e62bfc6bbc73a702afa47048d5a3f83545014e9c17e9b39a5573bb70.tar.gz'} 
+DEBUG 2026-08-03 15:50:01.309 UTC: 	 Encoded data for curl request: dryrun=0&workflow=crab_truncatedIR_dispSUSY_1510pre_10000events&saveoutput=1&savelogsflag=0&inputdata=%2FDisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8%2FPhase2Spring24DIGIRECOMiniAOD-PU200_AllTP_140X_mcRun4_realistic_v4-v1%2FGEN-SIM-DIGI-RAW-MINIAOD&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&useparent=0&ignorelocality=0&splitalgo=Automatic&algoargs=480&totalunits=10000&lfn=%2Fstore%2Fuser%2Frganesan&publication=0&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&jobtype=Analysis&generator=pythia&maxjobruntime=1250&numcores=4&maxmemory=4000&priority=10&nonprodsw=1&asyncdest=T3_CH_CERNBOX&requireaccelerator=0&oneEventMode=0&ignoreglobalblacklist=0&partialdataset=0&jobarch=el9_amd64_gcc12&jobminuarch=x86-64-v3&jobsw=CMSSW_15_1_0_pre4&cachefilename=45f5cf23503806c6b83c784580d0c5fe7caca76504a6a36a1982fdb435d883bd.tar.gz&debugfilename=663a12b6e62bfc6bbc73a702afa47048d5a3f83545014e9c17e9b39a5573bb70.tar.gz&tfileoutfiles=L1TrkNtuple_TruncatedIR_10000events.root
+DEBUG 2026-08-03 15:50:01.378 UTC: 	 Result: {'result': [{'RequestName': '260803_155001:rganesan_crab_truncatedIR_dispSUSY_1510pre_10000events'}]}
+INFO 2026-08-03 15:50:01.381 UTC: 	 Success: Your task has been delivered to the prod CRAB3 server.
+INFO 2026-08-03 15:50:01.381 UTC: 	 Task name: 260803_155001:rganesan_crab_truncatedIR_dispSUSY_1510pre_10000events
+INFO 2026-08-03 15:50:01.381 UTC: 	 Project dir: l1TF_displacedTracking_crab/crab_truncatedIR_dispSUSY_1510pre_10000events
+INFO 2026-08-03 15:50:01.381 UTC: 	 Please use ' crab status -d l1TF_displacedTracking_crab/crab_truncatedIR_dispSUSY_1510pre_10000events ' to check how the submission process proceeds.
+DEBUG 2026-08-03 15:50:01.381 UTC: 	 About to return
+INFO 2026-08-03 15:50:01.384 UTC: 	 Log file is /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/test/l1TF_displacedTracking_crab/crab_truncatedIR_dispSUSY_1510pre_10000events/crab.log

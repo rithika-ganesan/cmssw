@@ -1,0 +1,29 @@
+   ------------------------------------------------------------------
+
+
+Processing /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/test/L1TrackNtuplePlot.C("truncatedNONE_10000events_merged","/eos/user/r/rganesan/HTo2LongLivedTo4mu_MH-125_MFF-12_CTau-900mm_TuneCP5_14TeV-pythia8/modulewiseTruncation_10kevents_Higgs900/")...
+
+Number of events = 10166
+All performance results include cuts pt > 2.00 & |eta| < 2.50 unless 'no pt or eta cuts' stated.
+Only TP with stubs in at least 4 tracker layers considered
+
+efficiency for |eta| < 1.0 = 0.00 +- 0.00
+efficiency for 1.0 < |eta| < 1.75 = 0.00 +- 0.00
+efficiency for 1.75 < |eta| < 2.50 = 0.00 +- 0.00
+combined efficiency for |eta| < 2.50 = 0.00 +- 0.00 = 0.00/61519.00
+
+efficiency for pt > 2.00 = 0.00 +- 0.00
+efficiency for 2.00 < pt < 8.0 = 0.00 +- 0.00
+efficiency for pt > 8.0 = 0.00 +- 0.00
+efficiency for pt > 40.0 = 0.00 +- 0.00
+
+# TP/event (pt > 2.00) = 141.13
+# TP/event (pt > 3.0) = 40.21
+# TP/event (pt > 10.0) = 0.91
+# tracks/event (no pt or eta cuts) = 0.00
+# tracks/event (pt > 2.00) = 0.00
+# tracks/event (pt > 3.0) = 0.00
+# tracks/event (pt > 10.0) = 0.00
+
+z0 resolution = 999.00cm at |eta| = 0.05
+z0 resolution = 999.00cm at |eta| = 1.95
