@@ -6,6 +6,8 @@ __init__.py
 *~
 *.pb
 MCsamples
+MCsamples/
+./MCsamples
 
 # ignore partially applied patches and their backup
 *.rej
