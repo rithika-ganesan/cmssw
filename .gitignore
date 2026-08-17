@@ -5,9 +5,6 @@ __init__.py
 #*#
 *~
 *.pb
-MCsamples
-/MCsamples/
-./MCsamples
 
 # ignore partially applied patches and their backup
 *.rej
@@ -17,6 +14,7 @@ MCsamples
 # ignore files under the top level $CMSSW_BASE/src directory, but not its subdirectories
 /*
 !/*/
+/MCsamples/
 
 # ignore some IDE related files
 *.xcodeproj
