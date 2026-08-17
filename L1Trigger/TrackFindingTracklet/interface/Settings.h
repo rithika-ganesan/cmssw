@@ -179,6 +179,7 @@ namespace trklet {
     bool printDebugKF() const { return printDebugKF_; }
     bool debugTracklet() const { return debugTracklet_; }
     bool writetrace() const { return writetrace_; }
+    bool writeTest() const { return writeTest_; }
 
     bool warnNoMem() const { return warnNoMem_; }
     bool warnNoDer() const { return warnNoDer_; }
@@ -844,23 +845,23 @@ namespace trklet {
     // Set to large value, e.g. 10000, to disable truncation
     unsigned int maxstepoffset_{0};
     // turn off truncation for displaced tracking (not implemented properly for displaced seeding)
-    unsigned int maxstepoffset_extended_{10000};
+    unsigned int maxstepoffset_extended_{0};
 
     //Number of processing steps for one event (108=18TM*240MHz/40MHz)
 
     //IR should be set to 108 to match the FW for the summer chain, but ultimately should be at 156
     std::unordered_map<std::string, unsigned int> maxstep_{
-        {"IR", 156},  //IR will run at a higher clock speed to handle
+        {"IR", 10156}, //156  //IR will run at a higher clock speed to handle
                       //input links running at 25 Gbits/s
         //Set to 108 to match firmware project 240 MHz clock
-        {"VMR", 108},
-        {"TB", 108},
-        {"PC", 108},
-        {"MP", 108},
-        {"TP", 108},
-        {"TPD", 108},
-        {"TRE", 108},
-        {"DR", 108}};  //Specifies how many tracks allowed per bin in DR
+        {"VMR", 10108},
+        {"TB", 10108},
+        {"PC", 10108},
+        {"TP", 10108},
+        {"TRE", 10108},
+        {"TPD", 10108},
+        {"MP", 10108},
+        {"DR", 10108}};  //Specifies how many tracks allowed per bin in DR
 
     // If set to true this will generate debub printout in text files
     std::unordered_map<std::string, bool> writeMonitorData_{{"IL", false},
@@ -872,8 +873,8 @@ namespace trklet {
                                                             {"FT", false},
                                                             {"Residuals", false},
                                                             {"StubBend", false},
-                                                            {"MC", false},
-                                                            {"MP", false},
+                                                            {"MC", true},
+                                                            {"MP", true},
                                                             {"ME", false},
                                                             {"AP", false},
                                                             {"VMP", false},
@@ -881,7 +882,7 @@ namespace trklet {
                                                             {"TC", false},
                                                             {"Pars", false},
                                                             {"TPars", false},
-                                                            {"TPD", false},
+                                                            {"TPD", true},
                                                             {"TrackletPars", false},
                                                             {"ProjectionCalculator", false},
                                                             {"MPDiskProjection", false},
@@ -908,6 +909,7 @@ namespace trklet {
     bool printDebugKF_{false};   // if true print lots of debugging statements related to the KF fit
     bool debugTracklet_{false};  //Print detailed debug information about tracklet tracking
     bool writetrace_{false};     //Print out details about parsing configuration files
+    bool writeTest_{true};
 
     bool warnNoMem_{false};  //If true will print out warnings about missing projection memories
     bool warnNoDer_{false};  //If true will print out warnings about missing track fit derivatives

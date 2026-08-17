@@ -52,8 +52,13 @@ void InputRouter::addInput(MemoryBase* memory, string input) {
 }
 
 void InputRouter::execute() {
+  if (settings_.writeTest()) {
+    edm::LogVerbatim("Tracklet") << "Number of DTC stubs: " << dtcstubs_->nStubs();
+  }
+
   for (unsigned int i = 0; i < settings_.maxStep("IR"); i++) {
     if (i >= dtcstubs_->nStubs()) {
+	// edm::LogVerbatim("Tracklet") << name_ << " InputRouter::execute ran " << i << " iterations (maxStep(\"IR\")=" << settings_.maxStep("IR") << ", nStubs=" << dtcstubs_->nStubs() << ")";
       break;
     }
 
