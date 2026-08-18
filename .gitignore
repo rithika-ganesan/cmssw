@@ -15,6 +15,8 @@ __init__.py
 /*
 !/*/
 /MCsamples/
+/L1Trigger/TrackFindingTracklet/test/l1TF_*
+/L1Trigger/TrackFindingTracklet/plots/trunc*
 
 # ignore some IDE related files
 *.xcodeproj

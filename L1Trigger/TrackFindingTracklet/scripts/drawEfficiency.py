@@ -15,20 +15,22 @@ gStyle.SetPadTopMargin(0.05)
 gStyle.SetLabelFont(42, "XYZ")
 gStyle.SetTextFont(30)
 
-# get files 
+# get files
+local='/afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/test/'
 cernboxDispSUSY='/eos/user/r/rganesan/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/modulewiseTruncation_10kevents_dispSUSY/'
-cernboxHiggs900='/eos/user/r/rganesan/HTo2LongLivedTo4mu_MH-125_MFF-12_CTau-900mm_TuneCP5_14TeV-pythia8/modulewiseTruncation_10kevents_Higgs900/'
+cernboxHiggs900='/eos/user/r/rganesan/HTo2LongLivedTo4mu_MH-125_MFF-12_CTau-900mm_TuneCP5_14TeV-pythia8/modulewiseTruncation_10kevents/'
 
 #directoryPath='/eos/user/r/rganesan/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/crab_truncatedTPDPLUSMP_DispSUSY_1510pre_10000events/260806_185451/0000/'
 
 # options
-directoryPath=cernboxHiggs900
-plotTitle="Higgs to 2 LLPs to 4mu, ctau 900mm"
-widePlot=False
+directoryPath=cernboxHiggs900 #cernboxDispSUSY #cernboxHiggs900
+plotTitle="Higgs to 2 LLPs; 12 GeV" #"Higgs to 2 LLPs to 4mu, ctau 900mm"
+widePlot=True
 
 # get files
-allVariants=['GLOBAL', 'IR', 'VMR', 'TB', 'MP', 'PC', 'TP', 'TPD', 'DR', 'TRE', 'TPDplusMP', 'ALL', 'NONE']
-badEggs=['MP', 'TPD', 'DR', 'TP']
+allVariants=["TRE", "TPD", "MP", "DR"]
+#allVariants=['GLOBAL', 'IR', 'VMR', 'TB', 'MP', 'PC', 'TP', 'TPD', 'DR', 'TRE', 'TPDPLUSMP', 'ALL', 'NONE']
+#badEggs=['MP', 'TPD', 'DR', 'TP']
 variantLabels={
     'GLOBAL': "No truncation",
     'IR': "InputRouter",
@@ -39,18 +41,18 @@ variantLabels={
     'TP': "TrackProcesser",
     'TPD': "TPDisplaced",
     'DR': "DuplicateRemoval",
-    'TRE': "TRE",
+    'TRE': "No truncation", #"TRE",
     'ALL': "Global truncation",
-    'NONE': "No truncation"
+    'NONE': "No truncation",
+    'TPDPLUSMP': "TPD, MP"
 }
-
 
 filePaths = {}
 files = {}
 variants = []
 
 for vr in allVariants:
-    searchStem=directoryPath+"output_truncated"+vr+"_*.root"
+    searchStem=directoryPath+"output_*truncated"+vr+"_*.root"
     mySearch=glob.glob(searchStem)
     if len(mySearch) == 1:
         variants.append(vr)
@@ -58,6 +60,8 @@ for vr in allVariants:
         files[vr] = ROOT.TFile.Open(filePaths[vr], 'r')
     if len(mySearch) > 1:
         raise Exception("More than one file found for", vr, ".")
+
+print(variants)
 
 # define variables of interest
 variables=['eff_d0']
@@ -86,8 +90,8 @@ if widePlot == True:
     canvas = ROOT.TCanvas("c1", "Histogram", 1200, 600)
     legend = ROOT.TLegend(0.85, 0.6, 0.95, 0.9) #(0.8, 0.6, 0.9, 0.9)
 else:
-    canvas = ROOT.TCanvas("c1", "Histogram", 800, 600)
-    legend = ROOT.TLegend(0.8, 0.6, 0.9, 0.9)
+    canvas = ROOT.TCanvas("c1", "Histogram", 900, 600)
+    legend = ROOT.TLegend(0.85, 0.6, 0.95, 0.9)
 
     # legend styles
 legend.SetBorderSize(0)
@@ -100,7 +104,7 @@ for i, vr in enumerate(variants):
     hist.SetTitleSize(0.025)
     hist.SetLineColor(colorsDict[vr])
     hist.SetLineWidth(1)
-    if vr == "TP":
+    if vr == "TPD":
         hist.SetLineWidth(2)
     hist.SetMarkerColor(colorsDict[vr])
     hist.SetMarkerStyle(8)
@@ -111,7 +115,7 @@ for i, vr in enumerate(variants):
     hist.GetYaxis().SetTitleSize(0.0375)
     hist.GetYaxis().SetTitleOffset(0.0)
     #hist.GetYaxis().SetRangeUser(0.2, 1.0)
-    if vr: #in badEggs:
+    if vr: # in badEggs:
         if i==0:
             hist.Draw("HIST")
         else:
