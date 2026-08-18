@@ -25,7 +25,7 @@ GEOMETRY = "D110"
 # 'HYBRID_SIM' prompt tracklet track finding followed by Track Processing simulation (4 param fit)
 # 'HYBRID_SIM_DISPLACED' displaced tracklet track finding followed Track Processing simulation (5 param fit)
 # (Or legacy algos 'TMTT' or 'TRACKLET').
-L1TRKALGO = 'HYBRID'
+L1TRKALGO = 'HYBRID_DISPLACED'
 
 WRITE_DATA = False
 
@@ -70,7 +70,7 @@ process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(100))
 #--- To use MCsamples scripts, defining functions get*data*() for easy MC access,
 #--- follow instructions in https://github.com/cms-L1TK/MCsamples
 
-#from MCsamples.Scripts.getCMSdata_cfi import *
+from MCsamples.Scripts.getCMSdata_cfi import *
 #from MCsamples.Scripts.getCMSlocaldata_cfi import *
 
 if GEOMETRY == "D110":
@@ -85,10 +85,13 @@ if GEOMETRY == "D110":
 
   # Or read specified dataset (accesses CMS DB, so use this method only occasionally):
   #dataName="/RelValTTbar_14TeV_TuneCP5/CMSSW_15_1_0_pre5-PU_150X_mcRun4_realistic_v1_RV269_Run4D110_PU-v2/GEN-SIM-DIGI-RAW"
-  #inputMC=getCMSdata(dataName)
+  #dataName="/HTo2LongLivedTo4mu_MH-125_MFF-12_CTau-1500mm_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/GEN-SIM-DIGI-RAW-MINIAOD"
+  #dataName="/HTo2LongLivedTo4mu_MH-125_MFF-12_CTau-900mm_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/GEN-SIM-DIGI-RAW-MINIAOD"
+  dataName="/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_AllTP_140X_mcRun4_realistic_v4-v1/GEN-SIM-DIGI-RAW-MINIAOD"
+  inputMC=getCMSdata(dataName)
   
   # ttbar + 200PU
-  inputMC = ["/store/relval/CMSSW_15_1_0_pre5/RelValTTbar_14TeV_TuneCP5/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_RV269_Run4D110_PU-v2/2590000/0f0bcfd3-dafe-4dda-8d39-9765f6eae68e.root"]
+  #inputMC = ["/store/relval/CMSSW_15_1_0_pre5/RelValTTbar_14TeV_TuneCP5/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_RV269_Run4D110_PU-v2/2590000/0f0bcfd3-dafe-4dda-8d39-9765f6eae68e.root"]
 
 elif GEOMETRY == "D98":
 
@@ -122,7 +125,7 @@ process.source.inputCommands.append('drop  *_*_*Level1TTTracks*_*')
 # Use skipEvents to select particular single events for test vectors
 #process.source.skipEvents = cms.untracked.uint32(11)
 
-process.TFileService = cms.Service("TFileService", fileName = cms.string('L1TrkNtuple.root'), closeFileFast = cms.untracked.bool(True))
+process.TFileService = cms.Service("TFileService", fileName = cms.string('L1TrkNtuple_TruncatedNONE_10events_dispSUSY.root'), closeFileFast = cms.untracked.bool(True))
 process.Timing = cms.Service("Timing", summaryOnly = cms.untracked.bool(True))
 
 
@@ -294,6 +297,7 @@ process.L1TrackNtuple = L1TrackNtupleMaker.clone(
 
 process.ana = cms.Path(process.L1TrackNtuple)
 
+process.options.numberOfThreads=4
 
 ############################################################
 # final schedule of what is to be run
