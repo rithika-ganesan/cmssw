@@ -92,17 +92,9 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
   // All of the above vectors are empty. inputtrackfits_ is non-zero.
 
   // ****** CUSTOM LINE
-  edm::LogVerbatim("Tracklet") << "\nSector: " << iSector << ", Size of outputtracks vector: " << outputtracks.size(); 
-
-  // // // ****** CUSTOM LINE
-  // edm::LogVerbatim("Tracklet") << "Input variables sizes at the start of execute: ";
-  // edm::LogVerbatim("Tracklet") << "Input track fits: " << inputtrackfits_.size();
-  // edm::LogVerbatim("Tracklet") << "Input tracklets: " << inputtracklets_.size();
-  // edm::LogVerbatim("Tracklet") << "Input tracks: " << inputtracks_.size();
-  // edm::LogVerbatim("Tracklet") << "Input stub IDs lists: " << inputstubidslists_.size();
-  // edm::LogVerbatim("Tracklet") << "Input stub lists: " << inputstublists_.size();
-  // edm::LogVerbatim("Tracklet") << "Merged stub ID lists: " << mergedstubidslists_.size() << "\n";
-
+  // edm::LogVerbatim("Tracklet") << "\nSector: " << iSector << ", Size of outputtracks vector: " << outputtracks.size() 
+  //                               << ", Input tracks: " << inputtrackfits_.size();
+ 
   if (settings_.removalType() != "merge") {
     for (auto& inputtrackfit : inputtrackfits_) {
       if (inputtrackfit->nTracks() == 0)
@@ -117,17 +109,7 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
       return;
   }
 
-  // // // ****** CUSTOM LINE
-  // edm::LogVerbatim("Tracklet") << "Input variables sizes after loop: ";
-  // edm::LogVerbatim("Tracklet") << "Input track fits: " << inputtrackfits_.size();
-  // edm::LogVerbatim("Tracklet") << "Input tracklets: " << inputtracklets_.size();
-  // edm::LogVerbatim("Tracklet") << "Input tracks: " << inputtracks_.size();
-  // edm::LogVerbatim("Tracklet") << "Input stub IDs lists: " << inputstubidslists_.size();
-  // edm::LogVerbatim("Tracklet") << "Input stub lists: " << inputstublists_.size();
-  // edm::LogVerbatim("Tracklet") << "Merged stub ID lists: " << mergedstubidslists_.size() << "\n";
-
   unsigned int numTrk = inputtracks_.size();
-
   phiSec_ = iSector * settings_.dphisector() - 0.5 * settings_.dphisectorHG();
 
   ////////////////////
@@ -165,20 +147,36 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
         // // ****** CUSTOM LINE
         // edm::LogVerbatim("Tracklet") << "PD loop indices. rinvBin index: " << bin << ", phiBin index: " << phiBin;
 
+        edm::LogVerbatim("Tracklet") << "\nSector: " << iSector << ". Track counts: " << inputtrackfits_.size();
+
         for (unsigned int i = 0; i < inputtrackfits_.size(); i++) {
+
+          // ****** CUSTOM LINE
+          // edm::LogVerbatim("Tracklet") << "Looping through input track fits ...";
+          // edm::LogVerbatim("Tracklet") << "Number of stub lists: " << inputtrackfits_[i]->nStublists();
+          edm::LogVerbatim("Tracklet") << "Number of tracks: " << inputtrackfits_[i]->nTracks() << ", Number of tracklets: " << inputtracklets_.size();
+
           if (inputtrackfits_[i]->nStublists() == 0)
+            // ****** CUSTOM LINE
+            // edm::LogVerbatim("Tracklet") << "Empty stub list! Loop passed.";
             continue;
           if (inputtrackfits_[i]->nStublists() != inputtrackfits_[i]->nTracks())
             throw cms::Exception("LogicError")
                 << __FILE__ << " " << __LINE__ << " Number of stublists and tracks don't match up! ";
+          
           for (unsigned int j = 0; j < inputtrackfits_[i]->nStublists(); j++) {
             if (isTrackInBin(findOverlapRinvBins(inputtrackfits_[i]->getTrack(j)), bin)) {
               if (!isTrackInBin(findOverlapPhiBins(inputtrackfits_[i]->getTrack(j)), phiBin))
                 continue;
+              //***** CUSTOM */
+              edm::LogVerbatim("Tracklet") << "Input tracklets size: " << inputtracklets_.size();
               if (inputtracklets_.size() >= settings_.maxStep("DR"))
+                edm::LogVerbatim("Tracklet") << "MY DR TRUNC FLAG: loop passed. Number of tracklets: " << inputtracklets_.size();
                 continue;
               Tracklet* aTrack = inputtrackfits_[i]->getTrack(j);
               inputtracklets_.push_back(inputtrackfits_[i]->getTrack(j));
+              //***** CUSTOM */
+              // edm::LogVerbatim("Tracklet") << "Number of input tracklets: " << inputtracklets_.size();
               std::vector<const Stub*> stublist = inputtrackfits_[i]->getStublist(j);
               inputstublists_.push_back(stublist);
               std::vector<std::pair<int, int>> stubidslist = inputtrackfits_[i]->getStubidslist(j);

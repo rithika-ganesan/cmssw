@@ -7,859 +7,5450 @@
  https://github.com/cms-sw/cmssw/blob/master/Configuration/AlCa/python/autoCondPhase2.py to retrieve the right key.
 ************************************************************************************************************************
 using geometry D110 (tilted)
-%MSG-i ThreadStreamSetup:  (NoModuleName) 08-Sep-2026 19:52:38 CEST pre-events
+%MSG-i ThreadStreamSetup:  (NoModuleName) 08-Sep-2026 21:00:08 CEST pre-events
 setting # threads 4
 setting # streams 4
 %MSG
-08-Sep-2026 19:52:41 CEST  Initiating request to open file root://eoscms.cern.ch//eos/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root
-%MSG-w XrdAdaptorInternal:  file_open 08-Sep-2026 19:52:44 CEST pre-events
-Failed to open file at URL root://eoscms.cern.ch:1094//eos/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root?xrdcl.requuid=19f1ba4c-669a-4541-8440-2c90c8963f98.
+08-Sep-2026 21:00:10 CEST  Initiating request to open file root://eoscms.cern.ch//eos/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root
+%MSG-w XrdAdaptorInternal:  file_open 08-Sep-2026 21:00:14 CEST pre-events
+Failed to open file at URL root://eoscms.cern.ch:1094//eos/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root?xrdcl.requuid=3a54ff11-f2a9-4322-b44f-7a84b4206133.
 %MSG
-%MSG-w XrdAdaptorInternal:  file_open 08-Sep-2026 19:52:44 CEST pre-events
-Failed to open file at URL root://eoscms.cern.ch:1094//eos/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root?xrdcl.requuid=5d1f8332-ef86-4d63-9c7d-a7d7e8a84c14.
+%MSG-w XrdAdaptorInternal:  file_open 08-Sep-2026 21:00:14 CEST pre-events
+Failed to open file at URL root://eoscms.cern.ch:1094//eos/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root?xrdcl.requuid=6e2a2d21-6884-492c-a174-d7497682e6cc.
 %MSG
-08-Sep-2026 19:52:57 CEST  Initiating request to open file root://xrootd-cms.infn.it//store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root
-%MSG-f XrdAdaptor:  file_open 08-Sep-2026 19:53:00 CEST pre-events
-Opened a file at URL root://stor9.datagrid.cea.fr:1095//store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root?cap.format=AEAD&cap.key=4+Av/8RSnpWB/cTByVzczY/whoc=&cap.msg=HW7lMmAhIkdxVIB2sILhRgpgK7KoCR3KQMIfKqTHn-LwOSUpqf5Pt8DpdiK_xL-8zSru6IL7XiA2EDi_WSgZJS_gdyMJFZ6kEDBFx3UO6a37miMO_FTSLKJ7G2tHiRKiN4Rk3FFTVwZ1RQbqPRJW0-Oqo7ilf9AvMGWIsDRwxPkYAjR-QNOoMWa1f4QE7lWSfAYnAXH9Q2Oq-OTOxTYoOcJwLDvIbbXdCXRM18BSW6VTHOb7aBFcisnJ4kXHhs_JUR4oQ12QK11EaL2yq39sDVRdRBHYuC1Q2CnZP-U6rSRdaW-uLeop9chPjKiqovZEh9o1sYC1ohgD8tv71ltzkNxlUwxOdfX-AZCsGZB-kMp9ri9FZVSyqxRUwQ6Sm73QgcovZP4NeetHSV6AHR_SXZMRwDxdqJslsRgJeD-_dZNm9gI8HVRbP8cltR_Kc0xFp7q5Q8KUHKcvm57MFvgjki70oqnViEVaTKOp7OnDP7cTtv70fmwI2nYN4fGqpf-DaMOGi2O1Ecb4MCDaDlubBI78hkkBxaJTZ2EBOyVQUpQDrH1_6bar222i7X1W-NwHSv0S5evnAET8SacfxiFkCy09Huh8tceDxKpNnnVMEVcL4paI64-rYP7vrfbzgRP0K1fFaj87HXsIjnKc1QFZ23fY98hxMBhE8g&cap.sym=AQEBAACAAAAAAAAACAAAAAAAAAABAAAAAAAAADXum0VvfwGmcyS1oNFXcYmPJGTdDRk9j8Upc9I&eos.clientinfo=zbase64:MDAwMDAwNmF4nBXIYQqAIAxA4at0AskgQmGHMbfVIFTmIrp9+e97rzYqUQ28d8s2SY37A1J4qOeTEOZBexvBfjOTEo7RVCogcbovG/1vUcoG3aoGh8nSoYIuU3Ks0c9h/QC/uSVM&mgm.id=19291aa8&mgm.logid=2202d090-abae-11f1-897e-b47af185f030&mgm.mtime=1756376332&mgm.replicahead=0&mgm.replicaindex=0&xrdcl.requuid=baad61c2-8b2e-45ca-8c1b-bac47a8b8ae0
+08-Sep-2026 21:00:27 CEST  Initiating request to open file root://xrootd-cms.infn.it//store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root
+%MSG-f XrdAdaptor:  file_open 08-Sep-2026 21:00:30 CEST pre-events
+Opened a file at URL root://stor9.datagrid.cea.fr:1095//store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root?cap.format=AEAD&cap.key=4+Av/8RSnpWB/cTByVzczY/whoc=&cap.msg=24Nt61_BZAQpg7-gZLkQbm-GpEAKt87pb0CC8GdrL9XvFX17gi7Jt6lGnp96W19uoZHmJ0RxSHd87Q5cZi6A-wnERJ9fmG1QZIGIeg1FMnhgzA_qtLjDmQBUIe9mrgPcfS6ICkTefAXx6YF2EmVt15ankQDFcHLyRCxk9Ema_GUnJcBLC1JTJSDx2V8hR-kdVbnylWhjT6rA4mLO1W_5YNuhFXgL2hYKiYGH9bQZbdq78bsjc1BH34ggkQB7rJHhI4DIoTaNzv3k79qymBC8MBmAayTeC0TRSw0--mpkMBrmWSeelyT1ALQ9gfqd_RAeBBL53XJhivXf4ri_L4b56Krv53PNUeumrNzut50eLFfLCfhkTTDWZ2849-UV18VwxDwO3HYv32JAWG0jiqp4Eaq1PA-7SiVzVo1TrnGptbDQdvaHKA8XSSz_Dy-UKQT08hq0NiwECdSUJqmmz5UJjPqud9_8yLZ04Co0wAH2e0iyHCj7wUjTGkUcsQSEBhAAncwyYw035uXDncEL-rROt65-paOgS4l5KFubMCyyS7uhLfGHBKIQuxUNgwC8BbG-BlPrcpZtaR6ID7Y0VV0sSIw7wkqDBDmhVflpQiyYKtJHXwN5Fhbc4P7WOms1YJ-SfbCHvA3DO9aMfUXGWGKsaTsiw0nuOXiImw&cap.sym=AQEBAACAAAAAAAAACAAAAAAAAAABAAAAAAAAADXum0VvfwGmcyS1oNFXcYlJ-9sytl7BtyaKNfA&eos.clientinfo=zbase64:MDAwMDAwNjl4nBXIUQqAIAyA4at0ArEHiYQdRt1Wg1CZi+j25dv3/61TjWrg3RYWaTE/IJWnRjkJwU/a2wnyzUxKOEdXaYDE6b5s9r9FqRgMa7o7TJYOFXSFkmONq9/DB6qlJR0=&mgm.id=19291aa8&mgm.logid=8fd8ae42-abb7-11f1-a892-b47af185f030&mgm.mtime=1756376332&mgm.replicahead=0&mgm.replicaindex=0&xrdcl.requuid=65cbffa1-3f8e-495e-a295-045834570545
 %MSG
-08-Sep-2026 19:53:12 CEST  Successfully opened file root://xrootd-cms.infn.it//store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root
+08-Sep-2026 21:00:42 CEST  Successfully opened file root://xrootd-cms.infn.it//store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root
 L1TrackNtupleMaker::beginJob
-Begin processing the 1st record. Run 1, Event 1, LumiSection 1 on stream 1 at 08-Sep-2026 19:53:35.051 CEST
-Begin processing the 2nd record. Run 1, Event 6, LumiSection 1 on stream 0 at 08-Sep-2026 19:53:35.051 CEST
-Begin processing the 3rd record. Run 1, Event 2, LumiSection 1 on stream 3 at 08-Sep-2026 19:53:35.051 CEST
-Begin processing the 4th record. Run 1, Event 4, LumiSection 1 on stream 2 at 08-Sep-2026 19:53:35.051 CEST
+Begin processing the 1st record. Run 1, Event 1, LumiSection 1 on stream 2 at 08-Sep-2026 21:01:16.900 CEST
+Begin processing the 2nd record. Run 1, Event 6, LumiSection 1 on stream 1 at 08-Sep-2026 21:01:16.901 CEST
+Begin processing the 3rd record. Run 1, Event 2, LumiSection 1 on stream 3 at 08-Sep-2026 21:01:16.902 CEST
+Begin processing the 4th record. Run 1, Event 4, LumiSection 1 on stream 0 at 08-Sep-2026 21:01:16.902 CEST
 
- Sector: 0, Size of outputtracks vector: 0
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 0. Track counts: 
+Number of tracks: 35, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 15, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 9, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 5, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 1, Number of tracklets: 0
+Input tracklets size: 0
+Number of tracks: 6, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 1. Track counts: 
+Number of tracks: 27, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 30, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 88, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 51, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 0, Number of tracklets: 0
+Number of tracks: 9, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
+Sector: 2. Track counts: 
+Number of tracks: 32, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 19, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 18, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 7, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 8, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 0, Number of tracklets: 0
 
- Sector: 1, Size of outputtracks vector: 14
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 3. Track counts: 
+Number of tracks: 31, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 25, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 20, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 8, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 3, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 3, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 4. Track counts: 
+Number of tracks: 32, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 18, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 13, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 2, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 5, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 2, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
+Sector: 5. Track counts: 
+Number of tracks: 45, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 33, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 22, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 15, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 4, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 4, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
- Sector: 2, Size of outputtracks vector: 79
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 6. Track counts: 
+Number of tracks: 14, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 27, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 11, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 2, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 0, Number of tracklets: 0
+Number of tracks: 3, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 7. Track counts: 
+Number of tracks: 13, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 5, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 20, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 6, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 2, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 1, Number of tracklets: 0
+Input tracklets size: 0
 
-
- Sector: 3, Size of outputtracks vector: 102
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 4, Size of outputtracks vector: 121
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 5, Size of outputtracks vector: 140
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 6, Size of outputtracks vector: 168
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 7, Size of outputtracks vector: 183
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 8, Size of outputtracks vector: 196
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 0, Size of outputtracks vector: 0
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 1, Size of outputtracks vector: 21
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 2, Size of outputtracks vector: 40
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 3, Size of outputtracks vector: 61
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 4, Size of outputtracks vector: 97
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 5, Size of outputtracks vector: 114
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 6, Size of outputtracks vector: 143
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 7, Size of outputtracks vector: 163
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 8, Size of outputtracks vector: 195
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
+Sector: 8. Track counts: 
+Number of tracks: 25, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 28, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 72, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 98, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 0, Number of tracklets: 0
+Number of tracks: 0, Number of tracklets: 0
 End of event analysis! 
 
+
+Sector: 0. Track counts: 
+Number of tracks: 30, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 34, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 18, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 7, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 3, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 0, Number of tracklets: 0
+
+Sector: 1. Track counts: 
+Number of tracks: 37, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 29, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 26, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 10, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 5, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 0, Number of tracklets: 0
+
+Sector: 2. Track counts: 
+Number of tracks: 31, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 15, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 19, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 12, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 2, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 6, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+
+Sector: 3. Track counts: 
+Number of tracks: 41, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 31, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 38, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 48, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 9, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 10, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+
+Sector: 4. Track counts: 
+Number of tracks: 31, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 30, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 14, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 8, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 5, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 0, Number of tracklets: 0
+
+Sector: 5. Track counts: 
+Number of tracks: 37, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 37, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 22, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 6, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 8, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 0, Number of tracklets: 0
+
+Sector: 6. Track counts: 
+Number of tracks: 27, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 42, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 12, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 6, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 9, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 6, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+
+Sector: 7. Track counts: 
+Number of tracks: 60, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 28, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 25, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 13, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 11, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 4, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+
+Sector: 8. Track counts: 
+Number of tracks: 31, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 45, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 23, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 13, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 6, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 2, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
 End of event analysis! 
 
-Begin processing the 5th record. Run 1, Event 3, LumiSection 1 on stream 0 at 08-Sep-2026 19:53:45.534 CEST
 
- Sector: 0, Size of outputtracks vector: 0
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 0. Track counts: 
+Number of tracks: 47, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 19, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 17, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 12, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 13, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 1, Number of tracklets: 0
+Input tracklets size: 0
 
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 1. Track counts: 
+Number of tracks: 12, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 22, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 17, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 7, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 0, Number of tracklets: 0
+Number of tracks: 0, Number of tracklets: 0
 
+Sector: 2. Track counts: 
+Number of tracks: 49, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 30, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 19, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 5, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 10, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 9, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
- Sector: 1, Size of outputtracks vector: 22
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 3. Track counts: 
+Number of tracks: 36, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 35, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 10, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 10, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 9, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 4, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 4. Track counts: 
+Number of tracks: 20, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 28, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 16, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 8, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 0, Number of tracklets: 0
+Number of tracks: 3, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
+Sector: 5. Track counts: 
+Number of tracks: 43, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 27, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 13, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 7, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 4, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 4, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
- Sector: 2, Size of outputtracks vector: 35
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 6. Track counts: 
+Number of tracks: 29, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 40, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 12, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 3, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 5, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 7, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 7. Track counts: 
+Number of tracks: 25, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 29, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 39, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 10, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 2, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 1, Number of tracklets: 0
+Input tracklets size: 0
 
-
- Sector: 3, Size of outputtracks vector: 61
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 4, Size of outputtracks vector: 82
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 5, Size of outputtracks vector: 99
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 6, Size of outputtracks vector: 116
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 7, Size of outputtracks vector: 139
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 8, Size of outputtracks vector: 159
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 0, Size of outputtracks vector: 0
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 1, Size of outputtracks vector: 33
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 2, Size of outputtracks vector: 55
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 3, Size of outputtracks vector: 72
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 4, Size of outputtracks vector: 128
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 5, Size of outputtracks vector: 226
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 6, Size of outputtracks vector: 266
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 7, Size of outputtracks vector: 288
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 8, Size of outputtracks vector: 308
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
+Sector: 8. Track counts: 
+Number of tracks: 40, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 44, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 17, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 7, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 8, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 2, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Begin processing the 5th record. Run 1, Event 3, LumiSection 1 on stream 2 at 08-Sep-2026 21:01:27.647 CEST
 End of event analysis! 
 
+
+Sector: 0. Track counts: 
+Number of tracks: 46, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 63, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 24, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 8, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 5, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 14, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+
+Sector: 1. Track counts: 
+Number of tracks: 32, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 36, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 18, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 9, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 3, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 7, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+
+Sector: 2. Track counts: 
+Number of tracks: 21, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 36, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 15, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 2, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 2, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 0, Number of tracklets: 0
+
+Sector: 3. Track counts: 
+Number of tracks: 107, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 40, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 13, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 12, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 42, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 29, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+
+Sector: 4. Track counts: 
+Number of tracks: 48, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 45, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 129, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 4, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 7, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 6, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+
+Sector: 5. Track counts: 
+Number of tracks: 63, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 31, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 26, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 8, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 24, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 3, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+
+Sector: 6. Track counts: 
+Number of tracks: 47, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 15, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 21, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 5, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 7, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 3, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+
+Sector: 7. Track counts: 
+Number of tracks: 31, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 58, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 8, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 11, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 4, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 4, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+
+Sector: 8. Track counts: 
+Number of tracks: 43, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 28, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 13, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 16, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 5, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 0, Number of tracklets: 0
 End of event analysis! 
 
 
- Sector: 0, Size of outputtracks vector: 0
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 0. Track counts: 
+Number of tracks: 35, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 29, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 25, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 5, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 13, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 4, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 1. Track counts: 
+Number of tracks: 44, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 53, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 23, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 4, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 19, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 6, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
+Sector: 2. Track counts: 
+Number of tracks: 23, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 42, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 16, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 5, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 2, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 2, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
- Sector: 1, Size of outputtracks vector: 24
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 3. Track counts: 
+Number of tracks: 25, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 20, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 11, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 8, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 5, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 2, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 4. Track counts: 
+Number of tracks: 27, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 15, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 15, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 16, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 2, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 4, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
+Sector: 5. Track counts: 
+Number of tracks: 43, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 28, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 19, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 6, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 5, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 7, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
- Sector: 2, Size of outputtracks vector: 53
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 6. Track counts: 
+Number of tracks: 38, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 17, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 21, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 5, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 6, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 4, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
+Sector: 7. Track counts: 
+Number of tracks: 22, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 24, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 15, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 6, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 4, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 4, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
 
-
- Sector: 3, Size of outputtracks vector: 75
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 4, Size of outputtracks vector: 90
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 5, Size of outputtracks vector: 109
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 6, Size of outputtracks vector: 133
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 7, Size of outputtracks vector: 155
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-
- Sector: 8, Size of outputtracks vector: 169
-Input variables sizes at the start of execute: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
-Input variables sizes after loop: 
-Input track fits: 6
-Input tracklets: 0
-Input tracks: 0
-Input stub IDs lists: 0
-Input stub lists: 0
-Merged stub ID lists: 0
-
+Sector: 8. Track counts: 
+Number of tracks: 32, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 29, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 11, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 6, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 6, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Number of tracks: 6, Number of tracklets: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
+Input tracklets size: 0
 End of event analysis! 
 
 Process             Times called   Average time (ms)      Total time (s)
-Cleaning                      45               0.209             0.00941
-Add Stubs                     45                1.92              0.0866
-InputRouter                   45               0.118             0.00529
-VMRouter                      45               0.699              0.0315
-TrackletProcessor             45                1.08              0.0487
-MatchProcessor                45                47.6                2.14
-TrackletProcessorDisplaced        45                8.19               0.369
-FitTrack                      45               0.164             0.00736
-PurgeDuplicate                45                3.38               0.152
-08-Sep-2026 19:53:49 CEST  Closed file root://xrootd-cms.infn.it//store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root
+Cleaning                      45                0.26              0.0117
+Add Stubs                     45                1.96              0.0884
+InputRouter                   45               0.137             0.00618
+VMRouter                      45               0.773              0.0348
+TrackletProcessor             45                1.12              0.0503
+MatchProcessor                45                48.7                2.19
+TrackletProcessorDisplaced        45                8.68                0.39
+FitTrack                      45               0.199             0.00895
+PurgeDuplicate                45                2.59               0.117
+08-Sep-2026 21:01:30 CEST  Closed file root://xrootd-cms.infn.it//store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root
 =============================================================
                      Monte Carlo  SUMMARY                    
 number of stubs         per TFP = 1591.0000 +- 40.7533
@@ -874,31 +5465,31 @@ number of      stubs per TFP = 1659.1111 +- 20.0812
      max tracking efficiency =    1.0000 +-  0.0000
 =============================================================
                          Tracklet  SUMMARY                         
-   number of stubs  per TFP = 133.1111 +- 10.5001
-   number of tracks per TFP =  26.4889 +-  2.4275
-current tracking efficiency =   1.0000 +-  0.0000
-max     tracking efficiency =   1.0000 +-  0.0000
-                  fake rate =   0.2508
-             duplicate rate =   0.0646
+   number of stubs  per TFP = 0.0000 +- 0.0000
+   number of tracks per TFP = 0.0000 +- 0.0000
+current tracking efficiency = 0.0000 +- 0.0000
+max     tracking efficiency = 0.0000 +- 0.0000
+                  fake rate = -nan
+             duplicate rate = -nan
 =============================================================
 L1TrackNtupleMaker::endJob
-TimeReport> Time report complete in 73.0415 seconds
+TimeReport> Time report complete in 85.16 seconds
  Time Summary: 
- - Min event:   3.54357
- - Max event:   13.511
- - Avg event:   9.24672
- - Total loop:  35.6471
- - Total init:  37.3941
- - Total job:   73.0415
- - Total EventSetup: 13.7499
- - Total non-module: 3.65532e+08
- Event Throughput: 0.140264 ev/s
+ - Min event:   2.86819
+ - Max event:   11.4772
+ - Avg event:   7.35431
+ - Total loop:  47.4585
+ - Total init:  37.7012
+ - Total job:   85.16
+ - Total EventSetup: 19.9824
+ - Total non-module: 69822.9
+ Event Throughput: 0.105355 ev/s
  CPU Summary: 
- - Total loop:     22.7107
- - Total init:     30.5867
+ - Total loop:     23.1097
+ - Total init:     30.7551
  - Total extra:    0
- - Total children: 0.05419
- - Total job:      53.2987
+ - Total children: 0.054845
+ - Total job:      53.8661
  Processing Summary: 
  - Number of Events:  5
  - Number of Global Begin Lumi Calls:  1
