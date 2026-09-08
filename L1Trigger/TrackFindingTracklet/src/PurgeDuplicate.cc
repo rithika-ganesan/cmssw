@@ -89,16 +89,19 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
   inputstublists_.clear();
   mergedstubidslists_.clear();
 
-  // ****** CUSTOM LINE
-  edm::LogVerbatim("Tracklet") << "Sector: " << iSector << ", Size of outputtracks vector: " << outputtracks.size(); 
+  // All of the above vectors are empty. inputtrackfits_ is non-zero.
 
-  // // ****** CUSTOM LINE
-  edm::LogVerbatim("Tracklet") << "Input variables sizes at the start of execute: ";
-  edm::LogVerbatim("Tracklet") << "Input tracklets: " << inputtracklets_.size();
-  edm::LogVerbatim("Tracklet") << "Input tracks: " << inputtracks_.size();
-  edm::LogVerbatim("Tracklet") << "Input stub IDs lists: " << inputstubidslists_.size();
-  edm::LogVerbatim("Tracklet") << "Input stub lists: " << inputstublists_.size();
-  edm::LogVerbatim("Tracklet") << "Merged stub ID lists: " << mergedstubidslists_.size() << "\n";
+  // ****** CUSTOM LINE
+  edm::LogVerbatim("Tracklet") << "\nSector: " << iSector << ", Size of outputtracks vector: " << outputtracks.size(); 
+
+  // // // ****** CUSTOM LINE
+  // edm::LogVerbatim("Tracklet") << "Input variables sizes at the start of execute: ";
+  // edm::LogVerbatim("Tracklet") << "Input track fits: " << inputtrackfits_.size();
+  // edm::LogVerbatim("Tracklet") << "Input tracklets: " << inputtracklets_.size();
+  // edm::LogVerbatim("Tracklet") << "Input tracks: " << inputtracks_.size();
+  // edm::LogVerbatim("Tracklet") << "Input stub IDs lists: " << inputstubidslists_.size();
+  // edm::LogVerbatim("Tracklet") << "Input stub lists: " << inputstublists_.size();
+  // edm::LogVerbatim("Tracklet") << "Merged stub ID lists: " << mergedstubidslists_.size() << "\n";
 
   if (settings_.removalType() != "merge") {
     for (auto& inputtrackfit : inputtrackfits_) {
@@ -113,6 +116,15 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
     if (inputtracks_.empty())
       return;
   }
+
+  // // // ****** CUSTOM LINE
+  // edm::LogVerbatim("Tracklet") << "Input variables sizes after loop: ";
+  // edm::LogVerbatim("Tracklet") << "Input track fits: " << inputtrackfits_.size();
+  // edm::LogVerbatim("Tracklet") << "Input tracklets: " << inputtracklets_.size();
+  // edm::LogVerbatim("Tracklet") << "Input tracks: " << inputtracks_.size();
+  // edm::LogVerbatim("Tracklet") << "Input stub IDs lists: " << inputstubidslists_.size();
+  // edm::LogVerbatim("Tracklet") << "Input stub lists: " << inputstublists_.size();
+  // edm::LogVerbatim("Tracklet") << "Merged stub ID lists: " << mergedstubidslists_.size() << "\n";
 
   unsigned int numTrk = inputtracks_.size();
 
@@ -141,6 +153,7 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
     std::vector<unsigned int> prefTracks;  // Stores all the tracks that are sent to the KF from each bin
     std::vector<int> prefTrackFit;  // Stores the track seed that corresponds to the associated track in prefTracks
 
+    // Currently both these loops just have one index value, i.e. loop contents are run just once per sector.
     for (unsigned int bin = 0; bin < settings_.rinvBins().size() - 1; bin++) {
       for (unsigned int phiBin = 0; phiBin < settings_.phiBins().size() - 1; phiBin++) {
         // Get vectors from TrackFit and save them
@@ -149,8 +162,8 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
         // inputstubidslists: Stub stubIDs for that 3rack
         // mergedstubidslists: the same as inputstubidslists, but will be used during duplicate removal
 
-        // ****** CUSTOM LINE
-        edm::LogVerbatim("Tracklet") << "PD loop indices. rinvBin index: " << bin << ", phiBin index: " << phiBin;
+        // // ****** CUSTOM LINE
+        // edm::LogVerbatim("Tracklet") << "PD loop indices. rinvBin index: " << bin << ", phiBin index: " << phiBin;
 
         for (unsigned int i = 0; i < inputtrackfits_.size(); i++) {
           if (inputtrackfits_[i]->nStublists() == 0)
