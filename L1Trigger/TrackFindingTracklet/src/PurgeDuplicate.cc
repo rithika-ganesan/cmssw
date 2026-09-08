@@ -89,6 +89,17 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
   inputstublists_.clear();
   mergedstubidslists_.clear();
 
+  // ****** CUSTOM LINE
+  edm::LogVerbatim("Tracklet") << "Sector: " << iSector << ", Size of outputtracks vector: " << outputtracks.size(); 
+
+  // // ****** CUSTOM LINE
+  edm::LogVerbatim("Tracklet") << "Input variables sizes at the start of execute: ";
+  edm::LogVerbatim("Tracklet") << "Input tracklets: " << inputtracklets_.size();
+  edm::LogVerbatim("Tracklet") << "Input tracks: " << inputtracks_.size();
+  edm::LogVerbatim("Tracklet") << "Input stub IDs lists: " << inputstubidslists_.size();
+  edm::LogVerbatim("Tracklet") << "Input stub lists: " << inputstublists_.size();
+  edm::LogVerbatim("Tracklet") << "Merged stub ID lists: " << mergedstubidslists_.size() << "\n";
+
   if (settings_.removalType() != "merge") {
     for (auto& inputtrackfit : inputtrackfits_) {
       if (inputtrackfit->nTracks() == 0)
@@ -137,6 +148,9 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
         // inputstublists: L1Stubs for that track
         // inputstubidslists: Stub stubIDs for that 3rack
         // mergedstubidslists: the same as inputstubidslists, but will be used during duplicate removal
+
+        // ****** CUSTOM LINE
+        edm::LogVerbatim("Tracklet") << "PD loop indices. rinvBin index: " << bin << ", phiBin index: " << phiBin;
 
         for (unsigned int i = 0; i < inputtrackfits_.size(); i++) {
           if (inputtrackfits_[i]->nStublists() == 0)

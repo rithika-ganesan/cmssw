@@ -816,6 +816,9 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
   if (not available_)
     return;  // No ROOT file open.
 
+  // // ********* CUSTOM LINES
+  // edm::LogVerbatim("Tracklet") << "Running event! ";
+
   if (!(MyProcess == 13 || MyProcess == 11 || MyProcess == 211 || MyProcess == 6 || MyProcess == 15 ||
         MyProcess == 1)) {
     edm::LogVerbatim("Tracklet") << "The specified MyProcess is invalid! Exiting...";
@@ -2011,6 +2014,9 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
   }
 
   eventTree->Fill();
+
+  // ***** CUSTOM 
+  edm::LogVerbatim("Tracklet") << "End of event analysis! \n";
 
 }  // end of analyze()
 

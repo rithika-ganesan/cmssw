@@ -1,0 +1,533 @@
+************************************************************************************************************************
+						 WARNING!
+ The key phase2_realistic now points to 150X_mcRun4_realistic_v1.
+ Usage of this key is discretionary and users are cautioned to use it at their own risk!
+ This Global Tag contains tags suited for an Inner Tracker layout with rectangular (25x100um2) pixel cells (T15,T21).
+ If this is not the geometry you are expecting to use, please consult:
+ https://github.com/cms-sw/cmssw/blob/master/Configuration/AlCa/python/autoCondPhase2.py to retrieve the right key.
+************************************************************************************************************************
+using geometry D110 (tilted)
+%MSG-i ThreadStreamSetup:  (NoModuleName) 08-Sep-2026 19:37:30 CEST pre-events
+setting # threads 4
+setting # streams 4
+%MSG
+08-Sep-2026 19:37:32 CEST  Initiating request to open file root://eoscms.cern.ch//eos/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root
+%MSG-w XrdAdaptorInternal:  file_open 08-Sep-2026 19:37:36 CEST pre-events
+Failed to open file at URL root://eoscms.cern.ch:1094//eos/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root?xrdcl.requuid=4bb6dfd8-bbdf-4b00-b609-e3a24007631c.
+%MSG
+%MSG-w XrdAdaptorInternal:  file_open 08-Sep-2026 19:37:36 CEST pre-events
+Failed to open file at URL root://eoscms.cern.ch:1094//eos/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root?xrdcl.requuid=641e01ba-a340-45f5-99c5-aa7ff12e21b0.
+%MSG
+08-Sep-2026 19:37:50 CEST  Initiating request to open file root://xrootd-cms.infn.it//store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root
+%MSG-f XrdAdaptor:  file_open 08-Sep-2026 19:37:53 CEST pre-events
+Opened a file at URL root://stor9.datagrid.cea.fr:1095//store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root?cap.format=AEAD&cap.key=4+Av/8RSnpWB/cTByVzczY/whoc=&cap.msg=TfhWi9NDi142J1zL-M6spAUYpGi9OpIBGAIdQ5ya81dCfEmQaAwtcPIcVEowyZzgcqoiG9hctXUhqRb2mPosEYVdNxhMzc8syG6ap6A-Eo-NnLcSsdcJaBoYaKzquVFUlDdabvTw-5fjzgcdcY0xHnj8iYPTr3DUKVzq-YpfDCNTEJTMVMWq0gMN76L2i0FkcnRGZL6vzabTGrzuWfQA0QstF5zmRx-e6gNiNudwGcjIkG2UmyHAEqmCOJGQeZrN-NxisRFlGSJB3LjckzD4z7Aj_Bbw4HVhkmEG51eJtjXOT1fqKOSjeJ5ojJwIgKjqvxHY2yA1jt2tGRjcpsgJ4q1YG2H3mYCPUn7Tu1qEX431reQcrZ5-C4hwfe8xwCuXYdV5Y-v42glHJSGcjObTh5REx1pnB80vRLTa8Re_cXAvK0fvFSzMK22mbH4msdk7t959bLl5N_N7JLmT2zhW2pNh0EgcdHNhU26ehk7v3ZiHgP1gHNrLy-fuyJ-aXRzuzbXoq7QiZ62wHfhoIh_kp8RMGB2oEz3j1HGGehVT4XNZ6__vTx1uH5nBbeQ3mk0UUfYZtLtUPoPUOBBgRAdiwAoGFopbz6YDuFVQ5O0NyY1sQT8Qu8ra8EXFcc7uhvhGBENdOZY0-35KJy9UI8ileMdBRI_Lu8l53Q&cap.sym=AQEBAACAAAAAAAAACAAAAAAAAAABAAAAAAAAADXum0VvfwGmcyS1oNFXcYkpc_OVgoS6kmBTstk&eos.clientinfo=zbase64:MDAwMDAwNmF4nBXIUQqAIAyA4at0AqmHIoUdRt1Wg1CZi+j25dv3/7VRCWqwb273k9SQHpDCQz2fhDAP2tsI0s1MSjhGU6mAxPG+bPS/RSkbdKvqHUaLhwq6TNGxhmX26wfHQiVg&mgm.id=19291aa8&mgm.logid=04ffee26-abac-11f1-aa57-b47af185f030&mgm.mtime=1756376332&mgm.replicahead=0&mgm.replicaindex=0&xrdcl.requuid=6d60c04c-4a7e-4978-b7c5-9513bfb7db66
+%MSG
+08-Sep-2026 19:38:04 CEST  Successfully opened file root://xrootd-cms.infn.it//store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root
+L1TrackNtupleMaker::beginJob
+Begin processing the 1st record. Run 1, Event 1, LumiSection 1 on stream 0 at 08-Sep-2026 19:38:28.644 CEST
+Begin processing the 2nd record. Run 1, Event 6, LumiSection 1 on stream 3 at 08-Sep-2026 19:38:28.644 CEST
+Begin processing the 3rd record. Run 1, Event 2, LumiSection 1 on stream 1 at 08-Sep-2026 19:38:28.645 CEST
+Begin processing the 4th record. Run 1, Event 4, LumiSection 1 on stream 2 at 08-Sep-2026 19:38:28.645 CEST
+Sector: 0, Size of outputtracks vector: 0
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 1, Size of outputtracks vector: 14
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 2, Size of outputtracks vector: 79
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 3, Size of outputtracks vector: 102
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 4, Size of outputtracks vector: 121
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 5, Size of outputtracks vector: 140
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 6, Size of outputtracks vector: 168
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 7, Size of outputtracks vector: 183
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 8, Size of outputtracks vector: 196
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+End of event analysis! 
+
+Sector: 0, Size of outputtracks vector: 0
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 1, Size of outputtracks vector: 21
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Begin processing the 5th record. Run 1, Event 3, LumiSection 1 on stream 0 at 08-Sep-2026 19:38:39.749 CEST
+Sector: 2, Size of outputtracks vector: 40
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 3, Size of outputtracks vector: 61
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 4, Size of outputtracks vector: 97
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 5, Size of outputtracks vector: 114
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 6, Size of outputtracks vector: 143
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 7, Size of outputtracks vector: 163
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 8, Size of outputtracks vector: 195
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 0, Size of outputtracks vector: 0
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 1, Size of outputtracks vector: 33
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 2, Size of outputtracks vector: 55
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 3, Size of outputtracks vector: 72
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 4, Size of outputtracks vector: 128
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 5, Size of outputtracks vector: 226
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 6, Size of outputtracks vector: 266
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 7, Size of outputtracks vector: 288
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 8, Size of outputtracks vector: 308
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 0, Size of outputtracks vector: 0
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 1, Size of outputtracks vector: 22
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 2, Size of outputtracks vector: 35
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 3, Size of outputtracks vector: 61
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 4, Size of outputtracks vector: 82
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 5, Size of outputtracks vector: 99
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 6, Size of outputtracks vector: 116
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 7, Size of outputtracks vector: 139
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 8, Size of outputtracks vector: 159
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+End of event analysis! 
+
+End of event analysis! 
+
+End of event analysis! 
+
+Sector: 0, Size of outputtracks vector: 0
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 1, Size of outputtracks vector: 24
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 2, Size of outputtracks vector: 53
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 3, Size of outputtracks vector: 75
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 4, Size of outputtracks vector: 90
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 5, Size of outputtracks vector: 109
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 6, Size of outputtracks vector: 133
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 7, Size of outputtracks vector: 155
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+Sector: 8, Size of outputtracks vector: 169
+Input variables sizes at the start of execute: 
+Input tracklets: 0
+Input tracks: 0
+Input stub IDs lists: 0
+Input stub lists: 0
+Merged stub ID lists: 0
+
+PD loop indices. rinvBin index: 0, phiBin index: 0
+End of event analysis! 
+
+Process             Times called   Average time (ms)      Total time (s)
+Cleaning                      45               0.209             0.00941
+Add Stubs                     45                1.91              0.0858
+InputRouter                   45               0.116             0.00522
+VMRouter                      45               0.712               0.032
+TrackletProcessor             45               0.995              0.0448
+MatchProcessor                45                48.1                2.16
+TrackletProcessorDisplaced        45                8.02               0.361
+FitTrack                      45               0.157             0.00704
+PurgeDuplicate                45                 4.2               0.189
+08-Sep-2026 19:38:43 CEST  Closed file root://xrootd-cms.infn.it//store/mc/Phase2Spring24DIGIRECOMiniAOD/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_AllTP_140X_mcRun4_realistic_v4-v1/2810000/422e9ac0-0bfb-4bc2-9cea-8022bcc593e0.root
+=============================================================
+                     Monte Carlo  SUMMARY                    
+number of stubs         per TFP = 1591.0000 +- 40.7533
+number of matched stubs per TFP = 1207.7778 +- 30.5744
+number of reco stubs    per TFP =  379.2889 +- 13.4456
+number of any TPs       per TFP =  709.6889 +- 16.5900
+number of reco TPs      per TFP =   54.9778 +-  1.8412
+number of TPs for eff   per TFP =    0.8667 +-  0.2729
+=============================================================
+                         DTC SUMMARY                         
+number of      stubs per TFP = 1659.1111 +- 20.0812
+     max tracking efficiency =    1.0000 +-  0.0000
+=============================================================
+                         Tracklet  SUMMARY                         
+   number of stubs  per TFP = 133.1111 +- 10.5001
+   number of tracks per TFP =  26.4889 +-  2.4275
+current tracking efficiency =   1.0000 +-  0.0000
+max     tracking efficiency =   1.0000 +-  0.0000
+                  fake rate =   0.2508
+             duplicate rate =   0.0646
+=============================================================
+L1TrackNtupleMaker::endJob
+TimeReport> Time report complete in 76.2122 seconds
+ Time Summary: 
+ - Min event:   3.67147
+ - Max event:   12.9074
+ - Avg event:   10.6603
+ - Total loop:  37.6744
+ - Total init:  38.5375
+ - Total job:   76.2122
+ - Total EventSetup: 15.9626
+ - Total non-module: 7.07421e+08
+ Event Throughput: 0.132716 ev/s
+ CPU Summary: 
+ - Total loop:     22.784
+ - Total init:     30.8702
+ - Total extra:    0
+ - Total children: 0.056688
+ - Total job:      53.6554
+ Processing Summary: 
+ - Number of Events:  5
+ - Number of Global Begin Lumi Calls:  1
+ - Number of Global Begin Run Calls: 1
+
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev          module                subroutine         count   total
+ ---- -------------------- -- ------------------------- ---------------------   -----   -----
+    1 XrdAdaptorInternal   -w file_open                                            2        2
+    2 trackerDTC::Analyzer -w trackerDTC::Analyzer:Anal                            1        1
+    3 tt::AnalyzerMC       -w tt::AnalyzerMC:AnalyzerMC                            1        1
+    4 tt::AnalyzerTTTrack  -w tt::AnalyzerTTTrack:Analy                            1        1
+    5 TimeReport           -e AfterModEndJob                                       1        1
+    6 fileAction           -s file_close                                           1        1
+    7 fileAction           -s file_open                                            3        3
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 XrdAdaptorInternal   pre-events       pre-events       
+    2 trackerDTC::Analyzer EndJob                            
+    3 tt::AnalyzerMC       EndJob                            
+    4 tt::AnalyzerTTTrack  EndJob                            
+    5 TimeReport           EndJob                            
+    6 fileAction           PostGlobalEndRun                  
+    7 fileAction           pre-events       pre-events       pre-events
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                 5                   5
+Error                   1                   1
+System                  4                   4
+
+dropped waiting message count 0
