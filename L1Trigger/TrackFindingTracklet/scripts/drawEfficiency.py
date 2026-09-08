@@ -18,17 +18,17 @@ gStyle.SetTextFont(30)
 # get files
 local='/afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/test/'
 cernboxDispSUSY='/eos/user/r/rganesan/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/modulewiseTruncation_10kevents_dispSUSY/'
-cernboxHiggs900='/eos/user/r/rganesan/HTo2LongLivedTo4mu_MH-125_MFF-12_CTau-900mm_TuneCP5_14TeV-pythia8/modulewiseTruncation_10kevents/'
+cernboxHiggs900='/eos/user/r/rganesan/HTo2LongLivedTo4mu_MH-125_MFF-12_CTau-900mm_TuneCP5_14TeV-pythia8/modulewiseTruncation_50kevents/'
 
 #directoryPath='/eos/user/r/rganesan/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/crab_truncatedTPDPLUSMP_DispSUSY_1510pre_10000events/260806_185451/0000/'
 
 # options
 directoryPath=cernboxHiggs900 #cernboxDispSUSY #cernboxHiggs900
-plotTitle="Higgs to 2 LLPs; 12 GeV" #"Higgs to 2 LLPs to 4mu, ctau 900mm"
+plotTitle="Higgs to 2 LLPs (12 GeV)" #"Higgs to 2 LLPs to 4mu, ctau 900mm"
 widePlot=True
 
 # get files
-allVariants=["TRE", "TPD", "MP", "DR"]
+allVariants=["ALL", "TPD", "MP", "DR", "NONE"]
 #allVariants=['GLOBAL', 'IR', 'VMR', 'TB', 'MP', 'PC', 'TP', 'TPD', 'DR', 'TRE', 'TPDPLUSMP', 'ALL', 'NONE']
 #badEggs=['MP', 'TPD', 'DR', 'TP']
 variantLabels={
@@ -53,6 +53,7 @@ variants = []
 
 for vr in allVariants:
     searchStem=directoryPath+"output_*truncated"+vr+"_*.root"
+    # searchStem=directoryPath+"truncated"+vr+"_*.root"
     mySearch=glob.glob(searchStem)
     if len(mySearch) == 1:
         variants.append(vr)
@@ -79,7 +80,7 @@ def get_colors(palette, ncolors):
 
     return colors
 
-colors = get_colors(palette=ROOT.kRainbow, ncolors=len(allVariants))
+colors = get_colors(palette=ROOT.kSolar, ncolors=len(allVariants))
 colorsDict = {}
 for i, vr in enumerate(allVariants):
     colorsDict[vr] = colors[i]

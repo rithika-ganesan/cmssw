@@ -1,0 +1,29 @@
+
+Processing /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/plotMaker/L1TrackNtuplePlot.C("truncatedDR_10000events_merged","/eos/user/r/rganesan/HTo2LongLivedTo4mu_MH-125_MFF-12_CTau-900mm_TuneCP5_14TeV-pythia8/modulewiseTruncation_10kevents/")...
+
+Number of events = 10166
+All performance results include cuts pt > 2.00 & |eta| < 2.50 unless 'no pt or eta cuts' stated.
+Only TP with stubs in at least 4 tracker layers considered
+
+efficiency for |eta| < 1.0 = 95.66 +- 0.12
+efficiency for 1.0 < |eta| < 1.75 = 93.97 +- 0.17
+efficiency for 1.75 < |eta| < 2.50 = 94.29 +- 0.19
+combined efficiency for |eta| < 2.50 = 94.82 +- 0.09 = 61859.00/65241.00
+
+efficiency for pt > 2.00 = 94.82 +- 0.09
+efficiency for 2.00 < pt < 8.0 = 94.88 +- 0.09
+efficiency for pt > 8.0 = 94.34 +- 0.26
+efficiency for pt > 40.0 = 88.08 +- 1.37
+
+# TP/event (pt > 2.00) = 146.51
+# TP/event (pt > 3.0) = 41.45
+# TP/event (pt > 10.0) = 0.99
+# tracks/event (no pt or eta cuts) = 200.81
+# tracks/event (pt > 2.00) = 187.92
+# tracks/event (pt > 3.0) = 63.80
+# tracks/event (pt > 10.0) = 5.86
+
+Percentage fake tracks (no pt or eta cuts) = 14.31% 1749393 2041428
+Percentage duplicate tracks (no pt or eta cuts) = 6.51% 132844 2041428
+z0 resolution = 0.10cm at |eta| = 0.05
+z0 resolution = 0.41cm at |eta| = 1.95

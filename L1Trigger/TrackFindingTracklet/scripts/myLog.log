@@ -1,0 +1,12 @@
+   ------------------------------------------------------------------
+  | Welcome to ROOT 6.32.13                        https://root.cern |
+  | (c) 1995-2025, The ROOT Team; conception: R. Brun, F. Rademakers |
+  | Built for linuxx8664gcc on Jun 17 2025, 21:57:50                 |
+  | From heads/master@tags/v6-32-13                                  |
+  | With g++ (GCC) 12.3.1 20230527                                   |
+  | Try '.help'/'.?', '.demo', '.license', '.credits', '.quit'/'.q'  |
+   ------------------------------------------------------------------
+
+
+Processing /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/src/L1Trigger/TrackFindingTracklet/scripts/myMacro/makeTrackPlots.C("truncatedVMR_10000events_merged","/eos/user/r/rganesan/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/modulewiseTruncation_10kevents_dispSUSY/")...
+There are 10000 events.
