@@ -21,3 +21,9 @@ __init__.py
 
 #ignore mac specific file
 .DS_Store
+
+
+# files to not track
+*.root
+./*.root 
+MCsamples/
