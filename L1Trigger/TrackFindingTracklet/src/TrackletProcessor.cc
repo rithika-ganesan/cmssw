@@ -275,6 +275,8 @@ void TrackletProcessor::execute(unsigned int iSector, double phimin, double phim
       auto stubpair = teunitptr->read();
       stubpairs++;
 
+      edm::LogVerbatim("Tracklet") << "Before first if statement: TCIndex_: " << TCIndex_ << ", NTrackletMax: " << (int)settings_.ntrackletmax() << ", Number of tracklets: " << trackletpars_->nTracklets(); 
+
       if (trackletpars_->nTracklets() >= settings_.ntrackletmax()) {
         edm::LogVerbatim("Tracklet") << "TCIndex_: " << TCIndex_ << ", NTrackletMax: " << (int)settings_.ntrackletmax() << ", Number of tracklets: " << trackletpars_->nTracklets(); 
         edm::LogVerbatim("Tracklet") << "If statement 1: Will break on too many tracklets in " << getName();
@@ -303,10 +305,12 @@ void TrackletProcessor::execute(unsigned int iSector, double phimin, double phim
       if (accept)
         countsel++;
 
+      edm::LogVerbatim("Tracklet") << "Between if statements, after countsel: TCIndex_: " << TCIndex_ << ", NTrackletMax: " << (int)settings_.ntrackletmax() << ", Number of tracklets: " << trackletpars_->nTracklets(); 
+
       if (trackletpars_->nTracklets() >= settings_.ntrackletmax()) {
         edm::LogVerbatim("Tracklet") << "TCIndex_: " << TCIndex_ << ", NTrackletMax: " << (int)settings_.ntrackletmax() << ", Number of tracklets: " << trackletpars_->nTracklets(); 
         edm::LogVerbatim("Tracklet") << "If statement 2: Will break on number of tracklets in " << getName();
-        assert(0);
+        // assert(0);
         break;
       }
 
