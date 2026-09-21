@@ -7,259 +7,264 @@
  https://github.com/cms-sw/cmssw/blob/master/Configuration/AlCa/python/autoCondPhase2.py to retrieve the right key.
 ************************************************************************************************************************
 using geometry D110 (tilted)
-%MSG-i ThreadStreamSetup:  (NoModuleName) 21-Sep-2026 17:38:04 CEST pre-events
+%MSG-i ThreadStreamSetup:  (NoModuleName) 21-Sep-2026 18:47:30 CEST pre-events
 setting # threads 4
 setting # streams 4
 %MSG
-21-Sep-2026 17:38:10 CEST  Initiating request to open file root://eoscms.cern.ch//eos/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root
-%MSG-w XrdAdaptorInternal:  file_open 21-Sep-2026 17:38:16 CEST pre-events
-Failed to open file at URL root://eoscms.cern.ch:1094//eos/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root?xrdcl.requuid=e348bf7b-59e2-4317-a5ee-d80223343b06.
+21-Sep-2026 18:47:36 CEST  Initiating request to open file root://eoscms.cern.ch//eos/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root
+%MSG-w XrdAdaptorInternal:  file_open 21-Sep-2026 18:47:41 CEST pre-events
+Failed to open file at URL root://eoscms.cern.ch:1094//eos/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root?xrdcl.requuid=75920b00-47b7-4b50-a1ef-184ffb9541ff.
 %MSG
-%MSG-w XrdAdaptorInternal:  file_open 21-Sep-2026 17:38:16 CEST pre-events
-Failed to open file at URL root://eoscms.cern.ch:1094//eos/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root?xrdcl.requuid=0bf2e8a6-ed65-47c7-8b51-b3ac0435fbe9.
+%MSG-w XrdAdaptorInternal:  file_open 21-Sep-2026 18:47:41 CEST pre-events
+Failed to open file at URL root://eoscms.cern.ch:1094//eos/cms/store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root?xrdcl.requuid=97351870-3fae-4870-8491-491d6f97c29d.
 %MSG
-21-Sep-2026 17:38:44 CEST  Initiating request to open file root://xrootd-cms.infn.it//store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root
-%MSG-f XrdAdaptor:  file_open 21-Sep-2026 17:38:46 CEST pre-events
-Opened a file at URL root://sedsk00.grid.hep.ph.ic.ac.uk:24754//store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root?org.dcache.uuid=3b53e0b4-bfce-4c5e-8596-f250ef55103c&org.dcache.xrootd.client=rganesan.4068199@lxplus940.cern.ch&xrd.logintoken=org.dcache.door=2a0c:5bc0:c8:2:ba3f:d2ff:fe4b:4c20:1097&xrdcl.requuid=fe9dfcfb-8716-4978-9c10-a1f79d5095a7
+21-Sep-2026 18:48:09 CEST  Initiating request to open file root://xrootd-cms.infn.it//store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root
+%MSG-f XrdAdaptor:  file_open 21-Sep-2026 18:48:17 CEST pre-events
+Opened a file at URL root://dcache-cms290.desy.de:33177//store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root?org.dcache.uuid=1b21530d-3bfd-4229-be0e-6349159adb86&org.dcache.xrootd.client=rganesan.4157880@lxplus940.cern.ch&xrd.logintoken=org.dcache.door=2001:638:700:10bf:0:0:1:d6:1094&xrdcl.requuid=4d747489-f8a5-43b9-b49a-2e144968cbc0
 %MSG
-21-Sep-2026 17:39:04 CEST  Successfully opened file root://xrootd-cms.infn.it//store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root
+21-Sep-2026 18:48:37 CEST  Successfully opened file root://xrootd-cms.infn.it//store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root
+%MSG-f XrdAdaptor:  (NoModuleName) 21-Sep-2026 18:48:38 CEST pre-events
+Opened a file at URL root://sedsk00.grid.hep.ph.ic.ac.uk:24754//store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root?org.dcache.uuid=76517e40-9dfe-4ae2-b2f0-aa6d91d2a3b8&org.dcache.xrootd.client=rganesan.4157880@lxplus940.cern.ch&tried=t2-cms-xrootd02.desy.de&triedrc=resel&xrd.logintoken=org.dcache.door=2a0c:5bc0:c8:2:ba3f:d2ff:fe4b:4c20:1097&xrdcl.requuid=ba892e20-dd29-4c6f-af4a-417bca615a07
+%MSG
 L1TrackNtupleMaker::beginJob
-%MSG-f XrdAdaptor:  (NoModuleName) 21-Sep-2026 17:39:10 CEST pre-events
-Opened a file at URL root://dcache-cms290.desy.de:33177//store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root?org.dcache.uuid=b77f7169-0dc7-40f3-b2f3-1f571b786627&org.dcache.xrootd.client=rganesan.4068199@lxplus940.cern.ch&tried=+1213xrootd011213xrootd-cms-uk-2.gridpp.rl1213xrootd02.grid.hep.ph.ic.ac.uk,gfe02.grid.hep.ph.ic.ac.uk&triedrc=resel&xrd.logintoken=org.dcache.door=2001:638:700:10bf:0:0:1:d7:1094&xrdcl.requuid=47f9b343-8aed-47fe-9ce4-ac611f9715d3
+Begin processing the 1st record. Run 1, Event 38972, LumiSection 133 on stream 3 at 21-Sep-2026 18:49:18.201 CEST
+Begin processing the 2nd record. Run 1, Event 38971, LumiSection 133 on stream 1 at 21-Sep-2026 18:49:18.202 CEST
+Begin processing the 3rd record. Run 1, Event 38978, LumiSection 133 on stream 2 at 21-Sep-2026 18:49:18.202 CEST
+Begin processing the 4th record. Run 1, Event 38976, LumiSection 133 on stream 0 at 21-Sep-2026 18:49:18.203 CEST
+Begin processing the 5th record. Run 1, Event 38973, LumiSection 133 on stream 3 at 21-Sep-2026 18:49:19.935 CEST
+Begin processing the 6th record. Run 1, Event 38982, LumiSection 133 on stream 1 at 21-Sep-2026 18:49:20.713 CEST
+Begin processing the 7th record. Run 1, Event 38977, LumiSection 133 on stream 0 at 21-Sep-2026 18:49:21.469 CEST
+Begin processing the 8th record. Run 1, Event 38975, LumiSection 133 on stream 2 at 21-Sep-2026 18:49:22.332 CEST
+Begin processing the 9th record. Run 1, Event 38980, LumiSection 133 on stream 3 at 21-Sep-2026 18:49:23.223 CEST
+Begin processing the 10th record. Run 1, Event 38985, LumiSection 133 on stream 1 at 21-Sep-2026 18:49:24.144 CEST
+Begin processing the 11th record. Run 1, Event 38984, LumiSection 133 on stream 0 at 21-Sep-2026 18:49:24.967 CEST
+Begin processing the 12th record. Run 1, Event 38974, LumiSection 133 on stream 2 at 21-Sep-2026 18:49:25.673 CEST
+Begin processing the 13th record. Run 1, Event 38983, LumiSection 133 on stream 3 at 21-Sep-2026 18:49:26.522 CEST
+Begin processing the 14th record. Run 1, Event 38979, LumiSection 133 on stream 1 at 21-Sep-2026 18:49:27.570 CEST
+Begin processing the 15th record. Run 1, Event 38986, LumiSection 133 on stream 0 at 21-Sep-2026 18:49:28.383 CEST
+Begin processing the 16th record. Run 1, Event 38981, LumiSection 133 on stream 2 at 21-Sep-2026 18:49:29.222 CEST
+Begin processing the 17th record. Run 1, Event 38989, LumiSection 133 on stream 3 at 21-Sep-2026 18:49:30.104 CEST
+Begin processing the 18th record. Run 1, Event 38987, LumiSection 133 on stream 1 at 21-Sep-2026 18:49:30.809 CEST
+Begin processing the 19th record. Run 1, Event 38988, LumiSection 133 on stream 0 at 21-Sep-2026 18:49:31.695 CEST
+Begin processing the 20th record. Run 1, Event 38990, LumiSection 133 on stream 2 at 21-Sep-2026 18:49:32.458 CEST
+Begin processing the 21st record. Run 1, Event 38992, LumiSection 133 on stream 3 at 21-Sep-2026 18:49:33.344 CEST
+Begin processing the 22nd record. Run 1, Event 38996, LumiSection 133 on stream 1 at 21-Sep-2026 18:49:34.733 CEST
+Begin processing the 23rd record. Run 1, Event 39000, LumiSection 133 on stream 0 at 21-Sep-2026 18:49:35.005 CEST
+Begin processing the 24th record. Run 1, Event 38994, LumiSection 133 on stream 2 at 21-Sep-2026 18:49:35.424 CEST
+Begin processing the 25th record. Run 1, Event 38991, LumiSection 133 on stream 3 at 21-Sep-2026 18:49:36.093 CEST
+Begin processing the 26th record. Run 1, Event 38997, LumiSection 133 on stream 1 at 21-Sep-2026 18:49:36.792 CEST
+Begin processing the 27th record. Run 1, Event 39003, LumiSection 133 on stream 0 at 21-Sep-2026 18:49:37.517 CEST
+Begin processing the 28th record. Run 1, Event 38995, LumiSection 133 on stream 2 at 21-Sep-2026 18:49:38.152 CEST
+Begin processing the 29th record. Run 1, Event 39001, LumiSection 133 on stream 3 at 21-Sep-2026 18:49:39.130 CEST
+Begin processing the 30th record. Run 1, Event 39005, LumiSection 133 on stream 1 at 21-Sep-2026 18:49:39.866 CEST
+Begin processing the 31st record. Run 1, Event 39002, LumiSection 133 on stream 0 at 21-Sep-2026 18:49:40.658 CEST
+Begin processing the 32nd record. Run 1, Event 39007, LumiSection 133 on stream 2 at 21-Sep-2026 18:49:41.318 CEST
+Begin processing the 33rd record. Run 1, Event 38998, LumiSection 133 on stream 3 at 21-Sep-2026 18:49:41.989 CEST
+Begin processing the 34th record. Run 1, Event 38993, LumiSection 133 on stream 1 at 21-Sep-2026 18:49:42.652 CEST
+Begin processing the 35th record. Run 1, Event 39008, LumiSection 133 on stream 0 at 21-Sep-2026 18:49:43.281 CEST
+Begin processing the 36th record. Run 1, Event 39011, LumiSection 133 on stream 2 at 21-Sep-2026 18:49:43.956 CEST
+Begin processing the 37th record. Run 1, Event 39014, LumiSection 133 on stream 3 at 21-Sep-2026 18:49:44.748 CEST
+Begin processing the 38th record. Run 1, Event 38999, LumiSection 133 on stream 1 at 21-Sep-2026 18:49:45.579 CEST
+Begin processing the 39th record. Run 1, Event 39010, LumiSection 133 on stream 0 at 21-Sep-2026 18:49:46.303 CEST
+%MSG-f XrdAdaptorLvl3:  PostProcessPath 21-Sep-2026 18:49:47 CEST  Run: 1 Event: 38999
+Deactivating sedsk00.grid.hep.ph.ic.ac.uk from active sources because its quality (346) is higher than 260 and 4 times larger than the other active server dcache-cms290.desy.de (76) 
 %MSG
-%MSG-f XrdAdaptorLvl3:  source 21-Sep-2026 17:39:44 CEST PreSource
-Deactivating dcache-cms290.desy.de from active sources because its quality (2526) is higher than 260 and 4 times larger than the other active server sedsk00.grid.hep.ph.ic.ac.uk (43) 
+Begin processing the 40th record. Run 1, Event 39013, LumiSection 133 on stream 2 at 21-Sep-2026 18:49:47.902 CEST
+Begin processing the 41st record. Run 1, Event 39006, LumiSection 133 on stream 3 at 21-Sep-2026 18:49:48.220 CEST
+Begin processing the 42nd record. Run 1, Event 39012, LumiSection 133 on stream 1 at 21-Sep-2026 18:49:48.773 CEST
+Begin processing the 43rd record. Run 1, Event 39009, LumiSection 133 on stream 0 at 21-Sep-2026 18:49:49.492 CEST
+Begin processing the 44th record. Run 1, Event 39004, LumiSection 133 on stream 2 at 21-Sep-2026 18:49:50.255 CEST
+Begin processing the 45th record. Run 1, Event 39021, LumiSection 133 on stream 3 at 21-Sep-2026 18:49:50.929 CEST
+Begin processing the 46th record. Run 1, Event 39022, LumiSection 133 on stream 1 at 21-Sep-2026 18:49:51.585 CEST
+Begin processing the 47th record. Run 1, Event 39018, LumiSection 133 on stream 0 at 21-Sep-2026 18:49:52.322 CEST
+Begin processing the 48th record. Run 1, Event 39019, LumiSection 133 on stream 2 at 21-Sep-2026 18:49:53.036 CEST
+Begin processing the 49th record. Run 1, Event 39016, LumiSection 133 on stream 3 at 21-Sep-2026 18:49:53.778 CEST
+Begin processing the 50th record. Run 1, Event 39017, LumiSection 133 on stream 1 at 21-Sep-2026 18:49:54.645 CEST
+Begin processing the 51st record. Run 1, Event 39020, LumiSection 133 on stream 0 at 21-Sep-2026 18:49:55.390 CEST
+Begin processing the 52nd record. Run 1, Event 39027, LumiSection 133 on stream 2 at 21-Sep-2026 18:49:56.093 CEST
+Begin processing the 53rd record. Run 1, Event 39015, LumiSection 133 on stream 3 at 21-Sep-2026 18:49:56.999 CEST
+Begin processing the 54th record. Run 1, Event 39025, LumiSection 133 on stream 1 at 21-Sep-2026 18:49:57.735 CEST
+Begin processing the 55th record. Run 1, Event 39023, LumiSection 133 on stream 0 at 21-Sep-2026 18:49:58.391 CEST
+Begin processing the 56th record. Run 1, Event 39028, LumiSection 133 on stream 2 at 21-Sep-2026 18:49:59.184 CEST
+Begin processing the 57th record. Run 1, Event 39032, LumiSection 133 on stream 3 at 21-Sep-2026 18:49:59.817 CEST
+Begin processing the 58th record. Run 1, Event 39024, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:02.621 CEST
+Begin processing the 59th record. Run 1, Event 39026, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:02.651 CEST
+Begin processing the 60th record. Run 1, Event 39033, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:02.651 CEST
+Begin processing the 61st record. Run 1, Event 39035, LumiSection 133 on stream 3 at 21-Sep-2026 18:50:03.437 CEST
+Begin processing the 62nd record. Run 1, Event 39031, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:04.397 CEST
+Begin processing the 63rd record. Run 1, Event 39034, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:05.188 CEST
+Begin processing the 64th record. Run 1, Event 39029, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:05.999 CEST
+Begin processing the 65th record. Run 1, Event 39030, LumiSection 133 on stream 3 at 21-Sep-2026 18:50:06.868 CEST
+Begin processing the 66th record. Run 1, Event 39038, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:07.818 CEST
+Begin processing the 67th record. Run 1, Event 39040, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:08.665 CEST
+Begin processing the 68th record. Run 1, Event 39037, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:09.284 CEST
+Begin processing the 69th record. Run 1, Event 39036, LumiSection 133 on stream 3 at 21-Sep-2026 18:50:09.975 CEST
+Begin processing the 70th record. Run 1, Event 39041, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:10.845 CEST
+Begin processing the 71st record. Run 1, Event 39043, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:11.519 CEST
+Begin processing the 72nd record. Run 1, Event 39039, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:12.386 CEST
+Begin processing the 73rd record. Run 1, Event 39045, LumiSection 133 on stream 3 at 21-Sep-2026 18:50:13.210 CEST
+Begin processing the 74th record. Run 1, Event 39044, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:14.090 CEST
+Begin processing the 75th record. Run 1, Event 39042, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:14.914 CEST
+Begin processing the 76th record. Run 1, Event 39046, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:19.160 CEST
+Begin processing the 77th record. Run 1, Event 39048, LumiSection 133 on stream 3 at 21-Sep-2026 18:50:19.161 CEST
+Begin processing the 78th record. Run 1, Event 39054, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:19.162 CEST
+Begin processing the 79th record. Run 1, Event 39050, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:19.897 CEST
+Begin processing the 80th record. Run 1, Event 39053, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:20.893 CEST
+Begin processing the 81st record. Run 1, Event 39047, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:21.882 CEST
+Begin processing the 82nd record. Run 1, Event 39051, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:22.897 CEST
+Begin processing the 83rd record. Run 1, Event 39049, LumiSection 133 on stream 3 at 21-Sep-2026 18:50:23.781 CEST
+Begin processing the 84th record. Run 1, Event 39052, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:24.602 CEST
+Begin processing the 85th record. Run 1, Event 39058, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:25.413 CEST
+Begin processing the 86th record. Run 1, Event 39063, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:26.201 CEST
+Begin processing the 87th record. Run 1, Event 39056, LumiSection 133 on stream 3 at 21-Sep-2026 18:50:27.038 CEST
+Begin processing the 88th record. Run 1, Event 39055, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:27.825 CEST
+Begin processing the 89th record. Run 1, Event 39060, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:28.684 CEST
+Begin processing the 90th record. Run 1, Event 39061, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:29.367 CEST
+Begin processing the 91st record. Run 1, Event 39062, LumiSection 133 on stream 3 at 21-Sep-2026 18:50:30.028 CEST
+Begin processing the 92nd record. Run 1, Event 39057, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:30.623 CEST
+Begin processing the 93rd record. Run 1, Event 39059, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:31.337 CEST
+Begin processing the 94th record. Run 1, Event 39067, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:33.746 CEST
+Begin processing the 95th record. Run 1, Event 39064, LumiSection 133 on stream 3 at 21-Sep-2026 18:50:33.747 CEST
+Begin processing the 96th record. Run 1, Event 39065, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:33.989 CEST
+Begin processing the 97th record. Run 1, Event 39070, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:34.997 CEST
+Begin processing the 98th record. Run 1, Event 39068, LumiSection 133 on stream 3 at 21-Sep-2026 18:50:35.766 CEST
+Begin processing the 99th record. Run 1, Event 39066, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:36.442 CEST
+Begin processing the 100th record. Run 1, Event 39075, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:37.138 CEST
+Begin processing the 101st record. Run 1, Event 39072, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:37.848 CEST
+Begin processing the 102nd record. Run 1, Event 39076, LumiSection 133 on stream 3 at 21-Sep-2026 18:50:38.560 CEST
+Begin processing the 103rd record. Run 1, Event 39071, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:39.470 CEST
+Begin processing the 104th record. Run 1, Event 39069, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:40.266 CEST
+Begin processing the 105th record. Run 1, Event 39081, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:41.140 CEST
+Begin processing the 106th record. Run 1, Event 39077, LumiSection 133 on stream 3 at 21-Sep-2026 18:50:41.893 CEST
+Begin processing the 107th record. Run 1, Event 39078, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:42.676 CEST
+Begin processing the 108th record. Run 1, Event 39082, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:43.496 CEST
+Begin processing the 109th record. Run 1, Event 39073, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:44.382 CEST
+Begin processing the 110th record. Run 1, Event 39074, LumiSection 133 on stream 3 at 21-Sep-2026 18:50:45.344 CEST
+Begin processing the 111th record. Run 1, Event 39080, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:46.002 CEST
+Begin processing the 112th record. Run 1, Event 39084, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:48.765 CEST
+Begin processing the 113th record. Run 1, Event 39083, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:48.820 CEST
+Begin processing the 114th record. Run 1, Event 39088, LumiSection 133 on stream 3 at 21-Sep-2026 18:50:48.825 CEST
+Begin processing the 115th record. Run 1, Event 39090, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:49.757 CEST
+Begin processing the 116th record. Run 1, Event 39086, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:50.531 CEST
+Begin processing the 117th record. Run 1, Event 39079, LumiSection 133 on stream 3 at 21-Sep-2026 18:50:51.491 CEST
+Begin processing the 118th record. Run 1, Event 39091, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:52.231 CEST
+Begin processing the 119th record. Run 1, Event 39089, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:52.889 CEST
+Begin processing the 120th record. Run 1, Event 39085, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:53.607 CEST
+Begin processing the 121st record. Run 1, Event 39093, LumiSection 133 on stream 3 at 21-Sep-2026 18:50:54.376 CEST
+Begin processing the 122nd record. Run 1, Event 39092, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:55.184 CEST
+Begin processing the 123rd record. Run 1, Event 39096, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:55.879 CEST
+Begin processing the 124th record. Run 1, Event 39094, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:56.709 CEST
+Begin processing the 125th record. Run 1, Event 39095, LumiSection 133 on stream 3 at 21-Sep-2026 18:50:57.572 CEST
+Begin processing the 126th record. Run 1, Event 39087, LumiSection 133 on stream 1 at 21-Sep-2026 18:50:58.255 CEST
+Begin processing the 127th record. Run 1, Event 39100, LumiSection 133 on stream 0 at 21-Sep-2026 18:50:58.932 CEST
+Begin processing the 128th record. Run 1, Event 39101, LumiSection 133 on stream 2 at 21-Sep-2026 18:50:59.632 CEST
+Begin processing the 129th record. Run 1, Event 39103, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:00.463 CEST
+Begin processing the 130th record. Run 1, Event 39098, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:03.204 CEST
+Begin processing the 131st record. Run 1, Event 39097, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:03.204 CEST
+Begin processing the 132nd record. Run 1, Event 39104, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:03.204 CEST
+Begin processing the 133rd record. Run 1, Event 39107, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:04.629 CEST
+Begin processing the 134th record. Run 1, Event 39102, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:05.319 CEST
+Begin processing the 135th record. Run 1, Event 39106, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:05.978 CEST
+Begin processing the 136th record. Run 1, Event 39112, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:06.740 CEST
+Begin processing the 137th record. Run 1, Event 39114, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:07.370 CEST
+Begin processing the 138th record. Run 1, Event 39105, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:08.131 CEST
+Begin processing the 139th record. Run 1, Event 39113, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:08.822 CEST
+Begin processing the 140th record. Run 1, Event 39116, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:09.536 CEST
+Begin processing the 141st record. Run 1, Event 39109, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:10.197 CEST
+Begin processing the 142nd record. Run 1, Event 39099, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:11.067 CEST
+Begin processing the 143rd record. Run 1, Event 39115, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:11.922 CEST
+Begin processing the 144th record. Run 1, Event 39110, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:12.793 CEST
+Begin processing the 145th record. Run 1, Event 39108, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:13.582 CEST
+Begin processing the 146th record. Run 1, Event 39121, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:14.428 CEST
+%MSG-f XrdAdaptor:  (NoModuleName) 21-Sep-2026 18:51:14 CEST pre-events
+Opened a file at URL root://dcache-cms290.desy.de:33177//store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root?org.dcache.uuid=13bdb1f1-2960-4ff0-89a0-4fe2d933a9b2&org.dcache.xrootd.client=rganesan.4157880@lxplus940.cern.ch&tried=+1213xrootd011213xrootd-cms-uk-2.gridpp.rl1213xrootd02.grid.hep.ph.ic.ac.uk,t2-cms-xrootd02.desy.de,gfe02.grid.hep.ph.ic.ac.uk&triedrc=resel&xrd.logintoken=org.dcache.door=2001:638:700:10bf:0:0:1:d6:1094&xrdcl.requuid=618ea97b-2e43-45bd-8f96-61bc27338ba7
 %MSG
-Begin processing the 1st record. Run 1, Event 38972, LumiSection 133 on stream 2 at 21-Sep-2026 17:39:44.097 CEST
-Begin processing the 2nd record. Run 1, Event 38971, LumiSection 133 on stream 3 at 21-Sep-2026 17:39:44.099 CEST
-Begin processing the 3rd record. Run 1, Event 38978, LumiSection 133 on stream 0 at 21-Sep-2026 17:39:44.099 CEST
-Begin processing the 4th record. Run 1, Event 38976, LumiSection 133 on stream 1 at 21-Sep-2026 17:39:44.100 CEST
-Begin processing the 5th record. Run 1, Event 38973, LumiSection 133 on stream 3 at 21-Sep-2026 17:39:45.833 CEST
-Begin processing the 6th record. Run 1, Event 38982, LumiSection 133 on stream 2 at 21-Sep-2026 17:39:46.380 CEST
-Begin processing the 7th record. Run 1, Event 38977, LumiSection 133 on stream 0 at 21-Sep-2026 17:39:46.896 CEST
-Begin processing the 8th record. Run 1, Event 38975, LumiSection 133 on stream 1 at 21-Sep-2026 17:39:47.625 CEST
-Begin processing the 9th record. Run 1, Event 38980, LumiSection 133 on stream 3 at 21-Sep-2026 17:39:48.294 CEST
-Begin processing the 10th record. Run 1, Event 38985, LumiSection 133 on stream 2 at 21-Sep-2026 17:39:49.078 CEST
-Begin processing the 11th record. Run 1, Event 38984, LumiSection 133 on stream 0 at 21-Sep-2026 17:39:49.895 CEST
-Begin processing the 12th record. Run 1, Event 38974, LumiSection 133 on stream 1 at 21-Sep-2026 17:39:50.824 CEST
-Begin processing the 13th record. Run 1, Event 38983, LumiSection 133 on stream 3 at 21-Sep-2026 17:39:51.586 CEST
-Begin processing the 14th record. Run 1, Event 38979, LumiSection 133 on stream 2 at 21-Sep-2026 17:39:52.395 CEST
-Begin processing the 15th record. Run 1, Event 38986, LumiSection 133 on stream 0 at 21-Sep-2026 17:39:53.241 CEST
-Begin processing the 16th record. Run 1, Event 38981, LumiSection 133 on stream 1 at 21-Sep-2026 17:39:54.037 CEST
-Begin processing the 17th record. Run 1, Event 38989, LumiSection 133 on stream 3 at 21-Sep-2026 17:39:54.869 CEST
-Begin processing the 18th record. Run 1, Event 38987, LumiSection 133 on stream 2 at 21-Sep-2026 17:39:55.686 CEST
-Begin processing the 19th record. Run 1, Event 38988, LumiSection 133 on stream 0 at 21-Sep-2026 17:39:56.476 CEST
-Begin processing the 20th record. Run 1, Event 38990, LumiSection 133 on stream 1 at 21-Sep-2026 17:39:57.259 CEST
-Begin processing the 21st record. Run 1, Event 38992, LumiSection 133 on stream 3 at 21-Sep-2026 17:39:58.054 CEST
-Begin processing the 22nd record. Run 1, Event 38996, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:00.568 CEST
-Begin processing the 23rd record. Run 1, Event 39000, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:00.568 CEST
-Begin processing the 24th record. Run 1, Event 38994, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:00.569 CEST
-Begin processing the 25th record. Run 1, Event 38991, LumiSection 133 on stream 3 at 21-Sep-2026 17:40:01.525 CEST
-Begin processing the 26th record. Run 1, Event 38997, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:02.469 CEST
-Begin processing the 27th record. Run 1, Event 39003, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:03.287 CEST
-Begin processing the 28th record. Run 1, Event 38995, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:04.014 CEST
-Begin processing the 29th record. Run 1, Event 39001, LumiSection 133 on stream 3 at 21-Sep-2026 17:40:04.906 CEST
-Begin processing the 30th record. Run 1, Event 39005, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:05.752 CEST
-Begin processing the 31st record. Run 1, Event 39002, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:06.413 CEST
-Begin processing the 32nd record. Run 1, Event 39007, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:07.224 CEST
-Begin processing the 33rd record. Run 1, Event 38998, LumiSection 133 on stream 3 at 21-Sep-2026 17:40:08.179 CEST
-Begin processing the 34th record. Run 1, Event 38993, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:08.968 CEST
-Begin processing the 35th record. Run 1, Event 39008, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:09.811 CEST
-Begin processing the 36th record. Run 1, Event 39011, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:10.749 CEST
-Begin processing the 37th record. Run 1, Event 39014, LumiSection 133 on stream 3 at 21-Sep-2026 17:40:11.628 CEST
-Begin processing the 38th record. Run 1, Event 38999, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:12.733 CEST
-Begin processing the 39th record. Run 1, Event 39010, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:13.566 CEST
-Begin processing the 40th record. Run 1, Event 39013, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:16.801 CEST
-Begin processing the 41st record. Run 1, Event 39006, LumiSection 133 on stream 3 at 21-Sep-2026 17:40:16.801 CEST
-Begin processing the 42nd record. Run 1, Event 39012, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:16.801 CEST
-Begin processing the 43rd record. Run 1, Event 39009, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:17.924 CEST
-Begin processing the 44th record. Run 1, Event 39004, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:18.399 CEST
-Begin processing the 45th record. Run 1, Event 39021, LumiSection 133 on stream 3 at 21-Sep-2026 17:40:19.334 CEST
-Begin processing the 46th record. Run 1, Event 39022, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:20.232 CEST
-Begin processing the 47th record. Run 1, Event 39018, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:21.162 CEST
-Begin processing the 48th record. Run 1, Event 39019, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:22.155 CEST
-Begin processing the 49th record. Run 1, Event 39016, LumiSection 133 on stream 3 at 21-Sep-2026 17:40:23.038 CEST
-Begin processing the 50th record. Run 1, Event 39017, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:23.943 CEST
-Begin processing the 51st record. Run 1, Event 39020, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:24.819 CEST
-Begin processing the 52nd record. Run 1, Event 39027, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:25.676 CEST
-Begin processing the 53rd record. Run 1, Event 39015, LumiSection 133 on stream 3 at 21-Sep-2026 17:40:26.526 CEST
-Begin processing the 54th record. Run 1, Event 39025, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:27.405 CEST
-Begin processing the 55th record. Run 1, Event 39023, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:28.346 CEST
-Begin processing the 56th record. Run 1, Event 39028, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:29.259 CEST
-Begin processing the 57th record. Run 1, Event 39032, LumiSection 133 on stream 3 at 21-Sep-2026 17:40:30.093 CEST
-Begin processing the 58th record. Run 1, Event 39024, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:32.883 CEST
-Begin processing the 59th record. Run 1, Event 39026, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:32.883 CEST
-Begin processing the 60th record. Run 1, Event 39033, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:32.883 CEST
-Begin processing the 61st record. Run 1, Event 39035, LumiSection 133 on stream 3 at 21-Sep-2026 17:40:33.700 CEST
-Begin processing the 62nd record. Run 1, Event 39031, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:34.582 CEST
-Begin processing the 63rd record. Run 1, Event 39034, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:35.466 CEST
-Begin processing the 64th record. Run 1, Event 39029, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:36.343 CEST
-Begin processing the 65th record. Run 1, Event 39030, LumiSection 133 on stream 3 at 21-Sep-2026 17:40:37.269 CEST
-Begin processing the 66th record. Run 1, Event 39038, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:38.122 CEST
-Begin processing the 67th record. Run 1, Event 39040, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:38.947 CEST
-Begin processing the 68th record. Run 1, Event 39037, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:39.720 CEST
-Begin processing the 69th record. Run 1, Event 39036, LumiSection 133 on stream 3 at 21-Sep-2026 17:40:40.567 CEST
-Begin processing the 70th record. Run 1, Event 39041, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:41.466 CEST
-Begin processing the 71st record. Run 1, Event 39043, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:42.277 CEST
-Begin processing the 72nd record. Run 1, Event 39039, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:43.006 CEST
-Begin processing the 73rd record. Run 1, Event 39045, LumiSection 133 on stream 3 at 21-Sep-2026 17:40:43.743 CEST
-Begin processing the 74th record. Run 1, Event 39044, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:44.573 CEST
-Begin processing the 75th record. Run 1, Event 39042, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:45.341 CEST
-Begin processing the 76th record. Run 1, Event 39046, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:48.121 CEST
-Begin processing the 77th record. Run 1, Event 39048, LumiSection 133 on stream 3 at 21-Sep-2026 17:40:48.121 CEST
-Begin processing the 78th record. Run 1, Event 39054, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:48.121 CEST
-Begin processing the 79th record. Run 1, Event 39050, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:48.987 CEST
-Begin processing the 80th record. Run 1, Event 39053, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:49.656 CEST
-Begin processing the 81st record. Run 1, Event 39047, LumiSection 133 on stream 3 at 21-Sep-2026 17:40:50.457 CEST
-Begin processing the 82nd record. Run 1, Event 39051, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:51.267 CEST
-Begin processing the 83rd record. Run 1, Event 39049, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:52.071 CEST
-Begin processing the 84th record. Run 1, Event 39052, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:52.870 CEST
-Begin processing the 85th record. Run 1, Event 39058, LumiSection 133 on stream 3 at 21-Sep-2026 17:40:53.629 CEST
-Begin processing the 86th record. Run 1, Event 39063, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:54.506 CEST
-Begin processing the 87th record. Run 1, Event 39056, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:55.338 CEST
-Begin processing the 88th record. Run 1, Event 39055, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:56.182 CEST
-Begin processing the 89th record. Run 1, Event 39060, LumiSection 133 on stream 3 at 21-Sep-2026 17:40:56.964 CEST
-Begin processing the 90th record. Run 1, Event 39061, LumiSection 133 on stream 2 at 21-Sep-2026 17:40:57.771 CEST
-Begin processing the 91st record. Run 1, Event 39062, LumiSection 133 on stream 0 at 21-Sep-2026 17:40:58.623 CEST
-Begin processing the 92nd record. Run 1, Event 39057, LumiSection 133 on stream 1 at 21-Sep-2026 17:40:59.421 CEST
-Begin processing the 93rd record. Run 1, Event 39059, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:00.230 CEST
-Begin processing the 94th record. Run 1, Event 39067, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:03.210 CEST
-Begin processing the 95th record. Run 1, Event 39064, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:03.211 CEST
-Begin processing the 96th record. Run 1, Event 39065, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:03.211 CEST
-Begin processing the 97th record. Run 1, Event 39070, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:04.182 CEST
-Begin processing the 98th record. Run 1, Event 39068, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:04.630 CEST
-Begin processing the 99th record. Run 1, Event 39066, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:05.384 CEST
-Begin processing the 100th record. Run 1, Event 39075, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:06.143 CEST
-Begin processing the 101st record. Run 1, Event 39072, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:06.928 CEST
-Begin processing the 102nd record. Run 1, Event 39076, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:07.687 CEST
-Begin processing the 103rd record. Run 1, Event 39071, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:08.447 CEST
-Begin processing the 104th record. Run 1, Event 39069, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:09.218 CEST
-Begin processing the 105th record. Run 1, Event 39081, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:09.977 CEST
-Begin processing the 106th record. Run 1, Event 39077, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:10.721 CEST
-Begin processing the 107th record. Run 1, Event 39078, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:11.470 CEST
-Begin processing the 108th record. Run 1, Event 39082, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:12.348 CEST
-Begin processing the 109th record. Run 1, Event 39073, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:13.105 CEST
-Begin processing the 110th record. Run 1, Event 39074, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:13.817 CEST
-Begin processing the 111th record. Run 1, Event 39080, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:14.570 CEST
-Begin processing the 112th record. Run 1, Event 39084, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:17.423 CEST
-Begin processing the 113th record. Run 1, Event 39083, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:17.424 CEST
-Begin processing the 114th record. Run 1, Event 39088, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:17.425 CEST
-Begin processing the 115th record. Run 1, Event 39090, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:18.511 CEST
-Begin processing the 116th record. Run 1, Event 39086, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:19.362 CEST
-Begin processing the 117th record. Run 1, Event 39079, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:20.080 CEST
-Begin processing the 118th record. Run 1, Event 39091, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:20.940 CEST
-Begin processing the 119th record. Run 1, Event 39089, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:21.723 CEST
-Begin processing the 120th record. Run 1, Event 39085, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:22.504 CEST
-Begin processing the 121st record. Run 1, Event 39093, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:23.251 CEST
-Begin processing the 122nd record. Run 1, Event 39092, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:23.981 CEST
-Begin processing the 123rd record. Run 1, Event 39096, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:24.793 CEST
-Begin processing the 124th record. Run 1, Event 39094, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:25.518 CEST
-Begin processing the 125th record. Run 1, Event 39095, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:26.278 CEST
-Begin processing the 126th record. Run 1, Event 39087, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:27.066 CEST
-Begin processing the 127th record. Run 1, Event 39100, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:27.803 CEST
-Begin processing the 128th record. Run 1, Event 39101, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:28.520 CEST
-Begin processing the 129th record. Run 1, Event 39103, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:29.294 CEST
-Begin processing the 130th record. Run 1, Event 39098, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:32.365 CEST
-Begin processing the 131st record. Run 1, Event 39097, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:32.366 CEST
-Begin processing the 132nd record. Run 1, Event 39104, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:32.367 CEST
-Begin processing the 133rd record. Run 1, Event 39107, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:33.305 CEST
-Begin processing the 134th record. Run 1, Event 39102, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:33.828 CEST
-Begin processing the 135th record. Run 1, Event 39106, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:34.591 CEST
-Begin processing the 136th record. Run 1, Event 39112, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:35.283 CEST
-Begin processing the 137th record. Run 1, Event 39114, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:36.083 CEST
-Begin processing the 138th record. Run 1, Event 39105, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:36.830 CEST
-Begin processing the 139th record. Run 1, Event 39113, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:37.520 CEST
-Begin processing the 140th record. Run 1, Event 39116, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:38.202 CEST
-Begin processing the 141st record. Run 1, Event 39109, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:38.880 CEST
-Begin processing the 142nd record. Run 1, Event 39099, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:39.606 CEST
-Begin processing the 143rd record. Run 1, Event 39115, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:40.440 CEST
-Begin processing the 144th record. Run 1, Event 39110, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:41.162 CEST
-Begin processing the 145th record. Run 1, Event 39108, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:41.866 CEST
-Begin processing the 146th record. Run 1, Event 39121, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:42.646 CEST
-Begin processing the 147th record. Run 1, Event 39111, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:43.400 CEST
-%MSG-f XrdAdaptor:  (NoModuleName) 21-Sep-2026 17:41:43 CEST pre-events
-Opened a file at URL root://dcache-cms290.desy.de:33177//store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root?org.dcache.uuid=bfacf270-f82c-400d-af95-80e67e36868b&org.dcache.xrootd.client=rganesan.4068199@lxplus940.cern.ch&tried=+1213xrootd011213xrootd-cms-uk-2.gridpp.rl1213xrootd02.grid.hep.ph.ic.ac.uk,gfe02.grid.hep.ph.ic.ac.uk,t2-cms-xrootd01.desy.de,xrootd01.grid.hep.ph.ic.ac.uk&triedrc=resel,enoent&xrd.logintoken=org.dcache.door=2001:638:700:10bf:0:0:1:d7:1094&xrdcl.requuid=ee000c68-322b-40c6-b720-ee1545b84947
+Begin processing the 147th record. Run 1, Event 39111, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:15.093 CEST
+Begin processing the 148th record. Run 1, Event 39123, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:17.586 CEST
+Begin processing the 149th record. Run 1, Event 39119, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:17.586 CEST
+Begin processing the 150th record. Run 1, Event 39117, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:17.586 CEST
+Begin processing the 151st record. Run 1, Event 39122, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:18.613 CEST
+Begin processing the 152nd record. Run 1, Event 39120, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:19.468 CEST
+Begin processing the 153rd record. Run 1, Event 39118, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:20.139 CEST
+Begin processing the 154th record. Run 1, Event 39124, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:20.800 CEST
+Begin processing the 155th record. Run 1, Event 39130, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:21.720 CEST
+Begin processing the 156th record. Run 1, Event 39126, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:22.727 CEST
+Begin processing the 157th record. Run 1, Event 39134, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:23.548 CEST
+Begin processing the 158th record. Run 1, Event 39132, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:24.274 CEST
+Begin processing the 159th record. Run 1, Event 39129, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:24.960 CEST
+Begin processing the 160th record. Run 1, Event 39136, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:25.698 CEST
+Begin processing the 161st record. Run 1, Event 39133, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:26.558 CEST
+Begin processing the 162nd record. Run 1, Event 39125, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:27.509 CEST
+Begin processing the 163rd record. Run 1, Event 39128, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:28.207 CEST
+Begin processing the 164th record. Run 1, Event 39127, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:28.992 CEST
+%MSG-f XrdAdaptor:  (NoModuleName) 21-Sep-2026 18:51:30 CEST pre-events
+Opened a file at URL root://dcache-cms290.desy.de:33177//store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root?org.dcache.uuid=40c6671c-f085-4500-99ed-ff0353fd06c1&org.dcache.xrootd.client=rganesan.4157880@lxplus940.cern.ch&tried=+1213xrootd011213xrootd-cms-uk-2.gridpp.rl1213xrootd02.grid.hep.ph.ic.ac.uk,t2-cms-xrootd02.desy.de,gfe02.grid.hep.ph.ic.ac.uk,xrootd01.grid.hep.ph.ic.ac.uk&triedrc=resel,enoent&xrd.logintoken=org.dcache.door=2001:638:700:10bf:0:0:1:d6:1094&xrdcl.requuid=17bf398e-864b-4898-b857-fed9497ebf15
 %MSG
-Begin processing the 148th record. Run 1, Event 39123, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:46.354 CEST
-Begin processing the 149th record. Run 1, Event 39119, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:46.354 CEST
-Begin processing the 150th record. Run 1, Event 39117, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:46.354 CEST
-Begin processing the 151st record. Run 1, Event 39122, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:47.260 CEST
-Begin processing the 152nd record. Run 1, Event 39120, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:47.641 CEST
-Begin processing the 153rd record. Run 1, Event 39118, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:48.412 CEST
-Begin processing the 154th record. Run 1, Event 39124, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:49.178 CEST
-Begin processing the 155th record. Run 1, Event 39130, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:49.974 CEST
-Begin processing the 156th record. Run 1, Event 39126, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:50.769 CEST
-Begin processing the 157th record. Run 1, Event 39134, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:51.554 CEST
-Begin processing the 158th record. Run 1, Event 39132, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:52.390 CEST
-Begin processing the 159th record. Run 1, Event 39129, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:53.289 CEST
-Begin processing the 160th record. Run 1, Event 39136, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:54.200 CEST
-Begin processing the 161st record. Run 1, Event 39133, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:55.114 CEST
-Begin processing the 162nd record. Run 1, Event 39125, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:55.842 CEST
-Begin processing the 163rd record. Run 1, Event 39128, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:56.548 CEST
-Begin processing the 164th record. Run 1, Event 39127, LumiSection 133 on stream 1 at 21-Sep-2026 17:41:57.271 CEST
-Begin processing the 165th record. Run 1, Event 39137, LumiSection 133 on stream 3 at 21-Sep-2026 17:41:59.929 CEST
-Begin processing the 166th record. Run 1, Event 39138, LumiSection 133 on stream 2 at 21-Sep-2026 17:41:59.929 CEST
-Begin processing the 167th record. Run 1, Event 39140, LumiSection 133 on stream 0 at 21-Sep-2026 17:41:59.930 CEST
-Begin processing the 168th record. Run 1, Event 39135, LumiSection 133 on stream 1 at 21-Sep-2026 17:42:00.787 CEST
-Begin processing the 169th record. Run 1, Event 39139, LumiSection 133 on stream 3 at 21-Sep-2026 17:42:01.309 CEST
-Begin processing the 170th record. Run 1, Event 39144, LumiSection 133 on stream 2 at 21-Sep-2026 17:42:02.199 CEST
-Begin processing the 171st record. Run 1, Event 39131, LumiSection 133 on stream 0 at 21-Sep-2026 17:42:02.996 CEST
-Begin processing the 172nd record. Run 1, Event 39141, LumiSection 133 on stream 1 at 21-Sep-2026 17:42:03.718 CEST
-Begin processing the 173rd record. Run 1, Event 39143, LumiSection 133 on stream 3 at 21-Sep-2026 17:42:04.453 CEST
-Begin processing the 174th record. Run 1, Event 39147, LumiSection 133 on stream 2 at 21-Sep-2026 17:42:05.150 CEST
-Begin processing the 175th record. Run 1, Event 39145, LumiSection 133 on stream 0 at 21-Sep-2026 17:42:05.886 CEST
-Begin processing the 176th record. Run 1, Event 39148, LumiSection 133 on stream 1 at 21-Sep-2026 17:42:06.656 CEST
-Begin processing the 177th record. Run 1, Event 39142, LumiSection 133 on stream 3 at 21-Sep-2026 17:42:07.374 CEST
-Begin processing the 178th record. Run 1, Event 39146, LumiSection 133 on stream 2 at 21-Sep-2026 17:42:08.144 CEST
-Begin processing the 179th record. Run 1, Event 39155, LumiSection 133 on stream 0 at 21-Sep-2026 17:42:08.879 CEST
-Begin processing the 180th record. Run 1, Event 39149, LumiSection 133 on stream 1 at 21-Sep-2026 17:42:09.566 CEST
-Begin processing the 181st record. Run 1, Event 39158, LumiSection 133 on stream 3 at 21-Sep-2026 17:42:10.239 CEST
-Begin processing the 182nd record. Run 1, Event 39159, LumiSection 133 on stream 2 at 21-Sep-2026 17:42:10.983 CEST
-Begin processing the 183rd record. Run 1, Event 39150, LumiSection 133 on stream 0 at 21-Sep-2026 17:42:13.403 CEST
-Begin processing the 184th record. Run 1, Event 39152, LumiSection 133 on stream 1 at 21-Sep-2026 17:42:13.403 CEST
-Begin processing the 185th record. Run 1, Event 39153, LumiSection 133 on stream 3 at 21-Sep-2026 17:42:13.403 CEST
-Begin processing the 186th record. Run 1, Event 39156, LumiSection 133 on stream 2 at 21-Sep-2026 17:42:14.260 CEST
-Begin processing the 187th record. Run 1, Event 39151, LumiSection 133 on stream 0 at 21-Sep-2026 17:42:14.955 CEST
-Begin processing the 188th record. Run 1, Event 39154, LumiSection 133 on stream 1 at 21-Sep-2026 17:42:15.660 CEST
-Begin processing the 189th record. Run 1, Event 39163, LumiSection 133 on stream 3 at 21-Sep-2026 17:42:16.452 CEST
-Begin processing the 190th record. Run 1, Event 39167, LumiSection 133 on stream 2 at 21-Sep-2026 17:42:17.104 CEST
-Begin processing the 191st record. Run 1, Event 39157, LumiSection 133 on stream 0 at 21-Sep-2026 17:42:17.824 CEST
-Begin processing the 192nd record. Run 1, Event 39164, LumiSection 133 on stream 1 at 21-Sep-2026 17:42:18.540 CEST
-Begin processing the 193rd record. Run 1, Event 39165, LumiSection 133 on stream 3 at 21-Sep-2026 17:42:19.353 CEST
-Begin processing the 194th record. Run 1, Event 39161, LumiSection 133 on stream 2 at 21-Sep-2026 17:42:20.117 CEST
-Begin processing the 195th record. Run 1, Event 39160, LumiSection 133 on stream 0 at 21-Sep-2026 17:42:20.911 CEST
-Begin processing the 196th record. Run 1, Event 39162, LumiSection 133 on stream 1 at 21-Sep-2026 17:42:21.592 CEST
-Begin processing the 197th record. Run 1, Event 39166, LumiSection 133 on stream 3 at 21-Sep-2026 17:42:22.383 CEST
-Begin processing the 198th record. Run 1, Event 39168, LumiSection 133 on stream 2 at 21-Sep-2026 17:42:23.113 CEST
-Begin processing the 199th record. Run 1, Event 39171, LumiSection 133 on stream 0 at 21-Sep-2026 17:42:23.913 CEST
-Begin processing the 200th record. Run 1, Event 39173, LumiSection 133 on stream 1 at 21-Sep-2026 17:42:24.688 CEST
-Begin processing the 201st record. Run 1, Event 39174, LumiSection 133 on stream 3 at 21-Sep-2026 17:42:25.451 CEST
-Begin processing the 202nd record. Run 1, Event 39172, LumiSection 133 on stream 2 at 21-Sep-2026 17:42:28.119 CEST
-Begin processing the 203rd record. Run 1, Event 39170, LumiSection 133 on stream 0 at 21-Sep-2026 17:42:28.119 CEST
-Begin processing the 204th record. Run 1, Event 39176, LumiSection 133 on stream 1 at 21-Sep-2026 17:42:28.119 CEST
-Begin processing the 205th record. Run 1, Event 39169, LumiSection 133 on stream 2 at 21-Sep-2026 17:42:29.589 CEST
-Begin processing the 206th record. Run 1, Event 39175, LumiSection 133 on stream 3 at 21-Sep-2026 17:42:30.326 CEST
-Begin processing the 207th record. Run 1, Event 39177, LumiSection 133 on stream 1 at 21-Sep-2026 17:42:31.038 CEST
-Begin processing the 208th record. Run 1, Event 39180, LumiSection 133 on stream 0 at 21-Sep-2026 17:42:31.781 CEST
-Begin processing the 209th record. Run 1, Event 39179, LumiSection 133 on stream 2 at 21-Sep-2026 17:42:32.578 CEST
-Begin processing the 210th record. Run 1, Event 39182, LumiSection 133 on stream 3 at 21-Sep-2026 17:42:33.269 CEST
-Begin processing the 211th record. Run 1, Event 39185, LumiSection 133 on stream 1 at 21-Sep-2026 17:42:33.909 CEST
-Begin processing the 212th record. Run 1, Event 39183, LumiSection 133 on stream 0 at 21-Sep-2026 17:42:34.624 CEST
-Begin processing the 213th record. Run 1, Event 39181, LumiSection 133 on stream 2 at 21-Sep-2026 17:42:35.414 CEST
-Begin processing the 214th record. Run 1, Event 39178, LumiSection 133 on stream 3 at 21-Sep-2026 17:42:36.120 CEST
-Begin processing the 215th record. Run 1, Event 39187, LumiSection 133 on stream 1 at 21-Sep-2026 17:42:36.880 CEST
-Begin processing the 216th record. Run 1, Event 39186, LumiSection 133 on stream 0 at 21-Sep-2026 17:42:37.590 CEST
-Begin processing the 217th record. Run 1, Event 39184, LumiSection 133 on stream 2 at 21-Sep-2026 17:42:38.283 CEST
-Begin processing the 218th record. Run 1, Event 39190, LumiSection 133 on stream 3 at 21-Sep-2026 17:42:38.944 CEST
-Begin processing the 219th record. Run 1, Event 39191, LumiSection 133 on stream 1 at 21-Sep-2026 17:42:39.614 CEST
-Begin processing the 220th record. Run 1, Event 39193, LumiSection 133 on stream 0 at 21-Sep-2026 17:42:40.275 CEST
-Begin processing the 221st record. Run 1, Event 39194, LumiSection 133 on stream 2 at 21-Sep-2026 17:42:40.980 CEST
-Begin processing the 222nd record. Run 1, Event 39188, LumiSection 133 on stream 3 at 21-Sep-2026 17:42:41.794 CEST
-Begin processing the 223rd record. Run 1, Event 39196, LumiSection 133 on stream 1 at 21-Sep-2026 17:42:42.594 CEST
-Begin processing the 224th record. Run 1, Event 39195, LumiSection 133 on stream 0 at 21-Sep-2026 17:42:43.271 CEST
-Begin processing the 225th record. Run 1, Event 39199, LumiSection 133 on stream 2 at 21-Sep-2026 17:42:43.944 CEST
-Begin processing the 226th record. Run 1, Event 39202, LumiSection 133 on stream 3 at 21-Sep-2026 17:42:44.681 CEST
-TCIndex_: 101, NTrackletMax: 127
+Begin processing the 165th record. Run 1, Event 39137, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:30.739 CEST
+Begin processing the 166th record. Run 1, Event 39138, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:30.740 CEST
+Begin processing the 167th record. Run 1, Event 39140, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:31.401 CEST
+Begin processing the 168th record. Run 1, Event 39135, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:31.989 CEST
+Begin processing the 169th record. Run 1, Event 39139, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:32.953 CEST
+Begin processing the 170th record. Run 1, Event 39144, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:33.672 CEST
+Begin processing the 171st record. Run 1, Event 39131, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:34.395 CEST
+Begin processing the 172nd record. Run 1, Event 39141, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:35.138 CEST
+Begin processing the 173rd record. Run 1, Event 39143, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:36.060 CEST
+Begin processing the 174th record. Run 1, Event 39147, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:36.647 CEST
+Begin processing the 175th record. Run 1, Event 39145, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:37.633 CEST
+Begin processing the 176th record. Run 1, Event 39148, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:38.653 CEST
+Begin processing the 177th record. Run 1, Event 39142, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:39.468 CEST
+Begin processing the 178th record. Run 1, Event 39146, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:40.129 CEST
+Begin processing the 179th record. Run 1, Event 39155, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:40.815 CEST
+Begin processing the 180th record. Run 1, Event 39149, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:41.470 CEST
+Begin processing the 181st record. Run 1, Event 39158, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:42.183 CEST
+%MSG-f XrdAdaptor:  (NoModuleName) 21-Sep-2026 18:51:42 CEST pre-events
+Opened a file at URL root://dcache-cms290.desy.de:33177//store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/00bc97c3-51d6-40a1-859c-076b3653a53e.root?org.dcache.uuid=df94ba78-7ca7-40c3-b583-16e6305cdfdd&org.dcache.xrootd.client=rganesan.4157880@lxplus940.cern.ch&tried=t2-cms-xrootd02.desy.de,gfe02.grid.hep.ph.ic.ac.uk&triedrc=resel&xrd.logintoken=org.dcache.door=2001:638:700:10bf:0:0:1:d6:1094&xrdcl.requuid=88568821-42c0-487a-ac49-8676680c2abd
+%MSG
+Begin processing the 182nd record. Run 1, Event 39159, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:42.847 CEST
+Begin processing the 183rd record. Run 1, Event 39150, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:45.154 CEST
+Begin processing the 184th record. Run 1, Event 39152, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:45.156 CEST
+Begin processing the 185th record. Run 1, Event 39153, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:45.158 CEST
+Begin processing the 186th record. Run 1, Event 39156, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:46.055 CEST
+Begin processing the 187th record. Run 1, Event 39151, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:46.635 CEST
+Begin processing the 188th record. Run 1, Event 39154, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:47.298 CEST
+Begin processing the 189th record. Run 1, Event 39163, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:48.010 CEST
+Begin processing the 190th record. Run 1, Event 39167, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:48.653 CEST
+Begin processing the 191st record. Run 1, Event 39157, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:49.496 CEST
+Begin processing the 192nd record. Run 1, Event 39164, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:50.342 CEST
+Begin processing the 193rd record. Run 1, Event 39165, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:51.082 CEST
+Begin processing the 194th record. Run 1, Event 39161, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:51.966 CEST
+Begin processing the 195th record. Run 1, Event 39160, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:52.645 CEST
+Begin processing the 196th record. Run 1, Event 39162, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:53.311 CEST
+Begin processing the 197th record. Run 1, Event 39166, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:54.038 CEST
+Begin processing the 198th record. Run 1, Event 39168, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:54.653 CEST
+Begin processing the 199th record. Run 1, Event 39171, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:55.303 CEST
+Begin processing the 200th record. Run 1, Event 39173, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:55.965 CEST
+Begin processing the 201st record. Run 1, Event 39174, LumiSection 133 on stream 1 at 21-Sep-2026 18:51:56.800 CEST
+Begin processing the 202nd record. Run 1, Event 39172, LumiSection 133 on stream 3 at 21-Sep-2026 18:51:59.734 CEST
+Begin processing the 203rd record. Run 1, Event 39170, LumiSection 133 on stream 0 at 21-Sep-2026 18:51:59.735 CEST
+Begin processing the 204th record. Run 1, Event 39176, LumiSection 133 on stream 2 at 21-Sep-2026 18:51:59.735 CEST
+Begin processing the 205th record. Run 1, Event 39169, LumiSection 133 on stream 1 at 21-Sep-2026 18:52:00.669 CEST
+Begin processing the 206th record. Run 1, Event 39175, LumiSection 133 on stream 3 at 21-Sep-2026 18:52:01.454 CEST
+Begin processing the 207th record. Run 1, Event 39177, LumiSection 133 on stream 2 at 21-Sep-2026 18:52:02.256 CEST
+Begin processing the 208th record. Run 1, Event 39180, LumiSection 133 on stream 0 at 21-Sep-2026 18:52:03.300 CEST
+Begin processing the 209th record. Run 1, Event 39179, LumiSection 133 on stream 1 at 21-Sep-2026 18:52:04.141 CEST
+Begin processing the 210th record. Run 1, Event 39182, LumiSection 133 on stream 3 at 21-Sep-2026 18:52:04.958 CEST
+Begin processing the 211th record. Run 1, Event 39185, LumiSection 133 on stream 2 at 21-Sep-2026 18:52:05.736 CEST
+Begin processing the 212th record. Run 1, Event 39183, LumiSection 133 on stream 0 at 21-Sep-2026 18:52:06.480 CEST
+Begin processing the 213th record. Run 1, Event 39181, LumiSection 133 on stream 1 at 21-Sep-2026 18:52:07.299 CEST
+Begin processing the 214th record. Run 1, Event 39178, LumiSection 133 on stream 3 at 21-Sep-2026 18:52:08.069 CEST
+Begin processing the 215th record. Run 1, Event 39187, LumiSection 133 on stream 2 at 21-Sep-2026 18:52:08.768 CEST
+Begin processing the 216th record. Run 1, Event 39186, LumiSection 133 on stream 0 at 21-Sep-2026 18:52:09.527 CEST
+Begin processing the 217th record. Run 1, Event 39184, LumiSection 133 on stream 1 at 21-Sep-2026 18:52:10.351 CEST
+Begin processing the 218th record. Run 1, Event 39190, LumiSection 133 on stream 3 at 21-Sep-2026 18:52:11.115 CEST
+Begin processing the 219th record. Run 1, Event 39191, LumiSection 133 on stream 2 at 21-Sep-2026 18:52:11.935 CEST
+Begin processing the 220th record. Run 1, Event 39193, LumiSection 133 on stream 0 at 21-Sep-2026 18:52:12.764 CEST
+Begin processing the 221st record. Run 1, Event 39194, LumiSection 133 on stream 1 at 21-Sep-2026 18:52:13.692 CEST
+Begin processing the 222nd record. Run 1, Event 39188, LumiSection 133 on stream 3 at 21-Sep-2026 18:52:14.382 CEST
+Begin processing the 223rd record. Run 1, Event 39196, LumiSection 133 on stream 2 at 21-Sep-2026 18:52:15.095 CEST
+Begin processing the 224th record. Run 1, Event 39195, LumiSection 133 on stream 0 at 21-Sep-2026 18:52:15.794 CEST
+Begin processing the 225th record. Run 1, Event 39199, LumiSection 133 on stream 1 at 21-Sep-2026 18:52:16.468 CEST
+TCIndex_: 101, NTrackletMax: 127, Number of tracklets: 127
 If statement 2: Will break on number of tracklets in TP_L1D1F
 cmsRun: src/L1Trigger/TrackFindingTracklet/src/TrackletProcessor.cc:309: void trklet::TrackletProcessor::execute(unsigned int, double, double): Assertion `0' failed.
 
@@ -267,212 +272,236 @@ cmsRun: src/L1Trigger/TrackFindingTracklet/src/TrackletProcessor.cc:309: void tr
 A fatal system signal has occurred: abort signal
 The following is the call stack containing the origin of the signal.
 
-Mon Sep 21 17:42:44 CEST 2026
-Thread 19 (Thread 0x7f041a3ff640 (LWP 4068420) "cmsRun"):
-#0  0x00007f0441eda38f in wait4 () from /lib64/libc.so.6
-#1  0x00007f043d60b217 in edm::service::cmssw_stacktrace_fork() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginFWCoreServicesPlugins.so
-#2  0x00007f043d60e07a in edm::service::InitRootHandlers::stacktraceHelperThread() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginFWCoreServicesPlugins.so
-#3  0x00007f04422d84d3 in std::execute_native_thread_routine (__p=0x7f041cfdc060) at ../../../../../libstdc++-v3/src/c++11/thread.cc:82
-#4  0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#5  0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 18 (Thread 0x7f040fdff640 (LWP 4068442) "cmsRun"):
-#0  0x00007f0441ed5b25 in clock_nanosleep@GLIBC_2.2.5 () from /lib64/libc.so.6
-#1  0x00007f0441eda5d7 in nanosleep () from /lib64/libc.so.6
-#2  0x00007f0441eda50e in sleep () from /lib64/libc.so.6
-#3  0x00007f043d60b0c0 in sig_pause_for_stacktrace () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginFWCoreServicesPlugins.so
+Mon Sep 21 18:52:17 CEST 2026
+Thread 19 (Thread 0x7f1aa5fff640 (LWP 4158309) "cmsRun"):
+#0  0x00007f1acdada38f in wait4 () from /lib64/libc.so.6
+#1  0x00007f1ac988b217 in edm::service::cmssw_stacktrace_fork() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginFWCoreServicesPlugins.so
+#2  0x00007f1ac988e07a in edm::service::InitRootHandlers::stacktraceHelperThread() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginFWCoreServicesPlugins.so
+#3  0x00007f1acded84d3 in std::execute_native_thread_routine (__p=0x7f1aa8bdd030) at ../../../../../libstdc++-v3/src/c++11/thread.cc:82
+#4  0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#5  0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 18 (Thread 0x7f1a9b9ff640 (LWP 4158335) "cmsRun"):
+#0  0x00007f1acdad5b25 in clock_nanosleep@GLIBC_2.2.5 () from /lib64/libc.so.6
+#1  0x00007f1acdada5d7 in nanosleep () from /lib64/libc.so.6
+#2  0x00007f1acdada50e in sleep () from /lib64/libc.so.6
+#3  0x00007f1ac988b0c0 in sig_pause_for_stacktrace () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginFWCoreServicesPlugins.so
 #4  <signal handler called>
-#5  0x00007f0441f08b8d in syscall () from /lib64/libc.so.6
-#6  0x00007f04429ce8bc in tbb::detail::r1::futex_wait (comparand=2, futex=0x7f043d9c70a4) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/semaphore.h:100
-#7  tbb::detail::r1::binary_semaphore::P (this=0x7f043d9c70a4) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/semaphore.h:253
-#8  tbb::detail::r1::rml::internal::thread_monitor::wait (this=0x7f043d9c70a0) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/rml_thread_monitor.h:235
-#9  tbb::detail::r1::rml::private_worker::run (this=0x7f043d9c7080) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/private_server.cpp:273
-#10 tbb::detail::r1::rml::private_worker::thread_routine (arg=0x7f043d9c7080) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/private_server.cpp:221
-#11 0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#12 0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 17 (Thread 0x7f040f3fe640 (LWP 4068443) "cmsRun"):
-#0  0x00007f0441ed5b25 in clock_nanosleep@GLIBC_2.2.5 () from /lib64/libc.so.6
-#1  0x00007f0441eda5d7 in nanosleep () from /lib64/libc.so.6
-#2  0x00007f0441eda50e in sleep () from /lib64/libc.so.6
-#3  0x00007f043d60b0c0 in sig_pause_for_stacktrace () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginFWCoreServicesPlugins.so
-#4  <signal handler called>
-#5  0x00007f0441f08b8d in syscall () from /lib64/libc.so.6
-#6  0x00007f04429ce8bc in tbb::detail::r1::futex_wait (comparand=2, futex=0x7f043d9c7124) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/semaphore.h:100
-#7  tbb::detail::r1::binary_semaphore::P (this=0x7f043d9c7124) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/semaphore.h:253
-#8  tbb::detail::r1::rml::internal::thread_monitor::wait (this=0x7f043d9c7120) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/rml_thread_monitor.h:235
-#9  tbb::detail::r1::rml::private_worker::run (this=0x7f043d9c7100) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/private_server.cpp:273
-#10 tbb::detail::r1::rml::private_worker::thread_routine (arg=0x7f043d9c7100) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/private_server.cpp:221
-#11 0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#12 0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 16 (Thread 0x7f040e3ff640 (LWP 4068446) "cmsRun"):
-#0  0x00007f0441f0345f in poll () from /lib64/libc.so.6
-#1  0x00007f043d60e297 in edm::service::InitRootHandlers::stacktraceFromThread() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginFWCoreServicesPlugins.so
-#2  0x00007f043d60e494 in sig_dostack_then_abort () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginFWCoreServicesPlugins.so
+#5  0x00007f1a9ed3d9f8 in trackerDTC::StubDTC::StubDTC(trackerDTC::StubGL const&, int) () from /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libL1TriggerTrackerDTC.so
+#6  0x00007f1a9de70ac9 in trackerDTC::ProducerDTC::produce(std::vector<std::vector<edm::Ref<edmNew::DetSetVector<TTStub<edm::Ref<edm::DetSetVector<Phase2TrackerDigi>, Phase2TrackerDigi, edm::refhelper::FindForDetSetVector<Phase2TrackerDigi> > > >, TTStub<edm::Ref<edm::DetSetVector<Phase2TrackerDigi>, Phase2TrackerDigi, edm::refhelper::FindForDetSetVector<Phase2TrackerDigi> > >, edmNew::DetSetVector<TTStub<edm::Ref<edm::DetSetVector<Phase2TrackerDigi>, Phase2TrackerDigi, edm::refhelper::FindForDetSetVector<Phase2TrackerDigi> > > >::FindForDetSetVector>, std::allocator<edm::Ref<edmNew::DetSetVector<TTStub<edm::Ref<edm::DetSetVector<Phase2TrackerDigi>, Phase2TrackerDigi, edm::refhelper::FindForDetSetVector<Phase2TrackerDigi> > > >, TTStub<edm::Ref<edm::DetSetVector<Phase2TrackerDigi>, Phase2TrackerDigi, edm::refhelper::FindForDetSetVector<Phase2TrackerDigi> > >, edmNew::DetSetVector<TTStub<edm::Ref<edm::DetSetVector<Phase2TrackerDigi>, Phase2TrackerDigi, edm::refhelper::FindForDetSetVector<Phase2TrackerDigi> > > >::FindForDetSetVector> > >, std::allocator<std::vector<edm::Ref<edmNew::DetSetVector<TTStub<edm::Ref<edm::DetSetVector<Phase2TrackerDigi>, Phase2TrackerDigi, edm::refhelper::FindForDetSetVector<Phase2TrackerDigi> > > >, TTStub<edm::Ref<edm::DetSetVector<Phase2TrackerDigi>, Phase2TrackerDigi, edm::refhelper::FindForDetSetVector<Phase2TrackerDigi> > >, edmNew::DetSetVector<TTStub<edm::Ref<edm::DetSetVector<Phase2TrackerDigi>, Phase2TrackerDigi, edm::refhelper::FindForDetSetVector<Phase2TrackerDigi> > > >::FindForDetSetVector>, std::allocator<edm::Ref<edmNew::DetSetVector<TTStub<edm::Ref<edm::DetSetVector<Phase2TrackerDigi>, Phase2TrackerDigi, edm::refhelper::FindForDetSetVector<Phase2TrackerDigi> > > >, TTStub<edm::Ref<edm::DetSetVector<Phase2TrackerDigi>, Phase2TrackerDigi, edm::refhelper::FindForDetSetVector<Phase2TrackerDigi> > >, edmNew::DetSetVector<TTStub<edm::Ref<edm::DetSetVector<Phase2TrackerDigi>, Phase2TrackerDigi, edm::refhelper::FindForDetSetVector<Phase2TrackerDigi> > > >::FindForDetSetVector> > > > > const&, TTDTC&) const () from /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginTrackerDTCPlugins.so
+#7  0x00007f1a9de7205c in trackerDTC::ProducerDTC::produce(edm::Event&, edm::EventSetup const&) () from /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginTrackerDTCPlugins.so
+#8  0x00007f1acee5ef15 in edm::stream::EDProducerAdaptorBase::doEvent(edm::EventTransitionInfo const&, edm::ActivityRegistry*, edm::ModuleCallingContext const*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#9  0x00007f1acee4166c in edm::WorkerT<edm::stream::EDProducerAdaptorBase>::implDo(edm::EventTransitionInfo const&, edm::ModuleCallingContext const*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#10 0x00007f1acedc4f79 in std::__exception_ptr::exception_ptr edm::Worker::runModuleAfterAsyncPrefetch<edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1> >(std::__exception_ptr::exception_ptr, edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1>::TransitionInfoType const&, edm::StreamID, edm::ParentContext const&, edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1>::Context const*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#11 0x00007f1acedd1344 in edm::Worker::RunModuleTask<edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1> >::execute() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#12 0x00007f1acef8c828 in tbb::detail::d2::function_task<edm::WaitingTaskList::announce()::{lambda()#1}>::execute(tbb::detail::d1::execution_data&) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreConcurrency.so
+#13 0x00007f1aceb1b5da in tbb::detail::r1::task_dispatcher::local_wait_for_all<false, tbb::detail::r1::outermost_worker_waiter> (t=<optimized out>, waiter=..., this=0x7f1accbd1f00) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/task_dispatcher.h:334
+#14 tbb::detail::r1::task_dispatcher::local_wait_for_all<tbb::detail::r1::outermost_worker_waiter> (t=0x0, waiter=..., this=0x7f1accbd1f00) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/task_dispatcher.h:470
+#15 tbb::detail::r1::arena::process (tls=..., this=<optimized out>) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/arena.cpp:215
+#16 tbb::detail::r1::thread_dispatcher_client::process (td=..., this=<optimized out>) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/thread_dispatcher_client.h:41
+#17 tbb::detail::r1::thread_dispatcher::process (this=<optimized out>, j=...) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/thread_dispatcher.cpp:195
+#18 0x00007f1aceb13688 in tbb::detail::r1::rml::private_worker::run (this=0x7f1ac9c47080) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/private_server.cpp:271
+#19 tbb::detail::r1::rml::private_worker::thread_routine (arg=0x7f1ac9c47080) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/private_server.cpp:221
+#20 0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#21 0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 17 (Thread 0x7f1a9affe640 (LWP 4158336) "cmsRun"):
+#0  0x00007f1acdb0345f in poll () from /lib64/libc.so.6
+#1  0x00007f1ac988e297 in edm::service::InitRootHandlers::stacktraceFromThread() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginFWCoreServicesPlugins.so
+#2  0x00007f1ac988e494 in sig_dostack_then_abort () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginFWCoreServicesPlugins.so
 #3  <signal handler called>
-#4  0x00007f0441e8d38c in __pthread_kill_implementation () from /lib64/libc.so.6
-#5  0x00007f0441e3fa86 in raise () from /lib64/libc.so.6
-#6  0x00007f0441e29873 in abort () from /lib64/libc.so.6
-#7  0x00007f0441e2979b in __assert_fail_base.cold () from /lib64/libc.so.6
-#8  0x00007f0441e387c6 in __assert_fail () from /lib64/libc.so.6
-#9  0x00007f04129a399f in trklet::TrackletProcessor::execute(unsigned int, double, double) () from /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libL1TriggerTrackFindingTracklet.so
-#10 0x00007f041291c7b9 in trklet::Sector::executeTP() () from /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libL1TriggerTrackFindingTracklet.so
-#11 0x00007f041298c18d in trklet::TrackletEventProcessor::event(trklet::SLHCEvent&, std::vector<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >&, std::vector<std::vector<trklet::StubStreamData, std::allocator<trklet::StubStreamData> >, std::allocator<std::vector<trklet::StubStreamData, std::allocator<trklet::StubStreamData> > > >&) () from /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libL1TriggerTrackFindingTracklet.so
-#12 0x00007f0412a3cec8 in L1FPGATrackProducer::produce(edm::Event&, edm::EventSetup const&) () from /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginTrackFindingTrackletPlugins.so
-#13 0x00007f04432502d0 in edm::one::EDProducerBase::doEvent(edm::EventTransitionInfo const&, edm::ActivityRegistry*, edm::ModuleCallingContext const*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
-#14 0x00007f044323ad6c in edm::WorkerT<edm::one::EDProducerBase>::implDo(edm::EventTransitionInfo const&, edm::ModuleCallingContext const*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
-#15 0x00007f04431c4f79 in std::__exception_ptr::exception_ptr edm::Worker::runModuleAfterAsyncPrefetch<edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1> >(std::__exception_ptr::exception_ptr, edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1>::TransitionInfoType const&, edm::StreamID, edm::ParentContext const&, edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1>::Context const*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
-#16 0x00007f04431c999a in edm::SerialTaskQueue::QueuedTask<edm::SerialTaskQueueChain::push<edm::Worker::RunModuleTask<edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1> >::execute()::{lambda()#1}&>(tbb::detail::d2::task_group&, edm::Worker::RunModuleTask<edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1> >::execute()::{lambda()#1}&)::{lambda()#1}>::execute() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
-#17 0x00007f0442fcd1e5 in tbb::detail::d2::function_task<edm::SerialTaskQueue::spawn(edm::SerialTaskQueue::TaskBase&)::{lambda()#1}>::execute(tbb::detail::d1::execution_data&) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreConcurrency.so
-#18 0x00007f04429d65da in tbb::detail::r1::task_dispatcher::local_wait_for_all<false, tbb::detail::r1::outermost_worker_waiter> (t=<optimized out>, waiter=..., this=0x7f0440fd1f80) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/task_dispatcher.h:334
-#19 tbb::detail::r1::task_dispatcher::local_wait_for_all<tbb::detail::r1::outermost_worker_waiter> (t=0x0, waiter=..., this=0x7f0440fd1f80) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/task_dispatcher.h:470
+#4  0x00007f1acda8d38c in __pthread_kill_implementation () from /lib64/libc.so.6
+#5  0x00007f1acda3fa86 in raise () from /lib64/libc.so.6
+#6  0x00007f1acda29873 in abort () from /lib64/libc.so.6
+#7  0x00007f1acda2979b in __assert_fail_base.cold () from /lib64/libc.so.6
+#8  0x00007f1acda387c6 in __assert_fail () from /lib64/libc.so.6
+#9  0x00007f1a9e61ca0b in trklet::TrackletProcessor::execute(unsigned int, double, double) () from /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libL1TriggerTrackFindingTracklet.so
+#10 0x00007f1a9e5957c9 in trklet::Sector::executeTP() () from /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libL1TriggerTrackFindingTracklet.so
+#11 0x00007f1a9e60519d in trklet::TrackletEventProcessor::event(trklet::SLHCEvent&, std::vector<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >, std::allocator<std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > > >&, std::vector<std::vector<trklet::StubStreamData, std::allocator<trklet::StubStreamData> >, std::allocator<std::vector<trklet::StubStreamData, std::allocator<trklet::StubStreamData> > > >&) () from /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libL1TriggerTrackFindingTracklet.so
+#12 0x00007f1a9e6b5ec8 in L1FPGATrackProducer::produce(edm::Event&, edm::EventSetup const&) () from /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginTrackFindingTrackletPlugins.so
+#13 0x00007f1acee502d0 in edm::one::EDProducerBase::doEvent(edm::EventTransitionInfo const&, edm::ActivityRegistry*, edm::ModuleCallingContext const*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#14 0x00007f1acee3ad6c in edm::WorkerT<edm::one::EDProducerBase>::implDo(edm::EventTransitionInfo const&, edm::ModuleCallingContext const*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#15 0x00007f1acedc4f79 in std::__exception_ptr::exception_ptr edm::Worker::runModuleAfterAsyncPrefetch<edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1> >(std::__exception_ptr::exception_ptr, edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1>::TransitionInfoType const&, edm::StreamID, edm::ParentContext const&, edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1>::Context const*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#16 0x00007f1acedc999a in edm::SerialTaskQueue::QueuedTask<edm::SerialTaskQueueChain::push<edm::Worker::RunModuleTask<edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1> >::execute()::{lambda()#1}&>(tbb::detail::d2::task_group&, edm::Worker::RunModuleTask<edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1> >::execute()::{lambda()#1}&)::{lambda()#1}>::execute() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#17 0x00007f1acef8e1e5 in tbb::detail::d2::function_task<edm::SerialTaskQueue::spawn(edm::SerialTaskQueue::TaskBase&)::{lambda()#1}>::execute(tbb::detail::d1::execution_data&) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreConcurrency.so
+#18 0x00007f1aceb1b5da in tbb::detail::r1::task_dispatcher::local_wait_for_all<false, tbb::detail::r1::outermost_worker_waiter> (t=<optimized out>, waiter=..., this=0x7f1accbd1e80) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/task_dispatcher.h:334
+#19 tbb::detail::r1::task_dispatcher::local_wait_for_all<tbb::detail::r1::outermost_worker_waiter> (t=0x0, waiter=..., this=0x7f1accbd1e80) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/task_dispatcher.h:470
 #20 tbb::detail::r1::arena::process (tls=..., this=<optimized out>) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/arena.cpp:215
 #21 tbb::detail::r1::thread_dispatcher_client::process (td=..., this=<optimized out>) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/thread_dispatcher_client.h:41
 #22 tbb::detail::r1::thread_dispatcher::process (this=<optimized out>, j=...) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/thread_dispatcher.cpp:195
-#23 0x00007f04429ce688 in tbb::detail::r1::rml::private_worker::run (this=0x7f043d9c7000) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/private_server.cpp:271
-#24 tbb::detail::r1::rml::private_worker::thread_routine (arg=0x7f043d9c7000) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/private_server.cpp:221
-#25 0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#26 0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 15 (Thread 0x7f040d3ff640 (LWP 4068449) "cmsRun"):
-#0  0x00007f0441f0fd9e in epoll_wait () from /lib64/libc.so.6
-#1  0x00007f043bd23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#2  0x00007f043bd1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#3  0x00007f043bd287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#4  0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#5  0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 14 (Thread 0x7f040cbfe640 (LWP 4068450) "cmsRun"):
-#0  0x00007f0441f0fd9e in epoll_wait () from /lib64/libc.so.6
-#1  0x00007f043bd23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#2  0x00007f043bd1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#3  0x00007f043bd287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#4  0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#5  0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 13 (Thread 0x7f040c3fd640 (LWP 4068451) "cmsRun"):
-#0  0x00007f0441f0fd9e in epoll_wait () from /lib64/libc.so.6
-#1  0x00007f043bd23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#2  0x00007f043bd1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#3  0x00007f043bd287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#4  0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#5  0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 12 (Thread 0x7f040bbfc640 (LWP 4068452) "cmsRun"):
-#0  0x00007f0441f0fd9e in epoll_wait () from /lib64/libc.so.6
-#1  0x00007f043bd23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#2  0x00007f043bd1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#3  0x00007f043bd287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#4  0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#5  0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 11 (Thread 0x7f040b3fb640 (LWP 4068453) "cmsRun"):
-#0  0x00007f0441f0fd9e in epoll_wait () from /lib64/libc.so.6
-#1  0x00007f043bd23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#2  0x00007f043bd1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#3  0x00007f043bd287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#4  0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#5  0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 10 (Thread 0x7f040abfa640 (LWP 4068454) "cmsRun"):
-#0  0x00007f0441f0fd9e in epoll_wait () from /lib64/libc.so.6
-#1  0x00007f043bd23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#2  0x00007f043bd1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#3  0x00007f043bd287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#4  0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#5  0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 9 (Thread 0x7f040a3f9640 (LWP 4068455) "cmsRun"):
-#0  0x00007f0441f0fd9e in epoll_wait () from /lib64/libc.so.6
-#1  0x00007f043bd23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#2  0x00007f043bd1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#3  0x00007f043bd287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#4  0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#5  0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 8 (Thread 0x7f0409bf8640 (LWP 4068456) "cmsRun"):
-#0  0x00007f0441f0fd9e in epoll_wait () from /lib64/libc.so.6
-#1  0x00007f043bd23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#2  0x00007f043bd1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#3  0x00007f043bd287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#4  0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#5  0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 7 (Thread 0x7f04093f7640 (LWP 4068457) "cmsRun"):
-#0  0x00007f0441f0fd9e in epoll_wait () from /lib64/libc.so.6
-#1  0x00007f043bd23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#2  0x00007f043bd1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#3  0x00007f043bd287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#4  0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#5  0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 6 (Thread 0x7f0408bf6640 (LWP 4068458) "cmsRun"):
-#0  0x00007f0441f0fd9e in epoll_wait () from /lib64/libc.so.6
-#1  0x00007f043bd23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#2  0x00007f043bd1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#3  0x00007f043bd287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#4  0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#5  0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 5 (Thread 0x7f04083f5640 (LWP 4068459) "cmsRun"):
-#0  0x00007f0441ed5b25 in clock_nanosleep@GLIBC_2.2.5 () from /lib64/libc.so.6
-#1  0x00007f0441eda5d7 in nanosleep () from /lib64/libc.so.6
-#2  0x00007f043bd29098 in XrdSysTimer::Wait(int) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
-#3  0x00007f043c53f66c in XrdCl::TaskManager::RunTasks() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdCl.so.3
-#4  0x00007f043c53f7a9 in RunRunnerThread () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdCl.so.3
-#5  0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#6  0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 4 (Thread 0x7f0407bf4640 (LWP 4068460) "cmsRun"):
-#0  0x00007f0441e8854a in __futex_abstimed_wait_common () from /lib64/libc.so.6
-#1  0x00007f0441e936a8 in __new_sem_wait_slow64.constprop.0 () from /lib64/libc.so.6
-#2  0x00007f043c5cdb16 in XrdCl::JobManager::RunJobs() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdCl.so.3
-#3  0x00007f043c5cdbc9 in RunRunnerThread () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdCl.so.3
-#4  0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#5  0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 3 (Thread 0x7f04073f3640 (LWP 4068461) "cmsRun"):
-#0  0x00007f0441e8854a in __futex_abstimed_wait_common () from /lib64/libc.so.6
-#1  0x00007f0441e936a8 in __new_sem_wait_slow64.constprop.0 () from /lib64/libc.so.6
-#2  0x00007f043c5cdb16 in XrdCl::JobManager::RunJobs() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdCl.so.3
-#3  0x00007f043c5cdbc9 in RunRunnerThread () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdCl.so.3
-#4  0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#5  0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 2 (Thread 0x7f0406bf2640 (LWP 4068462) "cmsRun"):
-#0  0x00007f0441e8854a in __futex_abstimed_wait_common () from /lib64/libc.so.6
-#1  0x00007f0441e936a8 in __new_sem_wait_slow64.constprop.0 () from /lib64/libc.so.6
-#2  0x00007f043c5cdb16 in XrdCl::JobManager::RunJobs() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdCl.so.3
-#3  0x00007f043c5cdbc9 in RunRunnerThread () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdCl.so.3
-#4  0x00007f0441e8b569 in start_thread () from /lib64/libc.so.6
-#5  0x00007f0441f10760 in clone3 () from /lib64/libc.so.6
-Thread 1 (Thread 0x7f0442435540 (LWP 4068199) "cmsRun"):
-#0  0x00007f0441ed5b25 in clock_nanosleep@GLIBC_2.2.5 () from /lib64/libc.so.6
-#1  0x00007f0441eda5d7 in nanosleep () from /lib64/libc.so.6
-#2  0x00007f0441eda50e in sleep () from /lib64/libc.so.6
-#3  0x00007f043d60b0c0 in sig_pause_for_stacktrace () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginFWCoreServicesPlugins.so
+#23 0x00007f1aceb13688 in tbb::detail::r1::rml::private_worker::run (this=0x7f1ac9c47100) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/private_server.cpp:271
+#24 tbb::detail::r1::rml::private_worker::thread_routine (arg=0x7f1ac9c47100) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/private_server.cpp:221
+#25 0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#26 0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 16 (Thread 0x7f1a99dff640 (LWP 4158337) "cmsRun"):
+#0  0x00007f1acdad5b25 in clock_nanosleep@GLIBC_2.2.5 () from /lib64/libc.so.6
+#1  0x00007f1acdada5d7 in nanosleep () from /lib64/libc.so.6
+#2  0x00007f1acdada50e in sleep () from /lib64/libc.so.6
+#3  0x00007f1ac988b0c0 in sig_pause_for_stacktrace () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginFWCoreServicesPlugins.so
 #4  <signal handler called>
-#5  0x00007f0441f08b8d in syscall () from /lib64/libc.so.6
-#6  0x00007f04422d5c29 in std::__atomic_futex_unsigned_base::_M_futex_wait_until (this=<optimized out>, __addr=0x7f03a16e2420, __val=2147483648, __has_timeout=<optimized out>, __s=..., __ns=...) at ../../../../../libstdc++-v3/src/c++11/futex.cc:122
-#7  0x00007f043e1d63ac in std::future<unsigned long>::get() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libUtilitiesXrdAdaptor.so
-#8  0x00007f043e1da2d6 in edm::storage::XrdFile::read(void*, unsigned long) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libUtilitiesXrdAdaptor.so
-#9  0x00007f043e16ae12 in edm::storage::StorageAccountProxy::read(void*, unsigned long) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libUtilitiesStorageFactory.so
-#10 0x00007f043e166434 in edm::storage::Storage::xread(void*, unsigned long) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libUtilitiesStorageFactory.so
-#11 0x00007f043de30d7d in TStorageFactoryFile::ReadBuffer(char*, int) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libIOPoolTFileAdaptor.so
-#12 0x00007f043de30464 in TStorageFactoryFile::ReadBuffer(char*, long long, int) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libIOPoolTFileAdaptor.so
-#13 0x00007f043cf0bfb7 in TBasket::ReadBasketBuffers(long long, int, TFile*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libTree.so
-#14 0x00007f043cf17134 in TBranch::GetBasketImpl(int, TBuffer*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libTree.so
-#15 0x00007f043cf18dcd in TBranch::GetBasketAndFirst(TBasket*&, long long&, TBuffer*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libTree.so
-#16 0x00007f043cf18fb7 in TBranch::GetEntry(long long, int) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libTree.so
-#17 0x00007f043cf2c524 in TBranchElement::GetEntry(long long, int) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libTree.so
-#18 0x00007f043cf2c4dd in TBranchElement::GetEntry(long long, int) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libTree.so
-#19 0x00007f040e9cdcb8 in edm::RootTree::getEntryUsingCache(TBranch*, long long, TTreeCache*) const () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginIOPoolInput.so
-#20 0x00007f040e9ad045 in edm::RootDelayedReader::getProduct_(edm::BranchID const&, edm::EDProductGetter const*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginIOPoolInput.so
-#21 0x00007f04431319bb in edm::DelayedReader::getProduct(edm::BranchID const&, edm::EDProductGetter const*, edm::ModuleCallingContext const*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
-#22 0x00007f04431e5382 in edm::DelayedReaderInputProductResolver::prefetchAsync_(edm::WaitingTaskHolder, edm::Principal const&, bool, edm::ServiceToken const&, edm::SharedResourcesAcquirer*, edm::ModuleCallingContext const*) const::{lambda()#1}::operator()() const::{lambda()#1}::operator()() const () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
-#23 0x00007f04431e554c in edm::DelayedReaderInputProductResolver::prefetchAsync_(edm::WaitingTaskHolder, edm::Principal const&, bool, edm::ServiceToken const&, edm::SharedResourcesAcquirer*, edm::ModuleCallingContext const*) const::{lambda()#1}::operator()() const () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
-#24 0x00007f04431e55b3 in edm::SerialTaskQueue::QueuedTask<edm::SerialTaskQueueChain::push<edm::DelayedReaderInputProductResolver::prefetchAsync_(edm::WaitingTaskHolder, edm::Principal const&, bool, edm::ServiceToken const&, edm::SharedResourcesAcquirer*, edm::ModuleCallingContext const*) const::{lambda()#1}&>(tbb::detail::d2::task_group&, edm::DelayedReaderInputProductResolver::prefetchAsync_(edm::WaitingTaskHolder, edm::Principal const&, bool, edm::ServiceToken const&, edm::SharedResourcesAcquirer*, edm::ModuleCallingContext const*) const::{lambda()#1}&)::{lambda()#1}>::execute() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
-#25 0x00007f0442fcd1e5 in tbb::detail::d2::function_task<edm::SerialTaskQueue::spawn(edm::SerialTaskQueue::TaskBase&)::{lambda()#1}>::execute(tbb::detail::d1::execution_data&) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreConcurrency.so
-#26 0x00007f04429d384b in tbb::detail::r1::task_dispatcher::local_wait_for_all<false, tbb::detail::r1::external_waiter> (waiter=..., t=0x7f0440f22d00, this=<optimized out>) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/task_dispatcher.h:334
-#27 tbb::detail::r1::task_dispatcher::local_wait_for_all<tbb::detail::r1::external_waiter> (waiter=..., t=<optimized out>, this=<optimized out>) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/task_dispatcher.h:470
-#28 tbb::detail::r1::task_dispatcher::execute_and_wait (t=<optimized out>, wait_ctx=..., w_ctx=...) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/task_dispatcher.cpp:168
-#29 0x00007f044314728f in edm::FinalWaitingTask::wait() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
-#30 0x00007f0443156dde in edm::EventProcessor::processRuns() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
-#31 0x00007f0443150221 in edm::EventProcessor::runToCompletion() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
-#32 0x000000000040857b in tbb::detail::d1::task_arena_function<main::{lambda()#1}::operator()() const::{lambda()#1}, void>::operator()() const ()
-#33 0x00007f04429c1f41 in tbb::detail::r1::task_arena_impl::execute (ta=..., d=...) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/arena.cpp:821
-#34 0x000000000040a293 in main::{lambda()#1}::operator()() const ()
-#35 0x00000000004051b8 in main ()
+#5  0x00007f1acdb08b8d in syscall () from /lib64/libc.so.6
+#6  0x00007f1acded5c29 in std::__atomic_futex_unsigned_base::_M_futex_wait_until (this=<optimized out>, __addr=0x7f1a341a68e0, __val=2147483648, __has_timeout=<optimized out>, __s=..., __ns=...) at ../../../../../libstdc++-v3/src/c++11/futex.cc:122
+#7  0x00007f1aca4563ac in std::future<unsigned long>::get() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libUtilitiesXrdAdaptor.so
+#8  0x00007f1aca45a2d6 in edm::storage::XrdFile::read(void*, unsigned long) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libUtilitiesXrdAdaptor.so
+#9  0x00007f1aca3eae12 in edm::storage::StorageAccountProxy::read(void*, unsigned long) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libUtilitiesStorageFactory.so
+#10 0x00007f1aca3e6434 in edm::storage::Storage::xread(void*, unsigned long) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libUtilitiesStorageFactory.so
+#11 0x00007f1aca0b0d7d in TStorageFactoryFile::ReadBuffer(char*, int) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libIOPoolTFileAdaptor.so
+#12 0x00007f1aca0b0464 in TStorageFactoryFile::ReadBuffer(char*, long long, int) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libIOPoolTFileAdaptor.so
+#13 0x00007f1ac910bfb7 in TBasket::ReadBasketBuffers(long long, int, TFile*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libTree.so
+#14 0x00007f1ac9117134 in TBranch::GetBasketImpl(int, TBuffer*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libTree.so
+#15 0x00007f1ac9118dcd in TBranch::GetBasketAndFirst(TBasket*&, long long&, TBuffer*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libTree.so
+#16 0x00007f1ac9118fb7 in TBranch::GetEntry(long long, int) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libTree.so
+#17 0x00007f1ac912c524 in TBranchElement::GetEntry(long long, int) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libTree.so
+#18 0x00007f1ac912c4dd in TBranchElement::GetEntry(long long, int) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libTree.so
+#19 0x00007f1a9bcc5cb8 in edm::RootTree::getEntryUsingCache(TBranch*, long long, TTreeCache*) const () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginIOPoolInput.so
+#20 0x00007f1a9bca5045 in edm::RootDelayedReader::getProduct_(edm::BranchID const&, edm::EDProductGetter const*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginIOPoolInput.so
+#21 0x00007f1aced319bb in edm::DelayedReader::getProduct(edm::BranchID const&, edm::EDProductGetter const*, edm::ModuleCallingContext const*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#22 0x00007f1acede22ef in edm::DelayedReaderInputProductResolver::resolveProduct_(edm::Principal const&, bool, edm::SharedResourcesAcquirer*, edm::ModuleCallingContext const*) const::{lambda()#1}::operator()() const () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#23 0x00007f1acede245c in edm::DelayedReaderInputProductResolver::resolveProduct_(edm::Principal const&, bool, edm::SharedResourcesAcquirer*, edm::ModuleCallingContext const*) const () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#24 0x00007f1aced45566 in edm::EventPrincipal::getByProductID(edm::ProductID const&) const () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#25 0x00007f1aced457d6 in edm::EventPrincipal::getIt(edm::ProductID const&) const () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#26 0x00007f1ace5b21c9 in edm::RefCore::tryToGetProductPtr(std::type_info const&, edm::EDProductGetter const*) const () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libDataFormatsCommon.so
+#27 0x00007f1a9a5d4748 in edm::refitem::GetRefPtrImpl<std::vector<reco::GenParticle, std::allocator<reco::GenParticle> >, reco::GenParticle, edm::refhelper::FindUsingAdvance<std::vector<reco::GenParticle, std::allocator<reco::GenParticle> >, reco::GenParticle>, unsigned int>::getRefPtr_(edm::RefCore const&, unsigned int) () from /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginTrackTriggerAssociationPlugins.so
+#28 0x00007f1a9a5d9f42 in tt::StubAssociator::produce(edm::Event&, edm::EventSetup const&) () from /afs/cern.ch/user/r/rganesan/private/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginTrackTriggerAssociationPlugins.so
+#29 0x00007f1acee5ef15 in edm::stream::EDProducerAdaptorBase::doEvent(edm::EventTransitionInfo const&, edm::ActivityRegistry*, edm::ModuleCallingContext const*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#30 0x00007f1acee4166c in edm::WorkerT<edm::stream::EDProducerAdaptorBase>::implDo(edm::EventTransitionInfo const&, edm::ModuleCallingContext const*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#31 0x00007f1acedc4f79 in std::__exception_ptr::exception_ptr edm::Worker::runModuleAfterAsyncPrefetch<edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1> >(std::__exception_ptr::exception_ptr, edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1>::TransitionInfoType const&, edm::StreamID, edm::ParentContext const&, edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1>::Context const*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#32 0x00007f1acedd1344 in edm::Worker::RunModuleTask<edm::OccurrenceTraits<edm::EventPrincipal, (edm::BranchActionType)1> >::execute() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#33 0x00007f1acef8c828 in tbb::detail::d2::function_task<edm::WaitingTaskList::announce()::{lambda()#1}>::execute(tbb::detail::d1::execution_data&) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreConcurrency.so
+#34 0x00007f1aceb1b5da in tbb::detail::r1::task_dispatcher::local_wait_for_all<false, tbb::detail::r1::outermost_worker_waiter> (t=<optimized out>, waiter=..., this=0x7f1accbd1f80) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/task_dispatcher.h:334
+#35 tbb::detail::r1::task_dispatcher::local_wait_for_all<tbb::detail::r1::outermost_worker_waiter> (t=0x0, waiter=..., this=0x7f1accbd1f80) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/task_dispatcher.h:470
+#36 tbb::detail::r1::arena::process (tls=..., this=<optimized out>) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/arena.cpp:215
+#37 tbb::detail::r1::thread_dispatcher_client::process (td=..., this=<optimized out>) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/thread_dispatcher_client.h:41
+#38 tbb::detail::r1::thread_dispatcher::process (this=<optimized out>, j=...) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/thread_dispatcher.cpp:195
+#39 0x00007f1aceb13688 in tbb::detail::r1::rml::private_worker::run (this=0x7f1ac9c47000) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/private_server.cpp:271
+#40 tbb::detail::r1::rml::private_worker::thread_routine (arg=0x7f1ac9c47000) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/private_server.cpp:221
+#41 0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#42 0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 15 (Thread 0x7f1a98fff640 (LWP 4158338) "cmsRun"):
+#0  0x00007f1acdb0fd9e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007f1ac7d23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#2  0x00007f1ac7d1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#3  0x00007f1ac7d287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#4  0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#5  0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 14 (Thread 0x7f1a987fe640 (LWP 4158339) "cmsRun"):
+#0  0x00007f1acdb0fd9e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007f1ac7d23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#2  0x00007f1ac7d1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#3  0x00007f1ac7d287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#4  0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#5  0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 13 (Thread 0x7f1a97ffd640 (LWP 4158340) "cmsRun"):
+#0  0x00007f1acdb0fd9e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007f1ac7d23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#2  0x00007f1ac7d1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#3  0x00007f1ac7d287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#4  0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#5  0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 12 (Thread 0x7f1a977fc640 (LWP 4158341) "cmsRun"):
+#0  0x00007f1acdb0fd9e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007f1ac7d23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#2  0x00007f1ac7d1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#3  0x00007f1ac7d287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#4  0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#5  0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 11 (Thread 0x7f1a96ffb640 (LWP 4158342) "cmsRun"):
+#0  0x00007f1acdb0fd9e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007f1ac7d23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#2  0x00007f1ac7d1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#3  0x00007f1ac7d287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#4  0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#5  0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 10 (Thread 0x7f1a967fa640 (LWP 4158343) "cmsRun"):
+#0  0x00007f1acdb0fd9e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007f1ac7d23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#2  0x00007f1ac7d1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#3  0x00007f1ac7d287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#4  0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#5  0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 9 (Thread 0x7f1a95ff9640 (LWP 4158344) "cmsRun"):
+#0  0x00007f1acdb0fd9e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007f1ac7d23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#2  0x00007f1ac7d1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#3  0x00007f1ac7d287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#4  0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#5  0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 8 (Thread 0x7f1a957f8640 (LWP 4158345) "cmsRun"):
+#0  0x00007f1acdb0fd9e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007f1ac7d23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#2  0x00007f1ac7d1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#3  0x00007f1ac7d287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#4  0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#5  0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 7 (Thread 0x7f1a94ff7640 (LWP 4158346) "cmsRun"):
+#0  0x00007f1acdb0fd9e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007f1ac7d23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#2  0x00007f1ac7d1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#3  0x00007f1ac7d287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#4  0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#5  0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 6 (Thread 0x7f1a947f6640 (LWP 4158347) "cmsRun"):
+#0  0x00007f1acdb0fd9e in epoll_wait () from /lib64/libc.so.6
+#1  0x00007f1ac7d23442 in XrdSys::IOEvents::PollE::Begin(XrdSysSemaphore*, int&, char const**) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#2  0x00007f1ac7d1f3ad in XrdSys::IOEvents::BootStrap::Start(void*) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#3  0x00007f1ac7d287a7 in XrdSysThread_Xeq () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#4  0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#5  0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 5 (Thread 0x7f1a93ff5640 (LWP 4158348) "cmsRun"):
+#0  0x00007f1acdad5b25 in clock_nanosleep@GLIBC_2.2.5 () from /lib64/libc.so.6
+#1  0x00007f1acdada5d7 in nanosleep () from /lib64/libc.so.6
+#2  0x00007f1ac7d29098 in XrdSysTimer::Wait(int) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdUtils.so.3
+#3  0x00007f1ac893f66c in XrdCl::TaskManager::RunTasks() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdCl.so.3
+#4  0x00007f1ac893f7a9 in RunRunnerThread () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdCl.so.3
+#5  0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#6  0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 4 (Thread 0x7f1a937f4640 (LWP 4158349) "cmsRun"):
+#0  0x00007f1acda8854a in __futex_abstimed_wait_common () from /lib64/libc.so.6
+#1  0x00007f1acda936a8 in __new_sem_wait_slow64.constprop.0 () from /lib64/libc.so.6
+#2  0x00007f1ac89cdb16 in XrdCl::JobManager::RunJobs() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdCl.so.3
+#3  0x00007f1ac89cdbc9 in RunRunnerThread () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdCl.so.3
+#4  0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#5  0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 3 (Thread 0x7f1a92ff3640 (LWP 4158350) "cmsRun"):
+#0  0x00007f1acda8854a in __futex_abstimed_wait_common () from /lib64/libc.so.6
+#1  0x00007f1acda936a8 in __new_sem_wait_slow64.constprop.0 () from /lib64/libc.so.6
+#2  0x00007f1ac89cdb16 in XrdCl::JobManager::RunJobs() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdCl.so.3
+#3  0x00007f1ac89cdbc9 in RunRunnerThread () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdCl.so.3
+#4  0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#5  0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 2 (Thread 0x7f1a927f2640 (LWP 4158351) "cmsRun"):
+#0  0x00007f1acda8854a in __futex_abstimed_wait_common () from /lib64/libc.so.6
+#1  0x00007f1acda936a8 in __new_sem_wait_slow64.constprop.0 () from /lib64/libc.so.6
+#2  0x00007f1ac89cdb16 in XrdCl::JobManager::RunJobs() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdCl.so.3
+#3  0x00007f1ac89cdbc9 in RunRunnerThread () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/external/el9_amd64_gcc12/lib/libXrdCl.so.3
+#4  0x00007f1acda8b569 in start_thread () from /lib64/libc.so.6
+#5  0x00007f1acdb10760 in clone3 () from /lib64/libc.so.6
+Thread 1 (Thread 0x7f1ace4bf540 (LWP 4157880) "cmsRun"):
+#0  0x00007f1acdad5b25 in clock_nanosleep@GLIBC_2.2.5 () from /lib64/libc.so.6
+#1  0x00007f1acdada5d7 in nanosleep () from /lib64/libc.so.6
+#2  0x00007f1acdada50e in sleep () from /lib64/libc.so.6
+#3  0x00007f1ac988b0c0 in sig_pause_for_stacktrace () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/pluginFWCoreServicesPlugins.so
+#4  <signal handler called>
+#5  0x00007f1acda88710 in __lll_lock_wait () from /lib64/libc.so.6
+#6  0x00007f1acda8ea8d in pthread_mutex_lock@@GLIBC_2.2.5 () from /lib64/libc.so.6
+#7  0x00007f1aced52829 in edm::EventProcessor::readNextEventForStream(edm::WaitingTaskHolder const&, unsigned int, edm::LuminosityBlockProcessingStatus&) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#8  0x00007f1aced5ef53 in edm::EventProcessor::handleNextEventForStreamAsync(edm::WaitingTaskHolder, unsigned int)::{lambda()#1}::operator()() [clone .lto_priv.0] () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#9  0x00007f1aced71e53 in edm::SerialTaskQueue::QueuedTask<edm::SerialTaskQueueChain::push<edm::EventProcessor::handleNextEventForStreamAsync(edm::WaitingTaskHolder, unsigned int)::{lambda()#1}>(tbb::detail::d2::task_group&, edm::EventProcessor::handleNextEventForStreamAsync(edm::WaitingTaskHolder, unsigned int)::{lambda()#1}&&)::{lambda()#1}>::execute() [clone .lto_priv.0] () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#10 0x00007f1acef8e1e5 in tbb::detail::d2::function_task<edm::SerialTaskQueue::spawn(edm::SerialTaskQueue::TaskBase&)::{lambda()#1}>::execute(tbb::detail::d1::execution_data&) () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreConcurrency.so
+#11 0x00007f1aceb1884b in tbb::detail::r1::task_dispatcher::local_wait_for_all<false, tbb::detail::r1::external_waiter> (waiter=..., t=0x7f1accbd9300, this=<optimized out>) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/task_dispatcher.h:334
+#12 tbb::detail::r1::task_dispatcher::local_wait_for_all<tbb::detail::r1::external_waiter> (waiter=..., t=<optimized out>, this=<optimized out>) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/task_dispatcher.h:470
+#13 tbb::detail::r1::task_dispatcher::execute_and_wait (t=<optimized out>, wait_ctx=..., w_ctx=...) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/task_dispatcher.cpp:168
+#14 0x00007f1aced4728f in edm::FinalWaitingTask::wait() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#15 0x00007f1aced56dde in edm::EventProcessor::processRuns() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#16 0x00007f1aced50221 in edm::EventProcessor::runToCompletion() () from /cvmfs/cms.cern.ch/el9_amd64_gcc12/cms/cmssw/CMSSW_15_1_0_pre4/lib/el9_amd64_gcc12/libFWCoreFramework.so
+#17 0x000000000040857b in tbb::detail::d1::task_arena_function<main::{lambda()#1}::operator()() const::{lambda()#1}, void>::operator()() const ()
+#18 0x00007f1aceb06f41 in tbb::detail::r1::task_arena_impl::execute (ta=..., d=...) at /data/cmsbld/jenkins/workspace/build-any-ib/w/BUILD/el9_amd64_gcc12/external/tbb/v2022.0.0-2c8b19d7f71a88d9ed1f550c4776837f/tbb-v2022.0.0/src/tbb/arena.cpp:821
+#19 0x000000000040a293 in main::{lambda()#1}::operator()() const ()
+#20 0x00000000004051b8 in main ()
 
 Current Modules:
 
 Module: L1FPGATrackProducer:l1tTTTracksFromTrackletEmulation (crashed)
-Module: none
-Module: none
+Module: trackerDTC::ProducerDTC:ProducerDTC
+Module: tt::StubAssociator:StubAssociator
 Module: none
 
 A fatal system signal has occurred: abort signal
