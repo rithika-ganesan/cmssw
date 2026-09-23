@@ -52,6 +52,7 @@ namespace trklet {
     tracks_.reserve(sizeTracks);
     stubs_.reserve(sizeStubs);
     edm::LogVerbatim("Tracklet") << "Stub count: " << sizeStubs << ", Track count: " << sizeTracks; 
+    edm::LogVerbatim("Tracklet") << "StreamTracksize: " << streamTrack.size();
     // store tracks and stubs
     for (int frame = 0; frame < static_cast<int>(streamTrack.size()); frame++) {
       const tt::FrameTrack& frameTrack = streamTrack[frame];
