@@ -1,5 +1,7 @@
 #include "L1Trigger/TrackFindingTracklet/interface/DuplicateRemoval.h"
 
+#include "FWCore/MessageLogger/interface/MessageLogger.h"
+
 #include <vector>
 #include <numeric>
 #include <algorithm>
@@ -36,6 +38,7 @@ namespace trklet {
   void DuplicateRemoval::consume(const tt::StreamsTrack& streamsTrack, const tt::StreamsStub& streamsStub) {
     auto nonNullTrack = [](int sum, const tt::FrameTrack& frame) { return sum + (frame.first.isNonnull() ? 1 : 0); };
     auto nonNullStub = [](int sum, const tt::FrameStub& frame) { return sum + (frame.first.isNonnull() ? 1 : 0); };
+    // sector index -> region_
     // count tracks and stubs and reserve corresponding vectors
     int sizeStubs(0);
     const int offset = region_ * setup_->tmNumLayers();
@@ -48,6 +51,7 @@ namespace trklet {
     }
     tracks_.reserve(sizeTracks);
     stubs_.reserve(sizeStubs);
+    edm::LogVerbatim("Tracklet") << "Stub count: " << sizeStubs << ", Track count: " << sizeTracks; 
     // store tracks and stubs
     for (int frame = 0; frame < static_cast<int>(streamTrack.size()); frame++) {
       const tt::FrameTrack& frameTrack = streamTrack[frame];

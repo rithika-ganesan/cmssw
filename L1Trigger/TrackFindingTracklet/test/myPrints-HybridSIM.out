@@ -1,0 +1,162 @@
+************************************************************************************************************************
+						 WARNING!
+ The key phase2_realistic now points to 150X_mcRun4_realistic_v1.
+ Usage of this key is discretionary and users are cautioned to use it at their own risk!
+ This Global Tag contains tags suited for an Inner Tracker layout with rectangular (25x100um2) pixel cells (T15,T21).
+ If this is not the geometry you are expecting to use, please consult:
+ https://github.com/cms-sw/cmssw/blob/master/Configuration/AlCa/python/autoCondPhase2.py to retrieve the right key.
+************************************************************************************************************************
+using geometry D121 (tilted)
+23-Sep-2026 19:24:09 CEST  Initiating request to open file root://eoscms.cern.ch//eos/cms/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU-v1/2590000/0033230b-a131-453a-95c0-fe14d5027d1f.root?scitag.flow=206
+%MSG-f XrdAdaptor:  file_open 23-Sep-2026 19:24:10 CEST pre-events
+Opened a file at URL root://st-120-100gb-1rztwn.cern.ch:1095//eos/cms/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU-v1/2590000/0033230b-a131-453a-95c0-fe14d5027d1f.root?cap.format=AEAD&cap.key=LoNjPjkNIX+qwWZwlmYzqFWzK3s=&cap.msg=-ZnQO_FnbOiQzmlIvtTOiZaq20ujZJroKv5Qz48J-VEYFd6kPq6zyd9uIdAk2Zwhy4-gj4ddk3aoaDPTYtA3hOtO2xSQ6i3K6y1hQPPm8bifgod2NYABc2BDbXc86JrLwgBGqb8xQLZbS_TE8PTJO4ZF_uCjD8X5ZdlJ19muAI_fCO1EHhCHYyXAyV1ZDkb2nZTV_vqC2Xk0OZzdRZaFkhfUMq4Vok_g9iwzdIFHoXjAfQlKKF_ODg5pvuXSSsl0LjT6sfpNi61gbslFliFDsE0X3C5W-3RDXm3dUuBDpQxRcyw0FqN0Pk3gcZ9_4-Ti-I2uTtr-PiGTXGzhYF-6Q4TDgChCcAanbdamzs6AY4gp6Ahenf55weOa8e_OKliiKrVaUvO19gtBOYggPR9Hz9uF7V6MxYwtpjiWgdQEqzDyxP2VISKoS-xI0sNMpCFHO_yGykNnuBre5uFPygceZTS675S9g4BeIUNtnCoaRx247-Cf45Lf9ktXs8X6uUtRUjyKEbdNzAX6QfMB2o_THCVUY2RVTinGl5ytYAbiiI6uGs1JG815rjsz9vwxNNxnJgGkgjIsq53mOZYBt4UH3G5pM6uraZ49cCmxDAa50vKBiw1I9zIlpVooLHnZbsfWDTYCc0_o3stYkDQP9DdhPOYEKJggc2jcHUXsupBY-EpCfO5_idMa20YgfbMu3BczvKjzPn4MwZSAig8o8F6uXUdLQkgJeKlP8lfSiuWyiQ18dEmSEVgSeb-LiW2IQeg1e7oag7TUU8kC2o-JpbiDiSJYEDWdozMN_QFi&cap.sym=AQEBAACAAAAAAAAACAAAAAAAAAABAAAAAAAAAHDxW14s5KSzGL-OkeUEvKZYYJiAEPjYJFbxKQA&eos.clientinfo=zbase64:MDAwMDAwNmZ4nBWIQQqAIBAAv9IHjDXykLCPSV1TCJVtI+r16WWYmdqoWBaE2axTrtY9mEscdvlEAWGovI3Q3TESUxijca4YKO73KaP7zkxe8BKlF1Aa4HBK8ydPmT1xR7IaNvMDbzwl7g==&mgm.blockchecksum=ignore&mgm.id=1744ce17f&mgm.logid=969bb70c-b773-11f1-9ff0-a4bf0179524a&mgm.mtime=1781320111&mgm.replicahead=1&mgm.replicaindex=1&scitag.flow=206&xrdcl.requuid=fd00e7ef-6421-4ccd-a869-00a0b99c4b05
+%MSG
+23-Sep-2026 19:24:24 CEST  Successfully opened file root://eoscms.cern.ch//eos/cms/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU-v1/2590000/0033230b-a131-453a-95c0-fe14d5027d1f.root?scitag.flow=206
+%MSG-f XrdAdaptor:  (NoModuleName) 23-Sep-2026 19:24:24 CEST pre-events
+Opened a file at URL root://st-096-hh151911.cern.ch:1095//eos/cms/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU-v1/2590000/0033230b-a131-453a-95c0-fe14d5027d1f.root?cap.format=AEAD&cap.key=LoNjPjkNIX+qwWZwlmYzqFWzK3s=&cap.msg=xkB7mkbviSIxKyVrxYxGczP6CqxO7Xtfw0RThBsZbTtQMhWM7SK0nkp1FUBIbflkwFJToSCV5izumfIw7VQ8JKgvIHLW6FixKlnWXebiyOVAktyfAxY3uYSuajZtdwkuCZYT6iTdBYXjvHqjl_xbEMbUHlXofhvpdxomTTbEqNldIFzXp_70ZLT6Dv4aqirtPYM8eLFrhLEP_ciyUJZN5edrbfgUPUVAdkio4xsZJP7GaXWEDw2KKZxOb7d6fHp0fnjlhCjbOhlhwnHxUZCRxHgu8lSPlmCIliepK9rykPWRqrc1wHksPPduzVHGN-IYyFaYxbDdlUCl3soO67qP4hE_7ywXTarwmZeWnM4-KzViam36nw6t5QxYMbRK1BBgJm26jkc3stPMb3AwFiBvAwO3rZqjSPVHQb5aOB1tghad2vcDPp0kniP3bsnjLbkVRmogCu-EpF2JNgmETHbGO6unOwikzrqxfMX5Vbl8J3UiPowOZmoHa6ussBUcnBBiiag3rqprg2D94QIhNcrCyID3VvvkN7jXbOcfqVK3951Ep13VItFWL3-xv-ZbZXcAL6AlzQLAjrYJp2Hf87_HiAXQWL1JAFlK1tKGWJC2TrFSrz04vbBV-ZAKnbRRfgRH82eHuM1qdmsGNWzzkFdz8lOUzvnDOm_sGKHj-r1dvjbmrvtt51wZNhf5-Sw4urADZEmLU2SIkH6ObtEoGTZnSCUGx8jc1fX3nMK_WA6-ztEiCmdq_utSZZzHovllSWgkThgwZn5TBVgxrBCFF5lI760zZif7XeVHKzdo&cap.sym=AQEBAACAAAAAAAAACAAAAAAAAAABAAAAAAAAAHDxW14s5KSzGL-OkeUEvKYsi-Yt6y9s2kCVvk8&eos.clientinfo=zbase64:MDAwMDAwNmJ4nBXIwQnAIAxA0VW6gGIOFhQyTNWIQlGJkdLtW2/v/z6oeRY02tqjdh8erC1vzVgoodmUdxCGlTMxpT0G146J8rVu2f3vyhQFpyjjTlUKWHAAOhI3HYsH4+wH0qYkAA==&mgm.blockchecksum=ignore&mgm.id=1744ce17f&mgm.logid=9f4ca10e-b773-11f1-ac46-a4bf0179524a&mgm.mtime=1781320111&mgm.replicahead=0&mgm.replicaindex=0&scitag.flow=206&tried=st-120-100gb-1rztwn.cern.ch&triedrc=resel&xrdcl.requuid=d8952fb5-d8af-40ef-93e4-1bf183cef62f
+%MSG
+L1TrackNtupleMaker::beginJob
+Begin processing the 1st record. Run 1, Event 201, LumiSection 3 on stream 0 at 23-Sep-2026 19:24:41.946 CEST
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Begin processing the 2nd record. Run 1, Event 202, LumiSection 3 on stream 0 at 23-Sep-2026 19:24:43.210 CEST
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Begin processing the 3rd record. Run 1, Event 203, LumiSection 3 on stream 0 at 23-Sep-2026 19:24:44.336 CEST
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Begin processing the 4th record. Run 1, Event 204, LumiSection 3 on stream 0 at 23-Sep-2026 19:24:45.741 CEST
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Begin processing the 5th record. Run 1, Event 205, LumiSection 3 on stream 0 at 23-Sep-2026 19:24:46.768 CEST
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Merge running.
+Process             Times called   Average time (ms)      Total time (s)
+Cleaning                      45               0.102             0.00458
+Add Stubs                     45                2.06              0.0927
+InputRouter                   45               0.098             0.00441
+VMRouter                      45               0.355               0.016
+TrackletProcessor             45                1.01              0.0456
+MatchProcessor                45               0.869              0.0391
+FitTrack                      45                 0.1             0.00452
+PurgeDuplicate                45                2.05              0.0921
+23-Sep-2026 19:24:48 CEST  Closed file root://eoscms.cern.ch//eos/cms/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU-v1/2590000/0033230b-a131-453a-95c0-fe14d5027d1f.root?scitag.flow=206
+                         DTC SUMMARY                         
+number of      stubs per TFP = 1836.6889 +- 52.6848
+     max tracking efficiency =    0.9909 +-  0.0090
+=============================================================
+=============================================================
+                     Monte Carlo  SUMMARY                    
+number of stubs         per TFP = 1749.6000 +- 146.2474
+number of matched stubs per TFP = 1319.4667 +- 122.5812
+number of reco stubs    per TFP =  410.4222 +-  42.6394
+number of any TPs       per TFP =  776.0889 +-  76.3133
+number of reco TPs      per TFP =   59.9556 +-   6.2956
+number of TPs for eff   per TFP =    2.4444 +-   0.1912
+=============================================================
+                         Sim  SUMMARY                         
+   number of stubs  per TFP = 104.2444 +- 5.3431
+   number of tracks per TFP =  19.1333 +- 0.9551
+current tracking efficiency =   0.9455 +- 0.0217
+max     tracking efficiency =   0.9545 +- 0.0199
+                  fake rate =   0.0197
+             duplicate rate =   0.0046
+=============================================================
+                         Tracklet  SUMMARY                         
+   number of stubs  per TFP = 109.9333 +- 5.7717
+   number of tracks per TFP =  20.2222 +- 1.0351
+current tracking efficiency =   0.9455 +- 0.0217
+max     tracking efficiency =   0.9545 +- 0.0199
+                  fake rate =   0.0264
+             duplicate rate =   0.0484
+=============================================================
+L1TrackNtupleMaker::endJob
+TimeReport> Time report complete in 43.6806 seconds
+ Time Summary: 
+ - Min event:   1.0035
+ - Max event:   1.22305
+ - Avg event:   1.11856
+ - Total loop:  21.6198
+ - Total init:  22.052
+ - Total job:   43.6806
+ - Total EventSetup: 13.7773
+ - Total non-module: 3.75466e+08
+ Event Throughput: 0.23127 ev/s
+ CPU Summary: 
+ - Total loop:     12.6156
+ - Total init:     15.7416
+ - Total extra:    0
+ - Total children: 0.06498
+ - Total job:      28.366
+ Processing Summary: 
+ - Number of Events:  5
+ - Number of Global Begin Lumi Calls:  1
+ - Number of Global Begin Run Calls: 1
+
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev          module                subroutine         count   total
+ ---- -------------------- -- ------------------------- ---------------------   -----   -----
+    1 trackerDTC::Analyzer -w trackerDTC::Analyzer:Anal                            1        1
+    2 tt::AnalyzerMC       -w tt::AnalyzerMC:AnalyzerMC                            1        1
+    3 tt::AnalyzerTTTrack  -w tt::AnalyzerTTTrack:Analy                            1        1
+    4 tt::AnalyzerTTTrack  -w tt::AnalyzerTTTrack:Analy                            1        1
+    5 TimeReport           -e AfterModEndJob                                       1        1
+    6 fileAction           -s file_close                                           1        1
+    7 fileAction           -s file_open                                            2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 trackerDTC::Analyzer EndJob                            
+    2 tt::AnalyzerMC       EndJob                            
+    3 tt::AnalyzerTTTrack  EndJob                            
+    4 tt::AnalyzerTTTrack  EndJob                            
+    5 TimeReport           EndJob                            
+    6 fileAction           PostGlobalEndRun                  
+    7 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                 4                   4
+Error                   1                   1
+System                  3                   3
+
+dropped waiting message count 0
