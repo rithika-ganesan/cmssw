@@ -28,7 +28,7 @@ namespace trklet {
     const double baseLr = dataFormats->base(Variable::r, Process::dr);
     const double baseLphi = dataFormats->base(Variable::phi, Process::dr);
     const double baseLz = dataFormats->base(Variable::z, Process::dr);
-    // Finer granularity (by powers of 2) than the KF one. Used to transform from Tracklet to KF base.
+    // Finer granularity (by powers of 2) than the KF one. Used to tranform from Tracklet to KF base.
     baseR_ = baseLr * std::pow(2, -tt::ilog2(baseLr / setup->tbBaseR()));
     basePhi_ = baseLphi * std::pow(2, -tt::ilog2(baseLphi / setup->tbBasePhi()));
     baseZ_ = baseLz * std::pow(2, -tt::ilog2(baseLz / setup->tbBaseZ()));
@@ -39,29 +39,34 @@ namespace trklet {
     auto nonNullTrack = [](int sum, const tt::FrameTrack& frame) { return sum + (frame.first.isNonnull() ? 1 : 0); };
     auto nonNullStub = [](int sum, const tt::FrameStub& frame) { return sum + (frame.first.isNonnull() ? 1 : 0); };
     // sector index -> region_
+    // streamsTrack for a particular sector saved
+    // streamsStub for a particular layer saved -- is this across all sectors?
     // count tracks and stubs and reserve corresponding vectors
     int sizeStubs(0);
     const int offset = region_ * setup_->tmNumLayers();
     const tt::StreamTrack& streamTrack = streamsTrack[region_];
     stream_.reserve(streamTrack.size());
     const int sizeTracks = std::accumulate(streamTrack.begin(), streamTrack.end(), 0, nonNullTrack);
+    // get total number of stubs in all the layers
     for (int layer = 0; layer < setup_->tmNumLayers(); layer++) {
       const tt::StreamStub& streamStub = streamsStub[offset + layer];
       sizeStubs += std::accumulate(streamStub.begin(), streamStub.end(), 0, nonNullStub);
     }
     tracks_.reserve(sizeTracks);
     stubs_.reserve(sizeStubs);
-    edm::LogVerbatim("Tracklet") << "Stub count: " << sizeStubs << ", Track count: " << sizeTracks; 
-    edm::LogVerbatim("Tracklet") << "StreamTracksize: " << streamTrack.size();
+    // edm::LogVerbatim("Tracklet") << "Stub count: " << sizeStubs << ", Track count: " << sizeTracks; 
     // store tracks and stubs
+    // loop through tracks
     for (int frame = 0; frame < static_cast<int>(streamTrack.size()); frame++) {
       const tt::FrameTrack& frameTrack = streamTrack[frame];
+      // why do we do this?
       if (frameTrack.first.isNull()) {
         stream_.push_back(nullptr);
         continue;
       }
       tracks_.emplace_back();
       Track& track = tracks_.back();
+      // setup_->tmNumLayers() == 11
       track.stubs_ = std::vector<Stub*>(setup_->tmNumLayers(), nullptr);
       // parse track bits
       TTBV ttBV(frameTrack.second);
@@ -75,7 +80,9 @@ namespace trklet {
       ttBV >>= setup_->tbWidthInv2R();
       const int seedType = ttBV.val(setup_->tbWidthSeedType());
       track.trackDR_ = TrackDR(frameTrack.first, dataFormats_, seedType);
+      // edm::LogVerbatim("Tracklet") << track.cot_ << " " << track.z0_ << " " << " " << track.phi0_ << " " << track.inv2R_;
       // parse stubs
+      // seed type for this specific track (l1l2 etc) and saves (1, 2) or whatever
       const std::vector<int>& layersSeed = setup_->tbSeedLayers(seedType);
       const std::vector<int>& layersProj = setup_->tbProjectionLayers(seedType);
       for (int layer = 0; layer < setup_->tmNumLayers(); layer++) {
@@ -84,10 +91,14 @@ namespace trklet {
           continue;
         stubs_.emplace_back(frameStub.first);
         Stub& stub = stubs_.back();
+        // get the type of sensor module for each stub 
         stub.sm_ = setup_->sensorModule(frameStub.first);
+        // check if the layer ID for that sensor module matches with either layer ID for each layer in the seed type
         const auto it = std::find(layersSeed.begin(), layersSeed.end(), stub.sm_->layerId());
         stub.layer_ = std::distance(layersSeed.begin(), it);
+        // gets stub.layer_: 0 is first layer, 1 is second layer, 2 is not inside this
         if (it == layersSeed.end()) {
+          // if the stub does not belong to the seed, then:
           stub.layer_ +=
               std::distance(layersProj.begin(), std::find(layersProj.begin(), layersProj.end(), stub.sm_->layerId()));
           const int widthR = setup_->tbWidthR(stub.sm_->type());
@@ -98,6 +109,7 @@ namespace trklet {
               stub.sm_->barrel() ? setup_->tbBasePhi() : setup_->tbBasePhi(stub.sm_->layerIndexCombined());
           const double baseRZ = stub.sm_->barrel() ? setup_->tbBaseZ(stub.sm_->layerIndex()) : setup_->tbBaseR();
           TTBV ttBV(frameStub.second);
+          // why do the seed stubs not get these values?
           stub.z_ = ttBV.val(widthRZ, 0, true) * baseRZ;
           ttBV >>= widthRZ;
           stub.phi_ = ttBV.val(widthPhi, 0, true) * basePhi;
@@ -108,12 +120,15 @@ namespace trklet {
         } else
           stub.stubId_ = TTBV(frameStub.second).val(setup_->tbWidthStubId());
         track.stubs_[layer] = &stubs_.back();
+        edm::LogVerbatim("Tracklet") << frame << " " << layer << " " << layersSeed[0] << " " << layersSeed[1] << " " << stub.stubId_;
+        // edm::LogVerbatim("Tracklet") << "Loop layer: " << layer << ", stub layer: " << stub.layer_ << ", stub z: " << stub.z_ << " " << stub.phi_ << " " << stub.r_;
       }
       stream_.push_back(&tracks_.back());
     }
     // remove all gaps between end and last track
     for (auto it = stream_.end(); it != stream_.begin();)
       it = (*--it) ? stream_.begin() : stream_.erase(it);
+    edm::LogVerbatim("Tracklet") << " ";
   }
 
   // fill output products
@@ -125,8 +140,9 @@ namespace trklet {
     // calc stub position and uncertainties
     pos();
     // replace stubs with DTC stubs
-    if (setup_->drUseDTCStubs())
+    if (setup_->drUseDTCStubs()) {
       dtc();
+    }
     // replace stubs with TT stubs
     if (setup_->drUseTTStubs())
       tt();
@@ -139,24 +155,37 @@ namespace trklet {
   }
 
   // remove duplicated tracks, no merge of stubs, one stub per layer expected
+  // this runs once per sector
   void DuplicateRemoval::algo() {
     std::vector<Track*> cms(setup_->drNumComparisonModules(), nullptr);
-    for (Track*& track : stream_) {
+    // loop over each tracklet for this sector ie runs sizeTracks times
+    for (Track*& track : stream_) { 
+      // edm::LogVerbatim("Tracklet") << "Here is a track";
+      if (!track) {
+        // edm::LogVerbatim("Tracklet") << "Actually there isn't a track and it continues.";
+      }
       if (!track)
         // gaps propagate through chain and appear in output stream
         continue;
+      // if there is a track, if there is currently no track CM, make this track the track CM
       for (Track*& trackCM : cms) {
+        // edm::LogVerbatim("Tracklet") << "loop over cms?";
         if (!trackCM) {
+          // edm::LogVerbatim("Tracklet") << "There is currently no trackCM! so we shall set one. This track is now trackCM.";
           // tracks used in CMs propagate through chain and do appear in output stream unaltered
           trackCM = track;
           break;
         }
+        // edm::LogVerbatim("Tracklet") << "There was a trackCM from before! and now we have a new track. so we compare them.";
         if (equalEnough(track, trackCM)) {
+          // edm::LogVerbatim("Tracklet") << "They are equal enough. the current track is set to null";
           // tracks compared in CMs propagate through chain and appear in output stream as gap if identified as duplicate or unaltered elsewise
           track = nullptr;
           break;
         }
+        // edm::LogVerbatim("Tracklet") << "They were not equal, so we continue from the start of the loop.";
       }
+      // edm::LogVerbatim("Tracklet") << "  ";
     }
     // remove all gaps between end and last track
     for (auto it = stream_.end(); it != stream_.begin();)
