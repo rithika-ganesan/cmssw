@@ -78,6 +78,7 @@
 #include <memory>
 #include <string>
 #include <iostream>
+#include <typeinfo>
 
 //////////////
 // NAMESPACES
@@ -1659,6 +1660,9 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
     int hasStubInLayer[11] = {0};
     for (auto& theStubRef : theStubRefs) {
       DetId detid(theStubRef->getDetId());
+
+      // edm::LogVerbatim("Tracklet") << "Type of theStubRef: " << typeid(theStubRef).name();
+      // edm::LogVerbatim("Tracklet") <<  
 
       int layer = -1;
       if (detid.subdetId() == Phase2Tracker::Subdetector::Barrel) {

@@ -160,7 +160,7 @@ void TrackletEventProcessor::event(SLHCEvent& ev,
                                    vector<vector<string>>& streamsTrackRaw,
                                    vector<vector<StubStreamData>>& streamsStubRaw) {
   globals_->event() = &ev;
-
+  edm::LogVerbatim("Tracklet") << "Event number: " << eventnum_;
   tracks_.clear();
   eventnum_++;
   bool first = (eventnum_ == 1);

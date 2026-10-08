@@ -393,6 +393,9 @@ std::map<int, int> Tracklet::getStubIDs() {
         int location = 1;  // local
         location <<= resid_[i].fpgastubid().nbits();
 
+        // presuming that the below snippet is what actually gets printed out as stubID inside DR
+        // resid_[i].fpgastubid().value();
+
         stubIDs[1 + i] = resid_[i].fpgastubid().value() + location;
       }
 
@@ -406,12 +409,15 @@ std::map<int, int> Tracklet::getStubIDs() {
         int location = 1;  // local
         location <<= resid_[N_LAYER + i].fpgastubid().nbits();
 
+        // edm::LogVerbatim("Tracklet") << "Barrel disk Location: " << location;
+
         if (itfit().value() < 0) {
           stubIDs[-(N_LAYER + N_DISK) - i] = resid_[N_LAYER + i].fpgastubid().value() + location;
         } else {
           stubIDs[N_LAYER + N_DISK + i] = resid_[N_LAYER + i].fpgastubid().value() + location;
         }
       }
+      // edm::LogVerbatim("Tracklet") << "Barrel stub ID: " << stubIDs[i+1];
     }
 
     //get stubs making up tracklet
@@ -431,6 +437,8 @@ std::map<int, int> Tracklet::getStubIDs() {
         location <<= resid_[i].fpgastubid().nbits();
 
         stubIDs[1 + i] = resid_[i].fpgastubid().value() + location;
+
+        // edm::LogVerbatim("Tracklet") << "Disk barrel location: " << location;
       }
 
       //check disks
@@ -440,6 +448,8 @@ std::map<int, int> Tracklet::getStubIDs() {
         // two extra bits to indicate if the matched stub is local or from neighbor
         int location = 1;  // local
         location <<= resid_[N_LAYER + i].fpgastubid().nbits();
+
+        // edm::LogVerbatim("Tracklet") << "Disk disk location: " << location;
 
         if (innerFPGAStub_->l1tstub()->disk() < 0) {
           stubIDs[-11 - i] = resid_[N_LAYER + i].fpgastubid().value() + location;
@@ -521,6 +531,11 @@ std::map<int, int> Tracklet::getStubIDs() {
         stubIDs[outerFPGAStub_->layer().value() + 1] = outerFPGAStub_->phiregionaddress() + (1 << 10);
     }
   }
+
+  // // key -> layer id: either 1-6 for barrel or +- 11-15 for endcaps 
+  // for (const auto& [key, value] : stubIDs) {
+  //   edm::LogVerbatim("Tracklet") << key << " is " << value << ".";
+  // }
 
   return stubIDs;
 }

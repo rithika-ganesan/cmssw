@@ -2,9 +2,11 @@
 
 #include "FWCore/MessageLogger/interface/MessageLogger.h"
 
+#include <string>
 #include <vector>
 #include <numeric>
 #include <algorithm>
+// #include <typeinfo> 
 
 namespace trklet {
 
@@ -41,7 +43,9 @@ namespace trklet {
     // sector index -> region_
     // streamsTrack for a particular sector saved
     // streamsStub for a particular layer saved -- is this across all sectors?
-    // count tracks and stubs and reserve corresponding vectors
+    // // count tracks and stubs and reserve corresponding vectors
+    // edm::LogVerbatim("Tracklet") << "Size of streamsTrack: " << streamsTrack.size();
+    // edm::LogVerbatim("Tracklet") << "Size of streamsStub: " << streamsStub.size();
     int sizeStubs(0);
     const int offset = region_ * setup_->tmNumLayers();
     const tt::StreamTrack& streamTrack = streamsTrack[region_];
@@ -54,12 +58,11 @@ namespace trklet {
     }
     tracks_.reserve(sizeTracks);
     stubs_.reserve(sizeStubs);
-    // edm::LogVerbatim("Tracklet") << "Stub count: " << sizeStubs << ", Track count: " << sizeTracks; 
+    // edm::LogVerbatim("Tracklet") << "TRACKINFO. " << "Stub count=" << sizeStubs << " Track count=" << sizeTracks; 
     // store tracks and stubs
     // loop through tracks
     for (int frame = 0; frame < static_cast<int>(streamTrack.size()); frame++) {
       const tt::FrameTrack& frameTrack = streamTrack[frame];
-      // why do we do this?
       if (frameTrack.first.isNull()) {
         stream_.push_back(nullptr);
         continue;
@@ -80,17 +83,29 @@ namespace trklet {
       ttBV >>= setup_->tbWidthInv2R();
       const int seedType = ttBV.val(setup_->tbWidthSeedType());
       track.trackDR_ = TrackDR(frameTrack.first, dataFormats_, seedType);
-      // edm::LogVerbatim("Tracklet") << track.cot_ << " " << track.z0_ << " " << " " << track.phi0_ << " " << track.inv2R_;
+      // edm::LogVerbatim("Tracklet") << "track chi2: " << track.ichisqrphi_ << " " << track.ichisqrz_  << " " << track.chisqrphi_ << " " << track.chisqrz_ << ", seed type: " << seedType;
       // parse stubs
       // seed type for this specific track (l1l2 etc) and saves (1, 2) or whatever
       const std::vector<int>& layersSeed = setup_->tbSeedLayers(seedType);
       const std::vector<int>& layersProj = setup_->tbProjectionLayers(seedType);
       for (int layer = 0; layer < setup_->tmNumLayers(); layer++) {
         const tt::FrameStub& frameStub = streamsStub[offset + layer][frame];
+
         if (frameStub.first.isNull())
           continue;
+
+        // get contents of frameStub: ttStubRef and f/w frame word (64-bit)
+        const TTStubRef& ttStubRef = frameStub.first;
+        const std::string stubBitWord = TTBV(frameStub.second).str(); 
+
+        const auto stubKey = ttStubRef.key();
+        const auto detId_   = ttStubRef->getDetId().rawId();
+
         stubs_.emplace_back(frameStub.first);
         Stub& stub = stubs_.back();
+
+        // edm::LogVerbatim("Tracklet") << "detId=" << ttStubRef->getDetId().rawId();
+
         // get the type of sensor module for each stub 
         stub.sm_ = setup_->sensorModule(frameStub.first);
         // check if the layer ID for that sensor module matches with either layer ID for each layer in the seed type
@@ -110,6 +125,7 @@ namespace trklet {
           const double baseRZ = stub.sm_->barrel() ? setup_->tbBaseZ(stub.sm_->layerIndex()) : setup_->tbBaseR();
           TTBV ttBV(frameStub.second);
           // why do the seed stubs not get these values?
+          // edm::LogVerbatim("Tracklet") << "WIDTHS: " << widthRZ << " " << widthPhi << " " << widthR << " " << stub.sm_->type();
           stub.z_ = ttBV.val(widthRZ, 0, true) * baseRZ;
           ttBV >>= widthRZ;
           stub.phi_ = ttBV.val(widthPhi, 0, true) * basePhi;
@@ -117,10 +133,12 @@ namespace trklet {
           stub.r_ = ttBV.val(widthR, 0, stub.sm_->barrel()) * baseR;
           ttBV >>= widthR;
           stub.stubId_ = ttBV.val(setup_->tbWidthStubId());
-        } else
+          // edm::LogVerbatim("Tracklet") << "tb Wiidth STub id: " << setup_->tbWidthStubId(); this value is 10  ~ 1024 
+        } else {
           stub.stubId_ = TTBV(frameStub.second).val(setup_->tbWidthStubId());
+        }
         track.stubs_[layer] = &stubs_.back();
-        edm::LogVerbatim("Tracklet") << frame << " " << layer << " " << layersSeed[0] << " " << layersSeed[1] << " " << stub.stubId_;
+        edm::LogVerbatim("Tracklet") << "TRACKSTUBINFO" << " frame="<< frame << " layer=" << layer << " layerSeed0=" << layersSeed[0] << " layerSeed1=" << layersSeed[1] << " stubBitWord=" << stubBitWord << " stubKey=" << stubKey << " detID=" << detId_ << " stubID=" << stub.stubId_; // stub.stubId_;
         // edm::LogVerbatim("Tracklet") << "Loop layer: " << layer << ", stub layer: " << stub.layer_ << ", stub z: " << stub.z_ << " " << stub.phi_ << " " << stub.r_;
       }
       stream_.push_back(&tracks_.back());

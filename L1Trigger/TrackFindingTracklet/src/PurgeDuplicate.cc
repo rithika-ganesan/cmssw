@@ -462,7 +462,7 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
   //////////////////
   if (settings_.removalType() == "grid") {
     // Sort tracks by ichisq/DoF so that removal will keep the lower ichisq/DoF track
-    edm::LogVerbatim("Tracklet") << "If you see this, the removal type is grid.";
+    // edm::LogVerbatim("Tracklet") << "If you see this, the removal type is grid.";
     std::sort(inputtracks_.begin(), inputtracks_.end(), [](const Track* lhs, const Track* rhs) {
       return lhs->ichisq() / lhs->stubID().size() < rhs->ichisq() / rhs->stubID().size();
     });
@@ -497,7 +497,7 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
   //////////////////////////
   if (settings_.removalType() == "ichi" || settings_.removalType() == "nstub") {
 
-    edm::LogVerbatim("Tracklet") << "If you see this, ichi or nstub removal is running.";
+    // edm::LogVerbatim("Tracklet") << "If you see this, ichi or nstub removal is running.";
 
     for (unsigned int itrk = 0; itrk < numTrk - 1; itrk++) {  // numTrk-1 since last track has no other to compare to
 
@@ -538,7 +538,7 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
 
         // Chi2 duplicate removal
         if (settings_.removalType() == "ichi") {
-          edm::LogVerbatim("Tracklet") << "If you see this, chi2 duplicate removal is running.";
+          // edm::LogVerbatim("Tracklet") << "If you see this, chi2 duplicate removal is running.";
           if ((nStubP - nShare[jtrk] < settings_.minIndStubs()) ||
               (nStubS[jtrk] - nShare[jtrk] < settings_.minIndStubs())) {
             if ((int)inputtracks_[itrk]->ichisq() / (2 * inputtracks_[itrk]->stubID().size() - 4) >
