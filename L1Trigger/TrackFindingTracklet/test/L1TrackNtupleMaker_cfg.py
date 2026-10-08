@@ -17,7 +17,7 @@ process = cms.Process("L1TrackNtuple")
 ############################################################
 
 # D121 MC recommended. D110 MC can only be used if made with CMSSW_20.
-#GEOMETRY = "D110"
+# GEOMETRY = "D110"
 GEOMETRY = "D121"
 
 # Set L1 tracking algorithm:
@@ -27,7 +27,7 @@ GEOMETRY = "D121"
 # 'HYBRID_SIM' prompt tracklet reco + (NEWKF) Track Processing simulation (4 param fit)
 # 'HYBRID_SIM_DISPLACED' displaced tracklet reco + (NEWKF) Track Processing simulation (5 param fit)
 # (Or legacy algos 'TMTT' or 'TRACKLET').
-L1TRKALGO = 'HYBRID'
+L1TRKALGO = 'HYBRID_NEWKF'
 
 # Write output dataset?
 WRITE_DATA = False
@@ -65,8 +65,8 @@ process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(100))
 #--- To use MCsamples scripts, defining functions get*data*() for easy MC access,
 #--- follow instructions in https://github.com/cms-L1TK/MCsamples
 
-#from MCsamples.Scripts.getCMSdata_cfi import *
-#from MCsamples.Scripts.getCMSlocaldata_cfi import *
+from MCsamples.Scripts.getCMSdata_cfi import *
+from MCsamples.Scripts.getCMSlocaldata_cfi import *
 
 if GEOMETRY == "D110":
 
@@ -81,14 +81,21 @@ if GEOMETRY == "D110":
   # Or read specified dataset (accesses CMS DB, so use this method only occasionally):
   #dataName="/RelValTTbar_14TeV_TuneCP5/CMSSW_15_1_0_pre5-PU_150X_mcRun4_realistic_v1_RV269_Run4D110_PU-v2/GEN-SIM-DIGI-RAW"
   #inputMC=getCMSdata(dataName)
+#   dataName="/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_AllTP_140X_mcRun4_realistic_v4-v1/GEN-SIM-DIGI-RAW-MINIAOD"
+#   inputMC=getCMSdata(dataName)
   
+  inputMC=["/store/mc/Phase2Spring24DIGIRECOMiniAOD/HTo2LongLivedTo4mu_MH-125_MFF-25_CTau-1500mm_TuneCP5_14TeV-pythia8/GEN-SIM-DIGI-RAW-MINIAOD/PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/2530000/b2f2942f-0e46-4fd3-ac42-697de8538e93.root"]
   # ttbar + 200PU
-  inputMC = ["/store/relval/CMSSW_15_1_0_pre5/RelValTTbar_14TeV_TuneCP5/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_RV269_Run4D110_PU-v2/2590000/0f0bcfd3-dafe-4dda-8d39-9765f6eae68e.root"]
+#   inputMC = ["/store/relval/CMSSW_15_1_0_pre5/RelValTTbar_14TeV_TuneCP5/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_RV269_Run4D110_PU-v2/2590000/0f0bcfd3-dafe-4dda-8d39-9765f6eae68e.root"]
 
 elif GEOMETRY == "D121":
+  
+  # dispsusy 200 PU
+  dataName="/RelValDisplacedSUSY_14TeV/CMSSW_20_0_0_pre1-PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU_16Aug26-v3/GEN-SIM-DIGI-RAW"
+  inputMC=getCMSdata(dataName)
 
   # ttbar + 200PU
-  inputMC = ['/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU-v1/2590000/0033230b-a131-453a-95c0-fe14d5027d1f.root']
+#   inputMC = ['/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU-v1/2590000/0033230b-a131-453a-95c0-fe14d5027d1f.root']
   
   # ttbar + 0PU
   #inputMC = ['/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/150X_mcRun4_realistic_v1_STD_RegeneratedGS_D121_noPU-v1/2590000/0a33391d-2eb7-45fe-98fe-ca7b70a785c4.root']  
@@ -273,6 +280,7 @@ process.L1TrackNtuple = L1TrackNtupleMaker.clone(
    L1Tk_nPar = NHELIXPAR, # use 4 or 5-parameter L1 tracking?
    L1TrackInputTag = (L1TRK_NAME, L1TRK_LABEL),         # TTTrack input
    MCTruthTrackInputTag = (L1TRUTH_NAME, L1TRK_LABEL),  # MCTruth input
+   SaveStubs = True
 )
 
 process.ana = cms.Path(process.L1TrackNtuple)
