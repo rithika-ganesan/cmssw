@@ -1,4 +1,5 @@
 #include "L1Trigger/TrackFindingTracklet/interface/DuplicateRemoval.h"
+#include "FWCore/MessageLogger/interface/MessageLogger.h"
 
 #include <vector>
 #include <numeric>
@@ -114,6 +115,7 @@ namespace trklet {
   // fill output products
   void DuplicateRemoval::produce(tt::StreamsTrack& streamsTrack, tt::StreamsStub& streamsStub) {
     // remove duplicated tracks, no merge of stubs, one stub per layer expected
+    edm::LogVerbatim("Tracklet") << "DuplicateRemoval.cc running!";
     algo();
     // unify stubs
     unify();

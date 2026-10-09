@@ -90,6 +90,8 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
   mergedstubidslists_.clear();
   inputtracklets_.clear();
 
+  // edm::LogVerbatim("Tracklet") << "PurgeDuplicates.cc running!";
+
   if (settings_.removalType() != "merge") {
     for (const auto& trkfitmem : inputTrkFitMems_) {
       for (unsigned int j = 0; j < trkfitmem->nTracks(); j++) {

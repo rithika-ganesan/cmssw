@@ -12,6 +12,7 @@
 #include "DataFormats/Common/interface/Handle.h"
 #include "DataFormats/Math/interface/Error.h"
 
+#include "FWCore/MessageLogger/interface/MessageLogger.h"
 #include "L1Trigger/TrackFindingTracklet/interface/Setup.h"
 #include "L1Trigger/TrackTrigger/interface/StubPtConsistency.h"
 #include "DataFormats/L1TrackTrigger/interface/TTTypes.h"
@@ -80,8 +81,9 @@ namespace trklet {
     };
     auto bc = [fac](int n, int k) { return fac(n) / fac(k) / fac(n - k); };
     nPer_ = std::vector<int>(setup_->kfNumLayers() - setup_->kfMinLayers() + 1, 0);
-    for (int i = setup_->kfMinLayers(); i <= setup_->kfNumLayers(); i++)
-      for (int j = setup_->kfMinLayers(); j <= i; j++)
+
+    for (int i = setup_->kfMinLayers(); i <= setup_->kfNumLayers(); i++) 
+      for (int j = setup_->kfMinLayers(); j <= i; j++) 
         nPer_[i - setup_->kfMinLayers()] += bc(i, j);
   }
 
@@ -89,13 +91,16 @@ namespace trklet {
     // read input
     edm::Handle<tt::TTTracks> handle;
     iEvent.getByToken(edGetTokenTracks_, handle);
+    // edm::LogVerbatim("Tracklet") << "Number of tracks in the event: " << handle->size();
     std::vector<TTTrackRef> ttTrackRefs;
     ttTrackRefs.reserve(handle->size());
-    for (int iTrk = 0; iTrk < static_cast<int>(handle->size()); iTrk++)
+    for (int iTrk = 0; iTrk < static_cast<int>(handle->size()); iTrk++) {
       ttTrackRefs.emplace_back(handle, iTrk);
+    }
     // perform track multiplexinf
     const std::vector<int>& muxOrder = setup_->tmMuxOrder();
-    auto order = [&muxOrder](const TTTrackRef& lhs, TTTrackRef& rhs) {
+    // edm::LogVerbatim("Tracklet") << "muxOrder: " << muxOrder[0] << " " << muxOrder[1] << " " << muxOrder[2] << " " << muxOrder[3] << " " << muxOrder[4] << " " << muxOrder[5] << " " << muxOrder[6] << " " << muxOrder[7] << " " << muxOrder[8] << " " << muxOrder[9] << " " << muxOrder[10] << " " << muxOrder[11];
+    auto order = [&muxOrder](const TTTrackRef& lhs, const TTTrackRef& rhs) {
       const auto l = std::find(muxOrder.begin(), muxOrder.end(), lhs->trackSeedType());
       const auto r = std::find(muxOrder.begin(), muxOrder.end(), rhs->trackSeedType());
       return l < r;
@@ -104,6 +109,9 @@ namespace trklet {
     // perform duplicate removal
     auto equalEnough = [this](const TTTrackRef& lhs, const TTTrackRef& rhs) {
       std::vector<TTStubRef> l = lhs->getStubRefs();
+      // for (const TTStubRef& s : l) {
+      //   std::cout << s.id() << " " << s.key() << std::endl;
+      // }
       std::vector<TTStubRef> r = rhs->getStubRefs();
       std::sort(l.begin(), l.end());
       std::sort(r.begin(), r.end());
@@ -131,6 +139,8 @@ namespace trklet {
     for (int i = static_cast<int>(ptrs.size()) - 1; i >= 0; i--)
       if (!ptrs[i])
         ttTrackRefs.erase(std::next(ttTrackRefs.begin(), i));
+
+    edm::LogVerbatim("Tracklet") << "DRINFO: " << "initialSize=" << ptrs.size() << " finalSize=" << ttTrackRefs.size();
     // perform KF
     tt::TTTracks ttTracks;
     ttTracks.reserve(ttTrackRefs.size());
