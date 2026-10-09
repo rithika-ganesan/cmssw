@@ -83,6 +83,7 @@ namespace trklet {
     const tt::StreamsTrack& tracks = iEvent.get(edGetTokenTracks_);
     const TTDTC& ttDTC = iEvent.get(edGetTokenDTC_);
     for (int region = 0; region < setup->sysNumRegion(); region++) {
+      edm::LogVerbatim("Tracklet") << "Sector: " << region;
       // object to remove duplicated tracks in a processing region
       DuplicateRemoval dr(setup, dataFormats, region, ttDTC);
       // read in and organize input tracks and stubs
