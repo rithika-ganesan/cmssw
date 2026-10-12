@@ -27,7 +27,7 @@ GEOMETRY = "D121"
 # 'HYBRID_SIM' prompt tracklet reco + (NEWKF) Track Processing simulation (4 param fit)
 # 'HYBRID_SIM_DISPLACED' displaced tracklet reco + (NEWKF) Track Processing simulation (5 param fit)
 # (Or legacy algos 'TMTT' or 'TRACKLET').
-L1TRKALGO = 'HYBRID_SIM'
+L1TRKALGO = 'HYBRID_SIM_DISPLACED'
 
 # Write output dataset?
 WRITE_DATA = False
@@ -88,9 +88,9 @@ if GEOMETRY == "D110":
 elif GEOMETRY == "D121":
   
   # disp susy + 200 PU
-#   dataName = "RelValDisplacedSUSY_14TeV/CMSSW_20_0_0_pre1-PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU_16Aug26-v3/GEN-SIM-DIGI-RAW"
-#   inputMC=getCMSdata(dataName)
-  inputMC = ["/store/relval/CMSSW_20_0_0/RelValDisplacedSUSY_14TeV/GEN-SIM-DIGI-RAW/150X_mcRun4_realistic_v1_Run4_D121_pp_noPU_STD_Reference_16Aug26-v1/2590000/12155111-928c-482c-b3c5-94b8011db207.root"]
+  dataName = "/RelValDisplacedSUSY_14TeV/CMSSW_20_0_0_pre1-PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU_16Aug26-v3/GEN-SIM-DIGI-RAW"
+  inputMC=getCMSdata(dataName)
+#   inputMC = ["/store/relval/CMSSW_20_0_0/RelValDisplacedSUSY_14TeV/GEN-SIM-DIGI-RAW/150X_mcRun4_realistic_v1_Run4_D121_pp_noPU_STD_Reference_16Aug26-v1/2590000/12155111-928c-482c-b3c5-94b8011db207.root"]
 
   # ttbar + 200PU
 #   inputMC = ['/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU-v1/2590000/0033230b-a131-453a-95c0-fe14d5027d1f.root']
@@ -102,7 +102,7 @@ else:
 
   print("this is not a valid geometry!!!")
 
-process.source = cms.Source("PoolSource", fileNames = cms.untracked.vstring(*inputMC))
+process.source = cms.Source("PoolSource", fileNames = cms.untracked.vstring(*inputMC), eventsToSkip = cms.untracked.VEventRange('1:2420', '1:2423','1:2450'))
 
 # To avoid confusion, drop previously reconstructed L1 tracks + their truth association.
 process.source.dropDescendantsOfDroppedBranches = cms.untracked.bool(False)
