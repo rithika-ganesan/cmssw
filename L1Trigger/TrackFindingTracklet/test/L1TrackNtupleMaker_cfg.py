@@ -27,7 +27,7 @@ GEOMETRY = "D121"
 # 'HYBRID_SIM' prompt tracklet reco + (NEWKF) Track Processing simulation (4 param fit)
 # 'HYBRID_SIM_DISPLACED' displaced tracklet reco + (NEWKF) Track Processing simulation (5 param fit)
 # (Or legacy algos 'TMTT' or 'TRACKLET').
-L1TRKALGO = 'HYBRID'
+L1TRKALGO = 'HYBRID_SIM_DISPLACED'
 
 # Write output dataset?
 WRITE_DATA = False
@@ -65,8 +65,8 @@ process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(100))
 #--- To use MCsamples scripts, defining functions get*data*() for easy MC access,
 #--- follow instructions in https://github.com/cms-L1TK/MCsamples
 
-#from MCsamples.Scripts.getCMSdata_cfi import *
-#from MCsamples.Scripts.getCMSlocaldata_cfi import *
+from MCsamples.Scripts.getCMSdata_cfi import *
+from MCsamples.Scripts.getCMSlocaldata_cfi import *
 
 if GEOMETRY == "D110":
 
@@ -86,9 +86,14 @@ if GEOMETRY == "D110":
   inputMC = ["/store/relval/CMSSW_15_1_0_pre5/RelValTTbar_14TeV_TuneCP5/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_RV269_Run4D110_PU-v2/2590000/0f0bcfd3-dafe-4dda-8d39-9765f6eae68e.root"]
 
 elif GEOMETRY == "D121":
+  
+  # disp susy + 200 PU
+  dataName = "/RelValDisplacedSUSY_14TeV/CMSSW_20_0_0_pre1-PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU_16Aug26-v3/GEN-SIM-DIGI-RAW"
+  inputMC=getCMSdata(dataName)
+#   inputMC = ["/store/relval/CMSSW_20_0_0/RelValDisplacedSUSY_14TeV/GEN-SIM-DIGI-RAW/150X_mcRun4_realistic_v1_Run4_D121_pp_noPU_STD_Reference_16Aug26-v1/2590000/12155111-928c-482c-b3c5-94b8011db207.root"]
 
   # ttbar + 200PU
-  inputMC = ['/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU-v1/2590000/0033230b-a131-453a-95c0-fe14d5027d1f.root']
+#   inputMC = ['/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU-v1/2590000/0033230b-a131-453a-95c0-fe14d5027d1f.root']
   
   # ttbar + 0PU
   #inputMC = ['/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/150X_mcRun4_realistic_v1_STD_RegeneratedGS_D121_noPU-v1/2590000/0a33391d-2eb7-45fe-98fe-ca7b70a785c4.root']  
@@ -97,7 +102,7 @@ else:
 
   print("this is not a valid geometry!!!")
 
-process.source = cms.Source("PoolSource", fileNames = cms.untracked.vstring(*inputMC))
+process.source = cms.Source("PoolSource", fileNames = cms.untracked.vstring(*inputMC), eventsToSkip = cms.untracked.VEventRange('1:2420', '1:2423','1:2450'))
 
 # To avoid confusion, drop previously reconstructed L1 tracks + their truth association.
 process.source.dropDescendantsOfDroppedBranches = cms.untracked.bool(False)
