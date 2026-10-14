@@ -1,3 +1,5 @@
+# imports
+
 import ROOT
 import numpy as np
 import matplotlib.pyplot as plt
@@ -10,154 +12,89 @@ tree = f0.Get('L1TrackNtuple/eventTree')
 # branches = [branch.GetName() for branch in tree.GetListOfBranches()]
 # print(branches)
 
-# options
-seeds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, -1]
-seed_mapping = {
-    8: [1, 2],
-    9: [3, -1],
-    10: [1, 7],
-    11: [4, 7]
-}
-disp_seeds = seed_mapping.keys()
-
 # functions
-def compare_vals(v1, v2, tolerance=0.001):
-    if v1 == v2:
-        return True
-    elif v1 == -v2 and np.abs(v1) == 1:
-        return True
-    else:
-        diff = np.abs(v1 - v2) / ((v1 + v2) / 2)
-        if diff <= tolerance:
-            return True
-        else:
-            return False
-    
-def compare_tracks(i, j, vecs, tolerance):
-    
-    matchBool = True
-    for vec in vecs:
-        matchBool = matchBool and compare_vals(vec[i], vec[j], tolerance)
+def get_indices_by_variable(variable, list_vars=None):
+    if list_vars == None:
+        list_vars = np.unique(variable) 
 
-    return matchBool
+    indices = {}
+    for var_ in list_vars:
+        indices[var_] = []
 
-def compare_seed_mappings(seeds, counts, seed_mapping=seed_mapping):
+    for iv in range(len(variable)):
+        indices[variable[iv]].append(iv)
 
-    output = {}
+    return indices
 
-    for ds in seed_mapping.keys():
-        prompt_seeds = seed_mapping[ds]
-        prompt_counts = [counts[ps] for ps in prompt_seeds]
+# get truth duplicates 
+percentages = []
+test_pt_cut = 3 
+test_d0_cut = 1
 
-        if sum(prompt_counts) > 0:
-            output[ds] = [True, prompt_counts]
-
-    if len(output.keys()) == 0:
-        return None
-    else:
-        return output
-
-# set up dict
-all_events = {}
-
-
-
-# event loop
-
-n_trk_matchtp_all = [] 
-n_trk_matchtp_sel = []
-
+saved_pts = []
+saved_d0s = []
 for i, entry in enumerate(tree):
-    if i < 101:
-        # load track variables
-        trk_pt = entry.trk_pt
-        trk_eta = entry.trk_eta
-        trk_phi = entry.trk_phi
-        trk_charge = entry.trk_charge
-        trk_seed = entry.trk_seed
-
-        # load track matchtp variables
-        trk_matchtp_pt = entry.trk_matchtp_pt
-        trk_matchtp_eta = entry.trk_matchtp_eta 
-        trk_matchtp_phi = entry.trk_matchtp_phi
+    if i < 20: 
+        # get vars
         trk_matchtp_eventid = entry.trk_matchtp_eventid 
-
-        # get track indices corresponding to the tp event id
-        track_indices = {}
-        for eid in np.unique(trk_matchtp_eventid):
-            track_indices[eid] = []
-        for it in range(len(trk_pt)):
-            track_indices[trk_matchtp_eventid[it]].append(it)
-
-        # loop over matched tracking particles
-        matchedtps = {}
-        trk_matchtp_sel_count = 0
-        for eid in track_indices.keys():
-            tp_track_indices = track_indices[eid] 
-            track_seeds = []
-            for tid in tp_track_indices:
-                track_seeds.append(trk_seed[tid])
-            
-            counts = []
-            for seed in seeds:
-                counts.append(np.sum(track_seeds == seed))
-            matchedtps[eid] = [seeds, counts]
-            match_output = compare_seed_mappings(seeds, counts)
-            if match_output != None:
-                trk_matchtp_sel_count += 1
-
-        n_trk_matchtp_all.append(len(track_indices)) 
-        n_trk_matchtp_sel.append(trk_matchtp_sel_count)
-
-        all_events[i] = matchedtps
-
-
-# analyze 
-
-fig, ax = plt.subplots()
-
-bins=50
-# ax.hist(n_trk_matchtp_all, bins=bins, alpha=0.8)
-ax.hist(n_trk_matchtp_sel, bins=bins, alpha=0.8)
-
-fig.savefig('myhisto.pdf')
+        trk_pt = entry.trk_pt
+        trk_eta = entry.trk_eta 
+        trk_phi = entry.trk_phi 
+        trk_d0 = entry.trk_d0
+        trk_seed = entry.trk_seed
+        tp_pt = entry.tp_pt 
+        tp_eta = entry.tp_eta
+        tp_phi = entry.tp_phi 
+        tp_d0 = entry.tp_d0 
+        tp_nstub = entry.tp_nstub
+        tp_pdgid = entry.tp_pdgid
         
+        # get tp track indices
+        trk_matchtp_indices = get_indices_by_variable(trk_matchtp_eventid)
 
+        # # get stats
+        # percent = len(trk_matchtp_indices) * 100 / len(tp_pt)
+        # percentages.append(percent)
+        # # print(f"Event {i} has {len(trk_matchtp_indices)} tracking particles matched to tracks, and {len(tp_pt)} tracking particles.")
 
+        # look through tracking particles and see what the issues are
+        lost_pt, saved_pt = [], []
+        lost_d0, saved_d0 = [], []
+        for itp in range(len(tp_pt)):
+            if itp not in trk_matchtp_indices:
+                lostParticle = True
+            elif itp in trk_matchtp_indices:
+                lostParticle = False
+            else:
+                print(f"Missing tp at index {itp} in event {i}")
+                lostParticle = None
 
+            if lostParticle == True:
+                lpt, ld0 = tp_pt[itp], tp_d0[itp]
+                if lpt > test_pt_cut and ld0 > test_d0_cut:
+                    # lost_pt.append(lpt)
+                    # lost_d0.append(ld0)
+                    print(i, itp)
+                    print(lpt)
+                    print(ld0)
+                    print(tp_eta[itp])
+                    print(tp_phi[itp])
+                    print(tp_nstub[itp])
+                    print(tp_pdgid[itp])
+                    print(" ")
 
+            if lostParticle == False:
+                saved_pts.append(tp_pt[itp])
+                saved_d0s.append(tp_d0[itp])
+                    
 
+        # if len(lost_pt) > 0:
+        #     # print(np.median(lost_pt))
+        #     # print(np.median(lost_d0))
+        #     print(lost_pt)
+        #     print(lost_d0)
 
-#         # get indices corresponding to seeds
-#         track_indices = {}
-#         for seed in seeds:
-#             track_indices[seed] = []
-#         for it in range(len(trk_pt)):
-#             track_indices[trk_seed[it]].append(it)
-
-#         # loop over displaced seeds 
-#         for ds in disp_seeds:
-#             indices = track_indices[ds]
-
-#             # loop over tracks
-#             for it in indices:
-#                 # loop over prompt seeds
-#                 for ps in seed_mapping[ds]:
-#                     # loop over prompt tracks
-#                     for jt in track_indices[ps]:
-#                         matchBool = compare_tracks(it, jt, [trk_pt, trk_eta, trk_phi, trk_charge], tolerance=0.05)
-#                         if matchBool == True:
-#                             # save values
-#                             matchCounts["entry"].append(i)
-#                             matchCounts["displacedSeed"].append(ds)
-#                             matchCounts["dispTrackIndex"].append(it)
-#                             matchCounts["promptSeed"].append(ps)
-#                             matchCounts["promptTrackIndex"].append(jt)
-
-
-# df = pd.DataFrame(matchCounts)
-
-# print(df.head)
-
-
-    
+# print("Minimum:", min(percentages))
+# print("Maximum:", max(percentages))
+# print("Mean:", np.average(percentages))
+# print("Median:", np.median(percentages))
