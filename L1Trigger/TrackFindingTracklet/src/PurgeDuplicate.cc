@@ -90,7 +90,7 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
   mergedstubidslists_.clear();
   inputtracklets_.clear();
 
-  // edm::LogVerbatim("Tracklet") << "PurgeDuplicates.cc running!";
+  // edm::LogVerbatim("Tracklet") << "Initial PurgeDuplicates.cc running! Sector: " << iSector << ". Size of input tracks: " << inputtracks_.size();
 
   if (settings_.removalType() != "merge") {
     for (const auto& trkfitmem : inputTrkFitMems_) {
@@ -107,6 +107,9 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
   unsigned int numTrk = inputtracks_.size();
 
   phiSec_ = iSector * settings_.dphisector() - 0.5 * settings_.dphisectorHG();
+
+  edm::LogVerbatim("Tracklet") << "Initial PurgeDuplicates.cc running! Sector: " << iSector << ". Size of input tracks: " << inputtracks_.size();
+  // edm::LogVerbatim("Tracklet") << "PurgeDuplicates.cc running! Size of input tracks: " << inputtracks_.size();
 
   ////////////////////
   // Hybrid Removal //
@@ -563,6 +566,8 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
 
   }  // end ichi + nstub removal
 
+  // edm::LogVerbatim("Tracklet") << "PurgeDuplicates.cc running! Size of input tracks: " << inputtracks_.size();
+
   //Add tracks to output
   if (settings_.removalType() != "merge") {
     for (unsigned int i = 0; i < inputTrkFitMems_.size(); i++) {
@@ -581,6 +586,8 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
       }
     }
   }
+
+  // edm::LogVerbatim("Tracklet") << "PurgeDuplicates.cc running! Size of input tracks: " << inputtracks_.size();
 }
 
 double PurgeDuplicate::getPhiRes(const Tracklet* curTracklet, const Stub* curStub) const {

@@ -106,41 +106,42 @@ namespace trklet {
       return l < r;
     };
     std::sort(ttTrackRefs.begin(), ttTrackRefs.end(), order);
+    edm::LogVerbatim("Tracklet") << "DRINFO: " << "initialSize=" << ttTrackRefs.size();
     // perform duplicate removal
-    auto equalEnough = [this](const TTTrackRef& lhs, const TTTrackRef& rhs) {
-      std::vector<TTStubRef> l = lhs->getStubRefs();
-      // for (const TTStubRef& s : l) {
-      //   std::cout << s.id() << " " << s.key() << std::endl;
-      // }
-      std::vector<TTStubRef> r = rhs->getStubRefs();
-      std::sort(l.begin(), l.end());
-      std::sort(r.begin(), r.end());
-      std::vector<TTStubRef> same;
-      same.reserve(std::min(l.size(), r.size()));
-      std::set_intersection(l.begin(), l.end(), r.begin(), r.end(), std::back_inserter(same));
-      return static_cast<int>(same.size()) >= setup_->drMinIdenticalStubs();
-    };
-    std::vector<TTTrackRef*> ptrs;
-    ptrs.reserve(ttTrackRefs.size());
-    auto toPtr = [](TTTrackRef& ref) { return &ref; };
-    std::transform(ttTrackRefs.begin(), ttTrackRefs.end(), std::back_inserter(ptrs), toPtr);
-    for (int i = 0; i < static_cast<int>(ptrs.size()); i++) {
-      TTTrackRef* master = ptrs[i];
-      if (!master)
-        continue;
-      for (int j = i + 1; j < static_cast<int>(ptrs.size()); j++) {
-        TTTrackRef*& slave = ptrs[j];
-        if (!slave)
-          continue;
-        if (equalEnough(*master, *slave))
-          slave = nullptr;
-      }
-    }
-    for (int i = static_cast<int>(ptrs.size()) - 1; i >= 0; i--)
-      if (!ptrs[i])
-        ttTrackRefs.erase(std::next(ttTrackRefs.begin(), i));
+    // auto equalEnough = [this](const TTTrackRef& lhs, const TTTrackRef& rhs) {
+    //   std::vector<TTStubRef> l = lhs->getStubRefs();
+    //   // for (const TTStubRef& s : l) {
+    //   //   std::cout << s.id() << " " << s.key() << std::endl;
+    //   // }
+    //   std::vector<TTStubRef> r = rhs->getStubRefs();
+    //   std::sort(l.begin(), l.end());
+    //   std::sort(r.begin(), r.end());
+    //   std::vector<TTStubRef> same;
+    //   same.reserve(std::min(l.size(), r.size()));
+    //   std::set_intersection(l.begin(), l.end(), r.begin(), r.end(), std::back_inserter(same));
+    //   return static_cast<int>(same.size()) >= setup_->drMinIdenticalStubs();
+    // };
+    // std::vector<TTTrackRef*> ptrs;
+    // ptrs.reserve(ttTrackRefs.size());
+    // auto toPtr = [](TTTrackRef& ref) { return &ref; };
+    // std::transform(ttTrackRefs.begin(), ttTrackRefs.end(), std::back_inserter(ptrs), toPtr);
+    // for (int i = 0; i < static_cast<int>(ptrs.size()); i++) {
+    //   TTTrackRef* master = ptrs[i];
+    //   if (!master)
+    //     continue;
+    //   for (int j = i + 1; j < static_cast<int>(ptrs.size()); j++) {
+    //     TTTrackRef*& slave = ptrs[j];
+    //     if (!slave)
+    //       continue;
+    //     if (equalEnough(*master, *slave))
+    //       slave = nullptr;
+    //   }
+    // }
+    // for (int i = static_cast<int>(ptrs.size()) - 1; i >= 0; i--)
+    //   if (!ptrs[i])
+    //     ttTrackRefs.erase(std::next(ttTrackRefs.begin(), i));
 
-    edm::LogVerbatim("Tracklet") << "DRINFO: " << "initialSize=" << ptrs.size() << " finalSize=" << ttTrackRefs.size();
+    edm::LogVerbatim("Tracklet") << "DRINFO: " << " finalSize=" << ttTrackRefs.size();
     // perform KF
     tt::TTTracks ttTracks;
     ttTracks.reserve(ttTrackRefs.size());

@@ -221,6 +221,7 @@ private:
   std::vector<int>*
       m_trk_matchtp_eventtype;  //event type: -999 = fake track (not genuine), 1 = TP from signal pp event, 2 = TP from pileup
   std::vector<int>* m_trk_matchtp_pdgid;
+  std::vector<int>* m_trk_matchtp_eventid;
   // kinematics of matching truth particle
   std::vector<float>* m_trk_matchtp_pt;
   std::vector<float>* m_trk_matchtp_eta;
@@ -300,6 +301,8 @@ private:
   std::vector<float>* m_allstub_matchTP_pt;   // -999 if not matched
   std::vector<float>* m_allstub_matchTP_eta;  // -999 if not matched
   std::vector<float>* m_allstub_matchTP_phi;  // -999 if not matched
+  std::vector<int>* m_allstub_matchTP_eventid; // -999 if not matched
+  std::vector<int>* m_allstub_matchTP_tpkey;
 
   std::vector<int>* m_allstub_genuine;
 
@@ -420,6 +423,7 @@ void L1TrackNtupleMaker::endJob() {
   delete m_trk_MVA1;
   delete m_trk_matchtp_eventtype;
   delete m_trk_matchtp_pdgid;
+  delete m_trk_matchtp_eventid;
   delete m_trk_matchtp_pt;
   delete m_trk_matchtp_eta;
   delete m_trk_matchtp_phi;
@@ -498,7 +502,10 @@ void L1TrackNtupleMaker::endJob() {
   delete m_allstub_matchTP_pt;
   delete m_allstub_matchTP_eta;
   delete m_allstub_matchTP_phi;
+  delete m_allstub_matchTP_eventid;
+  delete m_allstub_matchTP_tpkey;
   delete m_allstub_genuine;
+
 
   delete m_jet_eta;
   delete m_jet_phi;
@@ -568,6 +575,7 @@ void L1TrackNtupleMaker::beginJob() {
   m_trk_MVA1 = new std::vector<float>;
   m_trk_matchtp_eventtype = new std::vector<int>;
   m_trk_matchtp_pdgid = new std::vector<int>;
+  m_trk_matchtp_eventid = new std::vector<int>;
   m_trk_matchtp_pt = new std::vector<float>;
   m_trk_matchtp_eta = new std::vector<float>;
   m_trk_matchtp_phi = new std::vector<float>;
@@ -648,6 +656,8 @@ void L1TrackNtupleMaker::beginJob() {
   m_allstub_matchTP_pt = new std::vector<float>;
   m_allstub_matchTP_eta = new std::vector<float>;
   m_allstub_matchTP_phi = new std::vector<float>;
+  m_allstub_matchTP_eventid = new std::vector<int>;
+  m_allstub_matchTP_tpkey = new std::vector<int>;
 
   m_allstub_genuine = new std::vector<int>;
 
@@ -708,6 +718,7 @@ void L1TrackNtupleMaker::beginJob() {
     eventTree->Branch("trk_MVA1", &m_trk_MVA1);
     eventTree->Branch("trk_matchtp_eventtype", &m_trk_matchtp_eventtype);
     eventTree->Branch("trk_matchtp_pdgid", &m_trk_matchtp_pdgid);
+    eventTree->Branch("trk_matchtp_eventid", &m_trk_matchtp_eventid);
     eventTree->Branch("trk_matchtp_pt", &m_trk_matchtp_pt);
     eventTree->Branch("trk_matchtp_eta", &m_trk_matchtp_eta);
     eventTree->Branch("trk_matchtp_phi", &m_trk_matchtp_phi);
@@ -796,6 +807,8 @@ void L1TrackNtupleMaker::beginJob() {
     eventTree->Branch("allstub_matchTP_pt", &m_allstub_matchTP_pt);
     eventTree->Branch("allstub_matchTP_eta", &m_allstub_matchTP_eta);
     eventTree->Branch("allstub_matchTP_phi", &m_allstub_matchTP_phi);
+    eventTree->Branch("allstub_matchTP_eventid", &m_allstub_matchTP_eventid);
+    eventTree->Branch("allstub_matchTP_tpkey", &m_allstub_matchTP_tpkey);
 
     eventTree->Branch("allstub_genuine", &m_allstub_genuine);
   }
@@ -876,6 +889,7 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
     m_trk_MVA1->clear();
     m_trk_matchtp_eventtype->clear();
     m_trk_matchtp_pdgid->clear();
+    m_trk_matchtp_eventid->clear();
     m_trk_matchtp_pt->clear();
     m_trk_matchtp_eta->clear();
     m_trk_matchtp_phi->clear();
@@ -958,6 +972,8 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
     m_allstub_matchTP_pt->clear();
     m_allstub_matchTP_eta->clear();
     m_allstub_matchTP_phi->clear();
+    m_allstub_matchTP_eventid->clear();
+    m_allstub_matchTP_tpkey->clear();
 
     m_allstub_genuine->clear();
   }
@@ -1106,23 +1122,30 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
         float myTP_pt = -999;
         float myTP_eta = -999;
         float myTP_phi = -999;
+        int myTP_eventid = -999;
+        int myTP_tpkey = -999;
 
         if (my_tp.isNull() == false) {
           int tmp_eventid = my_tp->eventId().event();
 
-          if (tmp_eventid > 0)
-            continue;  // this means stub from pileup track
+          // if (tmp_eventid > 0)
+          //   continue;  // this means stub from pileup track
 
           myTP_pdgid = my_tp->pdgId();
           myTP_pt = my_tp->p4().pt();
           myTP_eta = my_tp->p4().eta();
           myTP_phi = my_tp->p4().phi();
+          myTP_eventid = my_tp->eventId().event();
+          myTP_tpkey = my_tp.key();
         }
 
         m_allstub_matchTP_pdgid->push_back(myTP_pdgid);
         m_allstub_matchTP_pt->push_back(myTP_pt);
         m_allstub_matchTP_eta->push_back(myTP_eta);
         m_allstub_matchTP_phi->push_back(myTP_phi);
+        m_allstub_matchTP_eventid->push_back(myTP_eventid);
+        m_allstub_matchTP_tpkey->push_back(myTP_tpkey);
+
 
         int tmp_stub_genuine = 0;
         if (MCTruthTTStubHandle->isGenuine(tempStubPtr))
@@ -1468,6 +1491,7 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
       float tmp_matchtp_z0 = -999;
       float tmp_matchtp_lxy = -999;
       float tmp_matchtp_d0 = -999;
+      int tmp_eventid = -999;
 
       if (tmp_trk_genuine) {  // Change this to allow matching for loosely genuine tracks too
 
@@ -1475,7 +1499,7 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
         if (my_tp.isNull())
           assert(false);  // Should never happen
 
-        int tmp_eventid = my_tp->eventId().event();
+        tmp_eventid = my_tp->eventId().event();
 
         if (tmp_eventid > 0)
           tmp_matchtp_eventtype = 2;  // Genuine track from pileup
@@ -1522,6 +1546,7 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
 
       m_trk_matchtp_eventtype->push_back(tmp_matchtp_eventtype);
       m_trk_matchtp_pdgid->push_back(tmp_matchtp_pdgid);
+      m_trk_matchtp_eventid->push_back(tmp_eventid);
       m_trk_matchtp_pt->push_back(tmp_matchtp_pt);
       m_trk_matchtp_eta->push_back(tmp_matchtp_eta);
       m_trk_matchtp_phi->push_back(tmp_matchtp_phi);
@@ -1529,6 +1554,8 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
       m_trk_matchtp_z0->push_back(tmp_matchtp_z0);
       m_trk_matchtp_lxy->push_back(tmp_matchtp_lxy);
       m_trk_matchtp_d0->push_back(tmp_matchtp_d0);
+      
+
 
       // ----------------------------------------------------------------------------------------------
       // for tracking in jets

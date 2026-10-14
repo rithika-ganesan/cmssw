@@ -975,7 +975,7 @@ namespace trklet {
     // Set to large value, e.g. 10000, to disable truncation
     unsigned int maxstepoffset_{0};
     // turn off truncation for displaced tracking (not implemented properly for displaced seeding)
-    unsigned int maxstepoffset_extended_{10000};
+    unsigned int maxstepoffset_extended_{0};
 
     //Number of processing steps for one event (108=18TM*240MHz/40MHz)
 
@@ -985,12 +985,12 @@ namespace trklet {
                       //input links running at 25 Gbits/s
         //Set to 108 to match firmware project 240 MHz clock
         {"VMR", 108},
-        {"TB", 108},
-        {"PC", 108},
-        {"MP", 108},
-        {"TP", 108},
-        {"TPD", 108},
-        {"TRE", 108},
+        {"TB", 10108},
+        {"PC", 10108},
+        {"MP", 10108},
+        {"TP", 10108},
+        {"TPD", 10108},
+        {"TRE", 10108},
         {"DR", 108}};  //Specifies how many tracks allowed per bin in DR
 
     // If set to true this will generate debub printout in text files

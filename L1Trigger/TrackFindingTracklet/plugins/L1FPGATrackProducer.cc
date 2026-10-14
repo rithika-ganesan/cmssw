@@ -639,6 +639,7 @@ void L1FPGATrackProducer::produce(edm::Event& iEvent, const edm::EventSetup& iSe
   }
 
   const std::vector<trklet::Track>& tracks = eventProcessor.tracks();
+  // edm::LogVerbatim("Tracklet") << "loop check:" << tracks.size() << " " << tracks.capacity();
 
   // number of track channels
   const int numStreamsTrack = trklet::N_SECTOR * setup_->tbNumSeedTypes();
@@ -651,6 +652,8 @@ void L1FPGATrackProducer::produce(edm::Event& iEvent, const edm::EventSetup& iSe
 
   // this performs the actual tracklet event processing
   eventProcessor.event(ev, streamsTrackRaw, streamsStubRaw);
+
+  // edm::LogVerbatim("Tracklet") << "loop check:" << tracks.size() << " " << tracks.capacity();
 
   for (const auto& track : tracks) {
     if (track.duplicate())
@@ -741,6 +744,8 @@ void L1FPGATrackProducer::produce(edm::Event& iEvent, const edm::EventSetup& iSe
 
     L1TkTracksForOutput->push_back(aTrack);
   }
+
+  edm::LogVerbatim("Tracklet") << "loop check:" << tracks.size() << " " << tracks.capacity();
 
   //
   // This code is a bit of a hack, it fixes an issue where it was implied that tracks in the L1TkTracksForOutput
