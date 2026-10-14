@@ -13,6 +13,10 @@ tree = f0.Get('L1TrackNtuple/eventTree')
 # branches = [branch.GetName() for branch in tree.GetListOfBranches()]
 # print(branches)
 
+# options
+dispSeeds = [8, 9, 10, 11]
+promptSeeds = [0, 1, 2, 3, 4, 5, 6, 7]
+
 # functions
 def get_indices_by_variable(variable, list_vars=None):
     if list_vars == None:
@@ -28,19 +32,8 @@ def get_indices_by_variable(variable, list_vars=None):
     return indices
 
 # get truth duplicates 
-
-nmatches_pts = {
-    0: [],
-    1: [],
-    2: [],
-    3: [],
-    4: [],
-    5: [],
-    6: []
-}
-
 for i, entry in enumerate(tree):
-    if i < 1: 
+    if i < 10: 
         # get vars
         trk_matchtp_eventid = entry.trk_matchtp_eventid 
         trk_pt = entry.trk_pt
@@ -61,16 +54,44 @@ for i, entry in enumerate(tree):
         trk_matchtp_indices = get_indices_by_variable(trk_matchtp_eventid)
 
         # loop through tps
+        prompt_all, prompt_fail, disp_all, disp_fail, mixed_all, mixed_prompt = 0, 0, 0, 0, 0, 0
+        d0s = []
         for itp in range(len(tp_pt)):
-            nmatch = tp_nmatch[itp]
-            nmatches_pts[nmatch].append(tp_pt[itp])
+            if itp in trk_matchtp_indices:
+                trks = trk_matchtp_indices[itp]
+                my_seeds = []
+                for trk in trks:
+                    my_seeds.append(trk_seed[trk])
+                uniqueDispSeedCount = len(set(my_seeds) & set(dispSeeds))
+                uniquePromptSeedCount = len(set(my_seeds) & set(promptSeeds))
+                if uniqueDispSeedCount == 0:
+                    prompt_all += 1
+                    tp_class = 'prompt_only'
+                    if np.abs(tp_d0[itp]) > 0.1:
+                            prompt_fail += 1
+                        # print(i, itp, tp_d0[itp], len(trks))
+                        # for trk in trks:
+                        #     print(trk_d0[trk])
 
-fig, ax = plt.subplots(figsize=(10, 7))
+                elif uniqueDispSeedCount > 0 and uniquePromptSeedCount == 0:
+                    disp_all += 1
+                    tp_class = 'displaced_only'
+                    if np.abs(tp_d0[itp]) < 0.1:
+                        disp_fail += 1
+                        # for trk in trks: 
+                        #     print(trk_d0[trk], tp_d0[itp])
 
-for nmatch in nmatches_pts.keys():
-    ax.hist(nmatches_pts[nmatch], alpha=0.5, label=f"{nmatch} matched tracks", bins=np.linspace(0, 350, 51))
+                else:
+                    mixed_all += 1
+                    tp_class = 'mixed'
+                    if np.abs(tp_d0[itp]) < 0.1:
+                        mixed_prompt += 1
 
-ax.set_yscale('log')
-ax.legend(loc='best')
-ax.set_xlabel('TP pt [GeV]')
-fig.savefig('myhisto.pdf')
+        # print(d0s)
+        print(f"Prompt: {prompt_fail} / {prompt_all}", f"Displaced: {disp_fail} / {disp_all}", f"Mixed: {mixed_prompt} / {mixed_all}")
+
+
+                    
+
+
+
