@@ -78,6 +78,12 @@
 #include <memory>
 #include <string>
 #include <iostream>
+#include <sstream>
+#include <typeinfo>
+#include <stdio.h>
+#include <vector>
+#include <stdint.h>
+#include <string>
 
 //////////////
 // NAMESPACES
@@ -166,6 +172,7 @@ private:
   std::vector<float>* m_trk_z0;
   std::vector<float>* m_trk_tanL;
   std::vector<float>* m_trk_zT;
+  // std::vector<std::string>* m_trk_stubrefs;
   std::vector<float>* m_trk_chi2;
   std::vector<float>* m_trk_chi2_dof;
   std::vector<float>* m_trk_chi2rphi;
@@ -183,6 +190,17 @@ private:
   std::vector<float>* m_trk_chi2rphi_beamCon;
   std::vector<float>* m_trk_chi2rphi_dof_beamCon;
   std::vector<int>* m_trk_nstub;
+  std::vector<std::string>* m_trk_stubref_ld0;
+  std::vector<std::string>* m_trk_stubref_ld1;
+  std::vector<std::string>* m_trk_stubref_ld2;
+  std::vector<std::string>* m_trk_stubref_ld3;
+  std::vector<std::string>* m_trk_stubref_ld4;
+  std::vector<std::string>* m_trk_stubref_ld5;
+  std::vector<std::string>* m_trk_stubref_ld6;
+  std::vector<std::string>* m_trk_stubref_ld7;
+  std::vector<std::string>* m_trk_stubref_ld8;
+  std::vector<std::string>* m_trk_stubref_ld9;
+  std::vector<std::string>* m_trk_stubref_ld10;
   std::vector<int>* m_trk_lhits;
   std::vector<int>* m_trk_dhits;
   std::vector<int>* m_trk_seed;
@@ -384,6 +402,7 @@ void L1TrackNtupleMaker::endJob() {
   delete m_trk_d0;
   delete m_trk_tanL;
   delete m_trk_zT;
+  // delete m_trk_stubrefs;
   delete m_trk_chi2;
   delete m_trk_chi2_dof;
   delete m_trk_chi2rphi;
@@ -401,6 +420,17 @@ void L1TrackNtupleMaker::endJob() {
   delete m_trk_chi2rphi_beamCon;
   delete m_trk_chi2rphi_dof_beamCon;
   delete m_trk_nstub;
+  delete m_trk_stubref_ld0;
+  delete m_trk_stubref_ld1;
+  delete m_trk_stubref_ld2;
+  delete m_trk_stubref_ld3;
+  delete m_trk_stubref_ld4;
+  delete m_trk_stubref_ld5;
+  delete m_trk_stubref_ld6;
+  delete m_trk_stubref_ld7;
+  delete m_trk_stubref_ld8;
+  delete m_trk_stubref_ld9;
+  delete m_trk_stubref_ld10;
   delete m_trk_lhits;
   delete m_trk_dhits;
   delete m_trk_seed;
@@ -536,6 +566,7 @@ void L1TrackNtupleMaker::beginJob() {
   m_trk_z0 = new std::vector<float>;
   m_trk_tanL = new std::vector<float>;
   m_trk_zT = new std::vector<float>;
+  // m_trk_stubrefs = new std::vector<std::string>;
   m_trk_chi2 = new std::vector<float>;
   m_trk_chi2_dof = new std::vector<float>;
   m_trk_chi2rphi = new std::vector<float>;
@@ -553,6 +584,17 @@ void L1TrackNtupleMaker::beginJob() {
   m_trk_chi2rphi_beamCon = new std::vector<float>;
   m_trk_chi2rphi_dof_beamCon = new std::vector<float>;
   m_trk_nstub = new std::vector<int>;
+  m_trk_stubref_ld0 = new std::vector<std::string>;
+  m_trk_stubref_ld1 = new std::vector<std::string>;
+  m_trk_stubref_ld2 = new std::vector<std::string>;
+  m_trk_stubref_ld3 = new std::vector<std::string>;
+  m_trk_stubref_ld4 = new std::vector<std::string>;
+  m_trk_stubref_ld5 = new std::vector<std::string>;
+  m_trk_stubref_ld6 = new std::vector<std::string>;
+  m_trk_stubref_ld7 = new std::vector<std::string>;
+  m_trk_stubref_ld8 = new std::vector<std::string>;
+  m_trk_stubref_ld9 = new std::vector<std::string>;
+  m_trk_stubref_ld10 = new std::vector<std::string>;
   m_trk_lhits = new std::vector<int>;
   m_trk_dhits = new std::vector<int>;
   m_trk_seed = new std::vector<int>;
@@ -679,6 +721,7 @@ void L1TrackNtupleMaker::beginJob() {
     eventTree->Branch("trk_z0", &m_trk_z0);
     eventTree->Branch("trk_tanL", &m_trk_tanL);
     eventTree->Branch("trk_zT", &m_trk_zT);
+    // eventTree->Branch("trk_stubrefs", &m_trk_stubrefs);
     eventTree->Branch("trk_chi2", &m_trk_chi2);
     eventTree->Branch("trk_chi2_dof", &m_trk_chi2_dof);
     eventTree->Branch("trk_chi2rphi", &m_trk_chi2rphi);
@@ -696,6 +739,17 @@ void L1TrackNtupleMaker::beginJob() {
     eventTree->Branch("trk_chi2rphi_beamCon", &m_trk_chi2rphi_beamCon);
     eventTree->Branch("trk_chi2rphi_dof_beamCon", &m_trk_chi2rphi_dof_beamCon);
     eventTree->Branch("trk_nstub", &m_trk_nstub);
+    eventTree->Branch("trk_stubref_ld0", &m_trk_stubref_ld0);
+    eventTree->Branch("trk_stubref_ld1", &m_trk_stubref_ld1);
+    eventTree->Branch("trk_stubref_ld2", &m_trk_stubref_ld2);
+    eventTree->Branch("trk_stubref_ld3", &m_trk_stubref_ld3);
+    eventTree->Branch("trk_stubref_ld4", &m_trk_stubref_ld4);
+    eventTree->Branch("trk_stubref_ld5", &m_trk_stubref_ld5);
+    eventTree->Branch("trk_stubref_ld6", &m_trk_stubref_ld6);
+    eventTree->Branch("trk_stubref_ld7", &m_trk_stubref_ld7);
+    eventTree->Branch("trk_stubref_ld8", &m_trk_stubref_ld8);
+    eventTree->Branch("trk_stubref_ld9", &m_trk_stubref_ld9);
+    eventTree->Branch("trk_stubref_ld10", &m_trk_stubref_ld10);
     eventTree->Branch("trk_lhits", &m_trk_lhits);
     eventTree->Branch("trk_dhits", &m_trk_dhits);
     eventTree->Branch("trk_seed", &m_trk_seed);
@@ -850,6 +904,7 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
     m_trk_z0->clear();
     m_trk_tanL->clear();
     m_trk_zT->clear();
+    // m_trk_stubrefs->clear();
     m_trk_chi2->clear();
     m_trk_chi2_dof->clear();
     m_trk_chi2rphi->clear();
@@ -867,6 +922,17 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
     m_trk_chi2rphi_beamCon->clear();
     m_trk_chi2rphi_dof_beamCon->clear();
     m_trk_nstub->clear();
+    m_trk_stubref_ld0->clear();
+    m_trk_stubref_ld1->clear();
+    m_trk_stubref_ld2->clear();
+    m_trk_stubref_ld3->clear();
+    m_trk_stubref_ld4->clear();
+    m_trk_stubref_ld5->clear();
+    m_trk_stubref_ld6->clear();
+    m_trk_stubref_ld7->clear();
+    m_trk_stubref_ld9->clear();
+    m_trk_stubref_ld9->clear();
+    m_trk_stubref_ld10->clear();
     m_trk_lhits->clear();
     m_trk_dhits->clear();
     m_trk_seed->clear();
@@ -1226,6 +1292,7 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
 
     int this_l1track = 0;
     std::vector<TTTrack<Ref_Phase2TrackerDigi_>>::const_iterator iterL1Track;
+    
     for (iterL1Track = TTTrackHandle->begin(); iterL1Track != TTTrackHandle->end(); iterL1Track++) {
       edm::Ptr<TTTrack<Ref_Phase2TrackerDigi_>> l1track_ptr(TTTrackHandle, this_l1track);
       this_l1track++;
@@ -1330,45 +1397,88 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
       set<int> hitLayPS;
       set<int> hitLay2S;
 
-      if (true) {
-        // loop over stubs
-        for (int is = 0; is < tmp_trk_nstub; is++) {
-          //detID of stub
-          DetId detIdStub = theTrackerGeom->idToDet((stubRefs.at(is)->clusterRef(0))->getDetId())->geographicalId();
+      // for ( const auto& ref : stubRefs ) {
+        
+      // }
 
-          MeasurementPoint coords = stubRefs.at(is)->clusterRef(0)->findAverageLocalCoordinatesCentered();
-          const GeomDet* theGeomDet = theTrackerGeom->idToDet(detIdStub);
-          Global3DPoint posStub = theGeomDet->surface().toGlobal(theGeomDet->topology().localPosition(coords));
+      
+      // loop over stubs
+      std::vector<std::string> stubReferences(11);
+      for (int is = 0; is < tmp_trk_nstub; is++) {
+        //detID of stub
+        DetId detIdStub = theTrackerGeom->idToDet((stubRefs.at(is)->clusterRef(0))->getDetId())->geographicalId();
 
-          double x = posStub.x();
-          double y = posStub.y();
-          double z = posStub.z();
+        MeasurementPoint coords = stubRefs.at(is)->clusterRef(0)->findAverageLocalCoordinatesCentered();
+        const GeomDet* theGeomDet = theTrackerGeom->idToDet(detIdStub);
+        Global3DPoint posStub = theGeomDet->surface().toGlobal(theGeomDet->topology().localPosition(coords));
 
-          int layer = -999999;
-          bool barrel = (detIdStub.subdetId() == Phase2Tracker::Subdetector::Barrel);
-          if (barrel) {
-            layer = static_cast<int>(tTopo->layer(detIdStub));
-            if (DebugMode)
-              edm::LogVerbatim("Tracklet")
-                  << "   stub in layer " << layer << " at position x y z = " << x << " " << y << " " << z;
-            tmp_trk_lhits += pow(10, layer - 1);
-          } else {
-            layer = static_cast<int>(tTopo->layer(detIdStub));
-            if (DebugMode)
-              edm::LogVerbatim("Tracklet")
-                  << "   stub in disk " << layer << " at position x y z = " << x << " " << y << " " << z;
-            tmp_trk_dhits += pow(10, layer - 1);
-          }
+        double x = posStub.x();
+        double y = posStub.y();
+        double z = posStub.z();
 
-          bool psMod = (theTrackerGeom->getDetectorType(detIdStub) == TrackerGeometry::ModuleType::Ph2PSP);
-          int layerdisk = barrel ? layer : 10 + layer;
-          if (psMod) {
-            hitLayPS.insert(layerdisk);
-          } else {
-            hitLay2S.insert(layerdisk);
-          }
-        }  //end loop over stubs
-      }
+        auto ptr = stubRefs.at(is).get();
+        std::ostringstream ss;
+        ss << ptr;
+        std::string ptr_string = ss.str();
+
+        // Long64_t testint = 783274128;
+
+
+
+        // edm::LogVerbatim("Tracklet") << "My stub reference size: " << sizeof(ptr) * 8 << " " << sizeof(ptr_string) << myptr << sizeof(myptr);
+
+        int layer = -999999;
+        bool barrel = (detIdStub.subdetId() == Phase2Tracker::Subdetector::Barrel);
+        if (barrel) {
+          layer = static_cast<int>(tTopo->layer(detIdStub));
+          if (DebugMode)
+            edm::LogVerbatim("Tracklet")
+                << "   stub in layer " << layer << " at position x y z = " << x << " " << y << " " << z;
+          tmp_trk_lhits += pow(10, layer - 1);
+          stubReferences[layer - 1] = ptr_string;
+        } else {
+          layer = static_cast<int>(tTopo->layer(detIdStub));
+          if (DebugMode)
+            edm::LogVerbatim("Tracklet")
+                << "   stub in disk " << layer << " at position x y z = " << x << " " << y << " " << z;
+          tmp_trk_dhits += pow(10, layer - 1);
+          stubReferences[layer + 5] = ptr_string;
+        }
+
+        bool psMod = (theTrackerGeom->getDetectorType(detIdStub) == TrackerGeometry::ModuleType::Ph2PSP);
+        int layerdisk = barrel ? layer : 10 + layer;
+
+        if (psMod) {
+          hitLayPS.insert(layerdisk);
+        } else {
+          hitLay2S.insert(layerdisk);
+        }
+      }  //end loop over stubs
+
+      std::string tmp_trk_stubref_ld0 = stubReferences[0];
+      std::string tmp_trk_stubref_ld1 = stubReferences[1];
+      std::string tmp_trk_stubref_ld2 = stubReferences[2];
+      std::string tmp_trk_stubref_ld3 = stubReferences[3];
+      std::string tmp_trk_stubref_ld4 = stubReferences[4];
+      std::string tmp_trk_stubref_ld5 = stubReferences[5];
+      std::string tmp_trk_stubref_ld6 = stubReferences[6];
+      std::string tmp_trk_stubref_ld7 = stubReferences[7];
+      std::string tmp_trk_stubref_ld8 = stubReferences[8];
+      std::string tmp_trk_stubref_ld9 = stubReferences[8];
+      std::string tmp_trk_stubref_ld10 = stubReferences[10];
+      
+      // edm::LogVerbatim("Tracklet") << "STUBPOINTERINFO: " << " trackindex=" << this_l1track << " layerid=" << 0 << " stubpointer=" << stubReferences[0];
+      // edm::LogVerbatim("Tracklet") << "STUBPOINTERINFO: " << " trackindex=" << this_l1track << " layerid=" << 1 << " stubpointer=" << stubReferences[1];
+      // edm::LogVerbatim("Tracklet") << "STUBPOINTERINFO: " << " trackindex=" << this_l1track << " layerid=" << 2 << " stubpointer=" << stubReferences[2];
+      // edm::LogVerbatim("Tracklet") << "STUBPOINTERINFO: " << " trackindex=" << this_l1track << " layerid=" << 3 << " stubpointer=" << stubReferences[3];
+      // edm::LogVerbatim("Tracklet") << "STUBPOINTERINFO: " << " trackindex=" << this_l1track << " layerid=" << 4 << " stubpointer=" << stubReferences[4];
+      // edm::LogVerbatim("Tracklet") << "STUBPOINTERINFO: " << " trackindex=" << this_l1track << " layerid=" << 5 << " stubpointer=" << stubReferences[5];
+      // edm::LogVerbatim("Tracklet") << "STUBPOINTERINFO: " << " trackindex=" << this_l1track << " layerid=" << 6 << " stubpointer=" << stubReferences[6];
+      // edm::LogVerbatim("Tracklet") << "STUBPOINTERINFO: " << " trackindex=" << this_l1track << " layerid=" << 7 << " stubpointer=" << stubReferences[7];
+      // edm::LogVerbatim("Tracklet") << "STUBPOINTERINFO: " << " trackindex=" << this_l1track << " layerid=" << 8 << " stubpointer=" << stubReferences[8];
+      // edm::LogVerbatim("Tracklet") << "STUBPOINTERINFO: " << " trackindex=" << this_l1track << " layerid=" << 9 << " stubpointer=" << stubReferences[9];
+      // edm::LogVerbatim("Tracklet") << "STUBPOINTERINFO: " << " trackindex=" << this_l1track << " layerid=" << 10 << " stubpointer=" << stubReferences[10];
+      // edm::LogVerbatim("Tracklet") << " ";
 
       // Check accuracy of hit pattern info.
       if (DebugMode && hph.newKF()) {
@@ -1447,6 +1557,17 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
       m_trk_chi2rphi_beamCon->push_back(tmp_trk_chi2rphi_beamCon);
       m_trk_chi2rphi_dof_beamCon->push_back(tmp_trk_chi2rphi_dof_beamCon);
       m_trk_nstub->push_back(tmp_trk_nstub);
+      m_trk_stubref_ld0->push_back(tmp_trk_stubref_ld0);
+      m_trk_stubref_ld1->push_back(tmp_trk_stubref_ld1);
+      m_trk_stubref_ld2->push_back(tmp_trk_stubref_ld2);
+      m_trk_stubref_ld3->push_back(tmp_trk_stubref_ld3);
+      m_trk_stubref_ld4->push_back(tmp_trk_stubref_ld4);
+      m_trk_stubref_ld5->push_back(tmp_trk_stubref_ld5);
+      m_trk_stubref_ld6->push_back(tmp_trk_stubref_ld6);
+      m_trk_stubref_ld7->push_back(tmp_trk_stubref_ld7);
+      m_trk_stubref_ld8->push_back(tmp_trk_stubref_ld8);
+      m_trk_stubref_ld9->push_back(tmp_trk_stubref_ld9);
+      m_trk_stubref_ld10->push_back(tmp_trk_stubref_ld10);
       m_trk_dhits->push_back(tmp_trk_dhits);
       m_trk_lhits->push_back(tmp_trk_lhits);
       m_trk_seed->push_back(tmp_trk_seed);

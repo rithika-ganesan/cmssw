@@ -23,6 +23,8 @@
 #include <iterator>
 #include <cmath>
 #include <numeric>
+#include <iostream>
+#include <sstream>
 
 namespace trklet {
 
@@ -97,26 +99,34 @@ namespace trklet {
     for (int iTrk = 0; iTrk < static_cast<int>(handle->size()); iTrk++) {
       ttTrackRefs.emplace_back(handle, iTrk);
     }
-    // perform track multiplexinf
+    // perform track multiplexing -- sorting by seed rank
     const std::vector<int>& muxOrder = setup_->tmMuxOrder();
-    // edm::LogVerbatim("Tracklet") << "muxOrder: " << muxOrder[0] << " " << muxOrder[1] << " " << muxOrder[2] << " " << muxOrder[3] << " " << muxOrder[4] << " " << muxOrder[5] << " " << muxOrder[6] << " " << muxOrder[7] << " " << muxOrder[8] << " " << muxOrder[9] << " " << muxOrder[10] << " " << muxOrder[11];
     auto order = [&muxOrder](const TTTrackRef& lhs, const TTTrackRef& rhs) {
       const auto l = std::find(muxOrder.begin(), muxOrder.end(), lhs->trackSeedType());
       const auto r = std::find(muxOrder.begin(), muxOrder.end(), rhs->trackSeedType());
       return l < r;
     };
     std::sort(ttTrackRefs.begin(), ttTrackRefs.end(), order);
-    edm::LogVerbatim("Tracklet") << "DRINFO: " << "initialSize=" << ttTrackRefs.size();
+    // edm::LogVerbatim("Tracklet") << "DRINFO: " << "initialSize=" << ttTrackRefs.size();
 
-    const TTTrackRef& firstTrack = ttTrackRefs.at(0);
-    std::vector<TTStubRef> firstStubs = firstTrack->getStubRefs();
-    for (int k; k < static_cast<int>(firstStubs.size()); k++) {
-      const TTStubRef& myStubRef = firstStubs.at(k);
-      // const auto& word = myStubRef->stubindex();
-      edm::LogVerbatim("Tracklet") << "STUB INDEX PRINT: " << myStubRef->getDetId();
-    }
 
-    // perform duplicate removal
+
+    // const TTTrackRef& firstTrack = ttTrackRefs.at(10);
+    // edm::LogVerbatim("Tracklet") << "Seed type: " << firstTrack->trackSeedType();
+    // edm::LogVerbatim("Tracklet") << "d0 val: " << firstTrack->d0();
+    // std::vector<TTStubRef> firstStubs = firstTrack->getStubRefs();
+    // edm::LogVerbatim("Tracklet") << "Size of stub vector: " << firstStubs.size();
+    // for (int k; k < static_cast<int>(firstStubs.size()); k++) {
+    //   const TTStubRef& myStubRef = firstStubs.at(k);
+    //   edm::LogVerbatim("Tracklet") << "STUB INDEX PRINT: " << myStubRef->getDetId();
+    // }
+    // std::sort(firstStubs.begin(), firstStubs.end());
+    // for (int k; k < static_cast<int>(firstStubs.size()); k++) {
+    //   const TTStubRef& myStubRef = firstStubs.at(k);
+    //   edm::LogVerbatim("Tracklet") << "STUB INDEX PRINT: " << myStubRef->getDetId();
+    // }
+
+    // // perform duplicate removal
     // auto equalEnough = [this](const TTTrackRef& lhs, const TTTrackRef& rhs) {
     //   std::vector<TTStubRef> l = lhs->getStubRefs();
     //   std::vector<TTStubRef> r = rhs->getStubRefs();
@@ -147,7 +157,7 @@ namespace trklet {
     //   if (!ptrs[i])
     //     ttTrackRefs.erase(std::next(ttTrackRefs.begin(), i));
 
-    // edm::LogVerbatim("Tracklet") << "DRINFO: " << " finalSize=" << ttTrackRefs.size();
+    edm::LogVerbatim("Tracklet") << "DRINFO: " << " finalSize=" << ttTrackRefs.size();
     // perform KF
     tt::TTTracks ttTracks;
     ttTracks.reserve(ttTrackRefs.size());
@@ -317,6 +327,7 @@ namespace trklet {
       ttTrack.setTrackWordBits();
     }
     // store products
+    edm::LogVerbatim("Tracklet") << "KFINFO: " << " finalSize=" << ttTracks.size();
     iEvent.emplace(edPutTokenTracks_, std::move(ttTracks));
   }
 
