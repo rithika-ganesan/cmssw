@@ -24,3 +24,5 @@ __init__.py
 
 MCsamples 
 L1Trigger/TrackFindingTracklet/test/*.root
+L1Trigger/TrackFindingTracklet/test/l1TF_displacedTracking 
+ 

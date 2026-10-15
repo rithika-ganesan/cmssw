@@ -34,11 +34,11 @@ set inputFileStem = `echo $fileName | awk -F . '{print $1;}'`
 
 eval `scramv1 runtime -csh`
 
-# Run track quality MVA plotting macro
-set plotMacro = $CMSSW_BASE/src/L1Trigger/TrackFindingTracklet/test/L1TrackQualityPlot.C
-if (-e MVA_plots) rm -r MVA_plots
-\root -b -q ${plotMacro}'("'${inputFileStem}'","'${dirName}'")' 
-echo "MVA track quality Histograms written to MVA_plots/"  
+# # Run track quality MVA plotting macro
+# set plotMacro = $CMSSW_BASE/src/L1Trigger/TrackFindingTracklet/test/L1TrackQualityPlot.C
+# if (-e MVA_plots) rm -r MVA_plots
+# \root -b -q ${plotMacro}'("'${inputFileStem}'","'${dirName}'")' 
+# echo "MVA track quality Histograms written to MVA_plots/"  
 
 # Run track performance plotting macro
 set plotMacro = $CMSSW_BASE/src/L1Trigger/TrackFindingTracklet/test/L1TrackNtuplePlot.C

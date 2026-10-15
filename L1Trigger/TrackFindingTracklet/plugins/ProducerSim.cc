@@ -107,6 +107,15 @@ namespace trklet {
     };
     std::sort(ttTrackRefs.begin(), ttTrackRefs.end(), order);
     edm::LogVerbatim("Tracklet") << "DRINFO: " << "initialSize=" << ttTrackRefs.size();
+
+    const TTTrackRef& firstTrack = ttTrackRefs.at(0);
+    std::vector<TTStubRef> firstStubs = firstTrack->getStubRefs();
+    for (int k; k < static_cast<int>(firstStubs.size()); k++) {
+      const TTStubRef& myStubRef = firstStubs.at(k);
+      // const auto& word = myStubRef->stubindex();
+      edm::LogVerbatim("Tracklet") << "STUB INDEX PRINT: " << myStubRef->getDetId();
+    }
+
     // perform duplicate removal
     // auto equalEnough = [this](const TTTrackRef& lhs, const TTTrackRef& rhs) {
     //   std::vector<TTStubRef> l = lhs->getStubRefs();
