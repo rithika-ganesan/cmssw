@@ -110,9 +110,6 @@ namespace trklet {
     // perform duplicate removal
     // auto equalEnough = [this](const TTTrackRef& lhs, const TTTrackRef& rhs) {
     //   std::vector<TTStubRef> l = lhs->getStubRefs();
-    //   // for (const TTStubRef& s : l) {
-    //   //   std::cout << s.id() << " " << s.key() << std::endl;
-    //   // }
     //   std::vector<TTStubRef> r = rhs->getStubRefs();
     //   std::sort(l.begin(), l.end());
     //   std::sort(r.begin(), r.end());
@@ -141,7 +138,7 @@ namespace trklet {
     //   if (!ptrs[i])
     //     ttTrackRefs.erase(std::next(ttTrackRefs.begin(), i));
 
-    edm::LogVerbatim("Tracklet") << "DRINFO: " << " finalSize=" << ttTrackRefs.size();
+    // edm::LogVerbatim("Tracklet") << "DRINFO: " << " finalSize=" << ttTrackRefs.size();
     // perform KF
     tt::TTTracks ttTracks;
     ttTracks.reserve(ttTrackRefs.size());

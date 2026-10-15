@@ -12,13 +12,6 @@ tree = f0.Get('L1TrackNtuple/eventTree')
 
 # options
 seeds = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, -1]
-seed_mapping = {
-    8: [1, 2],
-    9: [3, -1],
-    10: [1, 7],
-    11: [4, 7]
-}
-disp_seeds = seed_mapping.keys()
 
 # functions
 def compare_vals(v1, v2, tolerance=0.001):
