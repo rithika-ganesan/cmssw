@@ -1,0 +1,188 @@
+************************************************************************************************************************
+						 WARNING!
+ The key phase2_realistic now points to 150X_mcRun4_realistic_v1.
+ Usage of this key is discretionary and users are cautioned to use it at their own risk!
+ This Global Tag contains tags suited for an Inner Tracker layout with rectangular (25x100um2) pixel cells (T15,T21).
+ If this is not the geometry you are expecting to use, please consult:
+ https://github.com/cms-sw/cmssw/blob/master/Configuration/AlCa/python/autoCondPhase2.py to retrieve the right key.
+************************************************************************************************************************
+using geometry D121 (tilted)
+22-Oct-2026 20:41:25 CEST  Initiating request to open file root://eoscms.cern.ch//eos/cms/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU-v1/2590000/0033230b-a131-453a-95c0-fe14d5027d1f.root?scitag.flow=206
+%MSG-f XrdAdaptor:  file_open 22-Oct-2026 20:41:26 CEST pre-events
+Opened a file at URL root://st-120-100gb-1rztwn.cern.ch:1095//eos/cms/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU-v1/2590000/0033230b-a131-453a-95c0-fe14d5027d1f.root?cap.format=AEAD&cap.key=LoNjPjkNIX+qwWZwlmYzqFWzK3s=&cap.msg=-tQ0JRcRRnmFih1C8V4-flAYQjfiSqvnG8OFDMC7rRH6oRcWiazmzwB7wV0w7qYvX7uAyJa349iUR7Jh9NaqWITt2CH9PbPjuRiZ6di0YQZIQdUcW8hKXD8eVt_jeKGzHJh7yqPKbbi5U49EFeMDc0T8bDT4htBTea_8ZO8g_zh1HMuZ6khlKXxUamqLlnvXTUuF34q725ahWYYzpU-25ZH0zZJQtHK3WBewBmimyRwZXYjqDGjoOUOM2y6dPopwHxYww6Z8JTzO0TgzFwRYSGgLCNYlBd8MWsCyHjAIkaJodi9V5uwCafB3m4zPiQch7KG2YrTskt-Wntiq29fpPwBbmCf-yvPW88wreQ6zNHDpHwX_srZhDbIedXwolA6B1gsLIiQ8ZVurRDGI0gzBrqd-8K4ehH5tg3fqEBhZUqozGYzGq5pVe0-66QFGN7ogeDxvgAC3QMUO9xryc3VTYiEuArKeN5zNPkWfypnuahSfSiSmQol7vSTGqOPqUmFwm830aDbr6kQuFXz1ua2_IT2zYzPv_2tznvM3qfuu_i3qjxIG6ZzszkWWx2Sgkk7Nkx6qIzO4rrvOW-pSWRvHZbTjHrouiOd4s6aN5nGMSnn-MNZK3_buraWsOJIBzYDS6xnuP3DFrK2piuykKnsAxjdiaaF28gj0kXB7rynijjMnf-mMBu_NGeUuOIs71ag-JWpmbgt69g1uotRQL1j4BWReF6htOd9lBfj7VAYQ5_pvU0krTjzjv7EyO8uqwUSW6nfkF40oEVtoCFEOMtFxBEYgwZzF-WgCSiwO&cap.sym=AQEBAACAAAAAAAAACAAAAAAAAAABAAAAAAAAAHDxW14s5KSzGL-OkeUEvKbqWyGkJRwA6otVHSk&eos.clientinfo=zbase64:MDAwMDAwNmZ4nBWIQQqAIBAAv9IHjDUKStjHpK4lhMq6EvX68jLMTC6UDAvCOK9DzMbeGFPoVt1JHqGrPIXQthCIyfdROGb0FPZ2Se9/RyYnWEXpCZQGOKzS/MqdRkf84zQatuUDcGcl8Q==&mgm.blockchecksum=ignore&mgm.id=1744ce17f&mgm.logid=30558612-ce48-11f1-ad20-a4bf0179524a&mgm.mtime=1781320111&mgm.replicahead=1&mgm.replicaindex=1&scitag.flow=206&xrdcl.requuid=29725d39-c4f8-480f-b82a-9a32315d9a7d
+%MSG
+22-Oct-2026 20:41:43 CEST  Successfully opened file root://eoscms.cern.ch//eos/cms/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU-v1/2590000/0033230b-a131-453a-95c0-fe14d5027d1f.root?scitag.flow=206
+%MSG-f XrdAdaptor:  (NoModuleName) 22-Oct-2026 20:41:43 CEST pre-events
+Opened a file at URL root://st-096-hh151911.cern.ch:1095//eos/cms/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU-v1/2590000/0033230b-a131-453a-95c0-fe14d5027d1f.root?cap.format=AEAD&cap.key=LoNjPjkNIX+qwWZwlmYzqFWzK3s=&cap.msg=6-Zpu6LkW9cOvtFtC_UqpdFxcfzvC5D38C0jVsdlO87e7G76SJCGe8t5nm_PufEKp4xnQo9ugob1cCRNIER-cfsSvKw6HV8Ri319APpBli231IduNqU2q5EOhTopmRBC46jr9vIHpudTji9ziNP_sUyaNYzK0PanMEF80c4Ai5dsRYJL_EhgpaIuOv_siApNQL6hbGIgpkDApHt9bhxMDAb-SJ9WUKt6TTYA1W2xLBAjYjUsRDZB9SMQIVhw6rnT7MAaF3Gw_fW_CafLD0anedJxGz9gG9vVdZykoAESZ_xGMWulxqgmL9VzkiopSAuANiwr51NtesfNDRf7R6VNWYCMD615IIc_TjRc8I90l5Z2TDQzNToTDrJmb9e_JuKzpt4hoOwco46aJ1PpgIxBFvz_9Z9uI2TJupoYFQUtWaw2rth1DD0DKwBGeBhmI_bS9B50TISqrsieSRSlBrBJN573HYnjDIusCDlLg8kIdwBA_K0FdniovJSCxsNMUVUbUfyuDumz2omPeVWyK-jrFTRPNXisnQxX9rUFroszhCLNXw3jZ5s4jw8Aa4qzbqR4XWFPBAeKYQTF11CntRQv50ZAnSkvJQ2dnnucGGxJEJnriA3lE0-SBZ21rU8n6U0CsHoyfy8byigj-JlirdD8SG_NDlmwp_3pPH7qwQT4jujusXOLC-QzYY6mPecZHAO4GiW-9tbNILAffEv8wJuMI4xGWsTWGL4hzRcv7wddSlH-ZIATQcXFk5Fs4uOAr4DeWB-HRmKTTEqlC2k1akxban4-uquC-MoZBMGg&cap.sym=AQEBAACAAAAAAAAACAAAAAAAAAABAAAAAAAAAHDxW14s5KSzGL-OkeUEvKbtdoIoD4qp_KeTJZ4&eos.clientinfo=zbase64:MDAwMDAwNmJ4nBXIwQnAIAxA0VW6gGIOFhQyTNWIQlGJkdLtW2/v/z6oeRY02sJRuw8P1pa3ZiyU0GzKOwjDypmY0h6Da8dE+Vq37P53ZYqCU5RxpyoFLDgAHYmbjsWDcfYD0SYj/A==&mgm.blockchecksum=ignore&mgm.id=1744ce17f&mgm.logid=3a1e16c8-ce48-11f1-9c00-a4bf0179524a&mgm.mtime=1781320111&mgm.replicahead=0&mgm.replicaindex=0&scitag.flow=206&tried=st-120-100gb-1rztwn.cern.ch&triedrc=resel&xrdcl.requuid=f3f3bf33-dc24-4bf2-ba36-14d41548cde2
+%MSG
+L1TrackNtupleMaker::beginJob
+Begin processing the 1st record. Run 1, Event 201, LumiSection 3 on stream 0 at 22-Oct-2026 20:42:04.078 CEST
+From PurgeDuplicates.cc, sector: 0; number of tracks: 111
+From PurgeDuplicates.cc, sector: 1; number of tracks: 118
+From PurgeDuplicates.cc, sector: 2; number of tracks: 37
+From PurgeDuplicates.cc, sector: 3; number of tracks: 41
+From PurgeDuplicates.cc, sector: 4; number of tracks: 150
+From PurgeDuplicates.cc, sector: 5; number of tracks: 131
+From PurgeDuplicates.cc, sector: 6; number of tracks: 66
+From PurgeDuplicates.cc, sector: 7; number of tracks: 33
+From PurgeDuplicates.cc, sector: 8; number of tracks: 44
+From ProducerSim: 
+Number of tracks before duplicate removal: 731
+Number of tracks after duplicate removal: 242
+Number of tracks after KF: 242
+
+Begin processing the 2nd record. Run 1, Event 202, LumiSection 3 on stream 0 at 22-Oct-2026 20:42:05.837 CEST
+From PurgeDuplicates.cc, sector: 0; number of tracks: 138
+From PurgeDuplicates.cc, sector: 1; number of tracks: 69
+From PurgeDuplicates.cc, sector: 2; number of tracks: 135
+From PurgeDuplicates.cc, sector: 3; number of tracks: 53
+From PurgeDuplicates.cc, sector: 4; number of tracks: 61
+From PurgeDuplicates.cc, sector: 5; number of tracks: 157
+From PurgeDuplicates.cc, sector: 6; number of tracks: 140
+From PurgeDuplicates.cc, sector: 7; number of tracks: 92
+From PurgeDuplicates.cc, sector: 8; number of tracks: 64
+From ProducerSim: 
+Number of tracks before duplicate removal: 909
+Number of tracks after duplicate removal: 277
+Number of tracks after KF: 277
+
+Begin processing the 3rd record. Run 1, Event 203, LumiSection 3 on stream 0 at 22-Oct-2026 20:42:07.548 CEST
+From PurgeDuplicates.cc, sector: 0; number of tracks: 176
+From PurgeDuplicates.cc, sector: 1; number of tracks: 205
+From PurgeDuplicates.cc, sector: 2; number of tracks: 178
+From PurgeDuplicates.cc, sector: 3; number of tracks: 181
+From PurgeDuplicates.cc, sector: 4; number of tracks: 135
+From PurgeDuplicates.cc, sector: 5; number of tracks: 182
+From PurgeDuplicates.cc, sector: 6; number of tracks: 205
+From PurgeDuplicates.cc, sector: 7; number of tracks: 125
+From PurgeDuplicates.cc, sector: 8; number of tracks: 152
+From ProducerSim: 
+Number of tracks before duplicate removal: 1539
+Number of tracks after duplicate removal: 543
+Number of tracks after KF: 543
+
+Begin processing the 4th record. Run 1, Event 204, LumiSection 3 on stream 0 at 22-Oct-2026 20:42:09.534 CEST
+From PurgeDuplicates.cc, sector: 0; number of tracks: 184
+From PurgeDuplicates.cc, sector: 1; number of tracks: 125
+From PurgeDuplicates.cc, sector: 2; number of tracks: 164
+From PurgeDuplicates.cc, sector: 3; number of tracks: 79
+From PurgeDuplicates.cc, sector: 4; number of tracks: 233
+From PurgeDuplicates.cc, sector: 5; number of tracks: 108
+From PurgeDuplicates.cc, sector: 6; number of tracks: 172
+From PurgeDuplicates.cc, sector: 7; number of tracks: 192
+From PurgeDuplicates.cc, sector: 8; number of tracks: 157
+From ProducerSim: 
+Number of tracks before duplicate removal: 1414
+Number of tracks after duplicate removal: 508
+Number of tracks after KF: 508
+
+Begin processing the 5th record. Run 1, Event 205, LumiSection 3 on stream 0 at 22-Oct-2026 20:42:11.415 CEST
+From PurgeDuplicates.cc, sector: 0; number of tracks: 228
+From PurgeDuplicates.cc, sector: 1; number of tracks: 140
+From PurgeDuplicates.cc, sector: 2; number of tracks: 163
+From PurgeDuplicates.cc, sector: 3; number of tracks: 115
+From PurgeDuplicates.cc, sector: 4; number of tracks: 82
+From PurgeDuplicates.cc, sector: 5; number of tracks: 157
+From PurgeDuplicates.cc, sector: 6; number of tracks: 79
+From PurgeDuplicates.cc, sector: 7; number of tracks: 118
+From PurgeDuplicates.cc, sector: 8; number of tracks: 113
+From ProducerSim: 
+Number of tracks before duplicate removal: 1195
+Number of tracks after duplicate removal: 408
+Number of tracks after KF: 408
+
+Process             Times called   Average time (ms)      Total time (s)
+Cleaning                      45               0.279              0.0126
+Add Stubs                     45                2.26               0.102
+InputRouter                   45               0.148             0.00664
+VMRouter                      45               0.911               0.041
+TrackletProcessor             45                1.34              0.0603
+MatchProcessor                45                50.4                2.27
+TrackletProcessorDisplaced        45                10.3               0.462
+FitTrack                      45               0.381              0.0171
+PurgeDuplicate                45               0.189             0.00852
+22-Oct-2026 20:42:13 CEST  Closed file root://eoscms.cern.ch//eos/cms/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU-v1/2590000/0033230b-a131-453a-95c0-fe14d5027d1f.root?scitag.flow=206
+                         DTC SUMMARY                         
+number of      stubs per TFP = 1836.6889 +- 52.6848
+     max tracking efficiency =    0.9918 +-  0.0082
+=============================================================
+=============================================================
+                     Monte Carlo  SUMMARY                    
+number of stubs         per TFP = 1749.6000 +- 146.2474
+number of matched stubs per TFP = 1319.4667 +- 122.5812
+number of reco stubs    per TFP =  410.4222 +-  42.6394
+number of any TPs       per TFP =  776.0889 +-  76.3133
+number of reco TPs      per TFP =   59.9556 +-   6.2956
+number of TPs for eff   per TFP =    2.7111 +-   0.1849
+=============================================================
+                         Sim  SUMMARY                         
+   number of stubs  per TFP = 203.9333 +- 13.0879
+   number of tracks per TFP =  43.9556 +-  2.9595
+current tracking efficiency =   0.9590 +-  0.0179
+max     tracking efficiency =   0.9672 +-  0.0161
+                  fake rate =   0.4540
+             duplicate rate =   0.0602
+=============================================================
+                         Tracklet  SUMMARY                         
+   number of stubs  per TFP = 648.2667 +- 38.8067
+   number of tracks per TFP = 128.6222 +-  7.7664
+current tracking efficiency =   0.9672 +-  0.0161
+max     tracking efficiency =   0.9754 +-  0.0140
+                  fake rate =   0.1985
+             duplicate rate =   0.6318
+=============================================================
+L1TrackNtupleMaker::endJob
+TimeReport> Time report complete in 52.4114 seconds
+ Time Summary: 
+ - Min event:   1.57138
+ - Max event:   1.87034
+ - Avg event:   1.76421
+ - Total loop:  28.9278
+ - Total init:  23.474
+ - Total job:   52.4114
+ - Total EventSetup: 18.0781
+ - Total non-module: 4.31344e+08
+ Event Throughput: 0.172844 ev/s
+ CPU Summary: 
+ - Total loop:     16.5063
+ - Total init:     17.9081
+ - Total extra:    0
+ - Total children: 0.066661
+ - Total job:      34.4242
+ Processing Summary: 
+ - Number of Events:  5
+ - Number of Global Begin Lumi Calls:  1
+ - Number of Global Begin Run Calls: 1
+
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev          module                subroutine         count   total
+ ---- -------------------- -- ------------------------- ---------------------   -----   -----
+    1 trackerDTC::Analyzer -w trackerDTC::Analyzer:Anal                            1        1
+    2 tt::AnalyzerMC       -w tt::AnalyzerMC:AnalyzerMC                            1        1
+    3 tt::AnalyzerTTTrack  -w tt::AnalyzerTTTrack:Analy                            1        1
+    4 tt::AnalyzerTTTrack  -w tt::AnalyzerTTTrack:Analy                            1        1
+    5 TimeReport           -e AfterModEndJob                                       1        1
+    6 fileAction           -s file_close                                           1        1
+    7 fileAction           -s file_open                                            2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 trackerDTC::Analyzer EndJob                            
+    2 tt::AnalyzerMC       EndJob                            
+    3 tt::AnalyzerTTTrack  EndJob                            
+    4 tt::AnalyzerTTTrack  EndJob                            
+    5 TimeReport           EndJob                            
+    6 fileAction           PostGlobalEndRun                  
+    7 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                 4                   4
+Error                   1                   1
+System                  3                   3
+
+dropped waiting message count 0

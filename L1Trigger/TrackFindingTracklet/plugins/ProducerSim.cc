@@ -93,7 +93,6 @@ namespace trklet {
     // read input
     edm::Handle<tt::TTTracks> handle;
     iEvent.getByToken(edGetTokenTracks_, handle);
-    // edm::LogVerbatim("Tracklet") << "Number of tracks in the event: " << handle->size();
     std::vector<TTTrackRef> ttTrackRefs;
     ttTrackRefs.reserve(handle->size());
     for (int iTrk = 0; iTrk < static_cast<int>(handle->size()); iTrk++) {
@@ -108,6 +107,8 @@ namespace trklet {
     };
     std::sort(ttTrackRefs.begin(), ttTrackRefs.end(), order);
     // edm::LogVerbatim("Tracklet") << "DRINFO: " << "initialSize=" << ttTrackRefs.size();
+
+    edm::LogVerbatim("Tracklet") << "Number of tracks before duplicate removal: " << " finalSize=" << ttTrackRefs.size();
 
 
 
@@ -126,38 +127,38 @@ namespace trklet {
     //   edm::LogVerbatim("Tracklet") << "STUB INDEX PRINT: " << myStubRef->getDetId();
     // }
 
-    // // perform duplicate removal
-    // auto equalEnough = [this](const TTTrackRef& lhs, const TTTrackRef& rhs) {
-    //   std::vector<TTStubRef> l = lhs->getStubRefs();
-    //   std::vector<TTStubRef> r = rhs->getStubRefs();
-    //   std::sort(l.begin(), l.end());
-    //   std::sort(r.begin(), r.end());
-    //   std::vector<TTStubRef> same;
-    //   same.reserve(std::min(l.size(), r.size()));
-    //   std::set_intersection(l.begin(), l.end(), r.begin(), r.end(), std::back_inserter(same));
-    //   return static_cast<int>(same.size()) >= setup_->drMinIdenticalStubs();
-    // };
-    // std::vector<TTTrackRef*> ptrs;
-    // ptrs.reserve(ttTrackRefs.size());
-    // auto toPtr = [](TTTrackRef& ref) { return &ref; };
-    // std::transform(ttTrackRefs.begin(), ttTrackRefs.end(), std::back_inserter(ptrs), toPtr);
-    // for (int i = 0; i < static_cast<int>(ptrs.size()); i++) {
-    //   TTTrackRef* master = ptrs[i];
-    //   if (!master)
-    //     continue;
-    //   for (int j = i + 1; j < static_cast<int>(ptrs.size()); j++) {
-    //     TTTrackRef*& slave = ptrs[j];
-    //     if (!slave)
-    //       continue;
-    //     if (equalEnough(*master, *slave))
-    //       slave = nullptr;
-    //   }
-    // }
-    // for (int i = static_cast<int>(ptrs.size()) - 1; i >= 0; i--)
-    //   if (!ptrs[i])
-    //     ttTrackRefs.erase(std::next(ttTrackRefs.begin(), i));
+    // perform duplicate removal
+    auto equalEnough = [this](const TTTrackRef& lhs, const TTTrackRef& rhs) {
+      std::vector<TTStubRef> l = lhs->getStubRefs();
+      std::vector<TTStubRef> r = rhs->getStubRefs();
+      std::sort(l.begin(), l.end());
+      std::sort(r.begin(), r.end());
+      std::vector<TTStubRef> same;
+      same.reserve(std::min(l.size(), r.size()));
+      std::set_intersection(l.begin(), l.end(), r.begin(), r.end(), std::back_inserter(same));
+      return static_cast<int>(same.size()) >= setup_->drMinIdenticalStubs();
+    };
+    std::vector<TTTrackRef*> ptrs;
+    ptrs.reserve(ttTrackRefs.size());
+    auto toPtr = [](TTTrackRef& ref) { return &ref; };
+    std::transform(ttTrackRefs.begin(), ttTrackRefs.end(), std::back_inserter(ptrs), toPtr);
+    for (int i = 0; i < static_cast<int>(ptrs.size()); i++) {
+      TTTrackRef* master = ptrs[i];
+      if (!master)
+        continue;
+      for (int j = i + 1; j < static_cast<int>(ptrs.size()); j++) {
+        TTTrackRef*& slave = ptrs[j];
+        if (!slave)
+          continue;
+        if (equalEnough(*master, *slave))
+          slave = nullptr;
+      }
+    }
+    for (int i = static_cast<int>(ptrs.size()) - 1; i >= 0; i--)
+      if (!ptrs[i])
+        ttTrackRefs.erase(std::next(ttTrackRefs.begin(), i));
 
-    edm::LogVerbatim("Tracklet") << "DRINFO: " << " finalSize=" << ttTrackRefs.size();
+    edm::LogVerbatim("Tracklet") << "Number of tracks after duplicate removal: " << ttTrackRefs.size();
     // perform KF
     tt::TTTracks ttTracks;
     ttTracks.reserve(ttTrackRefs.size());
@@ -326,8 +327,13 @@ namespace trklet {
           ttTrack, setup_->trackerGeometry(), setup_->trackerTopology(), setup_->sysBField(), setup_->simNPar()));
       ttTrack.setTrackWordBits();
     }
+    // no KF
+    // tt::TTTracks ttTracks;
+    // ttTracks.reserve(ttTrackRefs.size());
+    // for (const TTTrackRef& ttTrackRef : ttTrackRefs)
+    //   ttTracks.emplace_back(*ttTrackRef);   // copy-construct from the input track
     // store products
-    edm::LogVerbatim("Tracklet") << "KFINFO: " << " finalSize=" << ttTracks.size();
+    edm::LogVerbatim("Tracklet") << "Number of tracks after KF: " << " finalSize=" << ttTracks.size();
     iEvent.emplace(edPutTokenTracks_, std::move(ttTracks));
   }
 

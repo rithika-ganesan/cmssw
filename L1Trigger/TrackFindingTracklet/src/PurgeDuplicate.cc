@@ -108,7 +108,7 @@ void PurgeDuplicate::execute(std::vector<Track>& outputtracks, unsigned int iSec
 
   phiSec_ = iSector * settings_.dphisector() - 0.5 * settings_.dphisectorHG();
 
-  edm::LogVerbatim("Tracklet") << "Initial PurgeDuplicates.cc running! Sector: " << iSector << ". Size of input tracks: " << inputtracks_.size();
+  edm::LogVerbatim("Tracklet") << "From PurgeDuplicates.cc, sector: " << iSector << "; number of tracks: " << inputtracks_.size();
   // edm::LogVerbatim("Tracklet") << "PurgeDuplicates.cc running! Size of input tracks: " << inputtracks_.size();
 
   ////////////////////

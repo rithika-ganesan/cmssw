@@ -170,6 +170,7 @@ private:
   std::vector<float>* m_trk_phi;
   std::vector<float>* m_trk_d0;  // (filled if L1Tk_nPar==5, else 999)
   std::vector<float>* m_trk_z0;
+  std::vector<float>* m_trk_rinv;
   std::vector<float>* m_trk_tanL;
   std::vector<float>* m_trk_zT;
   // std::vector<std::string>* m_trk_stubrefs;
@@ -399,6 +400,7 @@ void L1TrackNtupleMaker::endJob() {
   delete m_trk_eta;
   delete m_trk_phi;
   delete m_trk_z0;
+  delete m_trk_rinv;
   delete m_trk_d0;
   delete m_trk_tanL;
   delete m_trk_zT;
@@ -564,6 +566,7 @@ void L1TrackNtupleMaker::beginJob() {
   m_trk_phi = new std::vector<float>;
   m_trk_d0 = new std::vector<float>;
   m_trk_z0 = new std::vector<float>;
+  m_trk_rinv = new std::vector<float>;
   m_trk_tanL = new std::vector<float>;
   m_trk_zT = new std::vector<float>;
   // m_trk_stubrefs = new std::vector<std::string>;
@@ -719,6 +722,7 @@ void L1TrackNtupleMaker::beginJob() {
     eventTree->Branch("trk_phi", &m_trk_phi);
     eventTree->Branch("trk_d0", &m_trk_d0);
     eventTree->Branch("trk_z0", &m_trk_z0);
+    eventTree->Branch("trk_rinv", &m_trk_rinv);
     eventTree->Branch("trk_tanL", &m_trk_tanL);
     eventTree->Branch("trk_zT", &m_trk_zT);
     // eventTree->Branch("trk_stubrefs", &m_trk_stubrefs);
@@ -902,6 +906,7 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
     m_trk_phi->clear();
     m_trk_d0->clear();
     m_trk_z0->clear();
+    m_trk_rinv->clear();
     m_trk_tanL->clear();
     m_trk_zT->clear();
     // m_trk_stubrefs->clear();
@@ -1309,6 +1314,7 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
       float tmp_trk_tanL = iterL1Track->tanL();
       float tmp_trk_zT = iterL1Track->z0() + setup->regChosenRofZ() * iterL1Track->tanL();
       int tmp_trk_charge = (int)TMath::Sign(1, iterL1Track->rInv());
+      float tmp_trk_rinv = iterL1Track->rInv();
 
       int nHelixPars = iterL1Track->nFitPars();
       const auto& helixCovMat = iterL1Track->helixCovMat();
@@ -1536,6 +1542,7 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
       m_trk_eta->push_back(tmp_trk_eta);
       m_trk_phi->push_back(tmp_trk_phi);
       m_trk_z0->push_back(tmp_trk_z0);
+      m_trk_rinv->push_back(tmp_trk_rinv);
       m_trk_d0->push_back(tmp_trk_d0);
       m_trk_tanL->push_back(tmp_trk_tanL);
       m_trk_zT->push_back(tmp_trk_zT);
@@ -1726,12 +1733,15 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
   int this_tp = 0;
   std::vector<TrackingParticle>::const_iterator iterTP;
   for (iterTP = TrackingParticleHandle->begin(); iterTP != TrackingParticleHandle->end(); ++iterTP) {
+  
     edm::Ptr<TrackingParticle> tp_ptr(TrackingParticleHandle, this_tp);
     this_tp++;
 
+    // edm::LogVerbatim("Tracklet") << "Tracking particle " << this_tp;
+
     int tmp_eventid = iterTP->eventId().event();
-    if (MyProcess != 1 && tmp_eventid > 0)
-      continue;  //only care about tracking particles from the primary interaction (except for MyProcess==1, i.e. looking at all TPs)
+    // if (MyProcess != 1 && tmp_eventid > 0)
+    //   continue;  //only care about tracking particles from the primary interaction (except for MyProcess==1, i.e. looking at all TPs)
 
     float tmp_tp_pt = iterTP->pt();
     float tmp_tp_charge = iterTP->charge();
@@ -1883,6 +1893,13 @@ void L1TrackNtupleMaker::analyze(const edm::Event& iEvent, const edm::EventSetup
           tmp_trk_genuine = true;
         if (MCTruthTTTrackHandle->isLooselyGenuine(matchedTracks.at(it)))
           tmp_trk_loosegenuine = true;
+
+        auto trk_ptr = matchedTracks.at(it).get();
+        std::ostringstream ss;
+        ss << trk_ptr;
+        std::string ptr_string = ss.str();
+
+        // edm::LogVerbatim("Tracklet") << "Here is string: " << ptr_string;
 
         if (DebugMode) {
           if (MCTruthTTTrackHandle->findTrackingParticlePtr(matchedTracks.at(it)).isNull()) {

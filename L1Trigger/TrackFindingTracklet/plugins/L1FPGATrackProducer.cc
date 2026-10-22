@@ -745,7 +745,7 @@ void L1FPGATrackProducer::produce(edm::Event& iEvent, const edm::EventSetup& iSe
     L1TkTracksForOutput->push_back(aTrack);
   }
 
-  edm::LogVerbatim("Tracklet") << "loop check:" << tracks.size() << " " << tracks.capacity();
+  // edm::LogVerbatim("Tracklet") << "loop check:" << tracks.size() << " " << tracks.capacity();
 
   //
   // This code is a bit of a hack, it fixes an issue where it was implied that tracks in the L1TkTracksForOutput

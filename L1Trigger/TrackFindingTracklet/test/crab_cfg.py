@@ -1,7 +1,7 @@
 from CRABClient.UserUtilities import config
 config = config()
 
-config.General.requestName = '__REQUEST_NAME__'
+config.General.requestName = 'CMSSW_20_1_0_pre1-Disp_SUSY_0_PU-HYBRID_SIM_DISPLACED_DR-Truncation'
 config.General.workArea = 'l1TF_displacedTracking'                                                              ## folder that will be created in the work area, will contain the folder above. Can stay the same for all your submissions in principle
 config.General.transferOutputs = True
 config.General.transferLogs = True
@@ -9,11 +9,11 @@ config.General.transferLogs = True
 config.JobType.pluginName = 'Analysis'
 config.JobType.psetName = 'L1TrackNtupleMaker_cfg.py'  ## cfg file that will be run (e.g. the one you pass to cmsRun xx_cfg.py)
 config.JobType.allowUndistributedCMSSW = True
-config.JobType.numCores = __NUM_THREADS__                           ## run multithread
-config.JobType.maxMemoryMB = __MAX_MEMORY__                      ## increase of the default mem request as these jobs are quite heavy
+config.JobType.numCores = 1                           ## run multithread
+config.JobType.maxMemoryMB = 3000                      ## increase of the default mem request as these jobs are quite heavy
 
 
-config.Data.inputDataset = '__INPUT_DATASET__'
+config.Data.inputDataset = '/RelValDisplacedSUSY_14TeV/CMSSW_20_0_0-150X_mcRun4_realistic_v1_Run4_D121_pp_noPU_STD_Reference_16Aug26-v1/GEN-SIM-DIGI-RAW'
 # config.Data.inputDataset = '/DisplacedSUSY_stopToBottom_M-800_50mm_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_AllTP_140X_mcRun4_realistic_v4-v1/GEN-SIM-DIGI-RAW-MINIAOD' 
 # config.Data.inputDataset = '/HTo2LongLivedTo4mu_MH-125_MFF-12_CTau-1500mm_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/GEN-SIM-DIGI-RAW-MINIAOD'
 # config.Data.inputDataset = '/HTo2LongLivedTo4mu_MH-125_MFF-12_CTau-900mm_TuneCP5_14TeV-pythia8/Phase2Spring24DIGIRECOMiniAOD-PU200_Trk1GeV_140X_mcRun4_realistic_v4-v1/GEN-SIM-DIGI-RAW-MINIAOD'
@@ -22,7 +22,7 @@ config.Data.outLFNDirBase = '/store/user/rganesan'   ## output folder on the sto
 
 
 config.Data.splitting = 'Automatic'                        ## each job will process one input file
-config.Data.totalUnits = __NUM_EVENTS__
+config.Data.totalUnits = -1
 # config.Data.unitsPerJob = 1
 # config.Data.totalUnits = 5
 config.Data.publication = False

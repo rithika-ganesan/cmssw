@@ -60,7 +60,7 @@ process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 # input and output
 ############################################################
 
-process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(100))
+process.maxEvents = cms.untracked.PSet(input = cms.untracked.int32(5))
 
 #--- To use MCsamples scripts, defining functions get*data*() for easy MC access,
 #--- follow instructions in https://github.com/cms-L1TK/MCsamples
@@ -92,13 +92,13 @@ elif GEOMETRY == "D121":
   # inputMC=getCMSdata(dataName)
 #    inputMC = ["/store/relval/CMSSW_20_0_0/RelValDisplacedSUSY_14TeV/GEN-SIM-DIGI-RAW/150X_mcRun4_realistic_v1_Run4_D121_pp_noPU_STD_Reference_16Aug26-v1/2590000/12155111-928c-482c-b3c5-94b8011db207.root"]
   
-  # disp susy + 200 PU
-  dataName = "/RelValDisplacedSUSY_14TeV/CMSSW_20_0_0_pre1-PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU_16Aug26-v3/GEN-SIM-DIGI-RAW"
-  inputMC=getCMSdata(dataName)
+#   # disp susy + 200 PU
+#   dataName = "/RelValDisplacedSUSY_14TeV/CMSSW_20_0_0_pre1-PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU_16Aug26-v3/GEN-SIM-DIGI-RAW"
+#   inputMC=getCMSdata(dataName)
  
 
   # ttbar + 200PU
-  # inputMC = ['/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU-v1/2590000/0033230b-a131-453a-95c0-fe14d5027d1f.root']
+  inputMC = ['/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/PU_150X_mcRun4_realistic_v1_STD_D121_RegeneratedGS_PU-v1/2590000/0033230b-a131-453a-95c0-fe14d5027d1f.root']
   
   # ttbar + 0PU
   #inputMC = ['/store/relval/CMSSW_20_0_0_pre1/RelValTTbar_14TeV/GEN-SIM-DIGI-RAW/150X_mcRun4_realistic_v1_STD_RegeneratedGS_D121_noPU-v1/2590000/0a33391d-2eb7-45fe-98fe-ca7b70a785c4.root']  
@@ -118,7 +118,7 @@ process.source.inputCommands.append('drop  *_*TTTrack*_*_*')
 # Use skipEvents to select particular single events for test vectors
 #process.source.skipEvents = cms.untracked.uint32(11)
 
-process.TFileService = cms.Service("TFileService", fileName = cms.string('L1TrkNtuple-DispSUSY200PU.root'), closeFileFast = cms.untracked.bool(True))
+process.TFileService = cms.Service("TFileService", fileName = cms.string('test.root'), closeFileFast = cms.untracked.bool(True))
 process.Timing = cms.Service("Timing", summaryOnly = cms.untracked.bool(True))
 
 ############################################################
